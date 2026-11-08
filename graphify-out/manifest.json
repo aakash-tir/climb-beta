@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794123227.5281014,
-    "ast_hash": "7533c5e2b307276dbeefa2b47dae0790",
+    "mtime": 1794123344.340545,
+    "ast_hash": "42164e514e3a202715bfc382d67eb6b1",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -430,8 +430,8 @@
     "semantic_hash": ""
   },
   "src/climb_beta/colour/crops.py": {
-    "mtime": 1794123178.7686682,
-    "ast_hash": "2ac1203156ea094c73a4e535f108df06",
+    "mtime": 1794123275.8214357,
+    "ast_hash": "d74f89613006f46c3d257dc75b71e071",
     "semantic_hash": ""
   },
   "tests/test_crops.py": {
@@ -455,23 +455,43 @@
     "semantic_hash": ""
   },
   "colour/eval_colour.py": {
-    "mtime": 1794123227.2661152,
-    "ast_hash": "79cfefd963ee24295127f21d456aeeb6",
+    "mtime": 1794123275.8122368,
+    "ast_hash": "c96e5a692ce227de2bf0860a706cc38b",
     "semantic_hash": ""
   },
   "src/climb_beta/metrics/__init__.py": {
-    "mtime": 1794123183.1341286,
+    "mtime": 1794123275.8569472,
     "ast_hash": "dec84527c8fa676488b36206e0e8715e",
     "semantic_hash": ""
   },
   "src/climb_beta/metrics/colour.py": {
-    "mtime": 1794123212.9477596,
+    "mtime": 1794123275.8574877,
     "ast_hash": "cdce938d644bbaff0eba6d77ed758887",
     "semantic_hash": ""
   },
   "tests/test_colour_eval.py": {
-    "mtime": 1794123211.6281407,
+    "mtime": 1794123275.858524,
     "ast_hash": "eddb68bf601baddf5ee885463b8f5342",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/route/__init__.py": {
+    "mtime": 1794123297.5957963,
+    "ast_hash": "b1d2029cdc0551dd835bb88e80f3f967",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/route/group.py": {
+    "mtime": 1794123325.8031433,
+    "ast_hash": "66a3c7cde328b7fb7facd51c1c89a0f7",
+    "semantic_hash": ""
+  },
+  "tests/test_route_group.py": {
+    "mtime": 1794123324.3644898,
+    "ast_hash": "3725f72933ce74c9b4c3f9b8558a8436",
+    "semantic_hash": ""
+  },
+  "configs/route.yaml": {
+    "mtime": 1794123296.7283547,
+    "ast_hash": "305cfc0ea4ca9aed6baad733fcc221aa",
     "semantic_hash": ""
   }
 }
