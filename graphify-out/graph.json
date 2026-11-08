@@ -679,7 +679,7 @@
       "norm_label": "a near-neutral textured wall."
     },
     {
-      "label": "Draw an elliptical hold in place and return its mask.      `shade` darkens towar",
+      "label": "Draw an elliptical hold in place and return its mask.      `shade` darkens tow",
       "file_type": "rationale",
       "source_file": "tests/synth.py",
       "source_location": "L53",
@@ -687,7 +687,7 @@
       "id": "tests_synth_rationale_53",
       "community": 21,
       "community_name": "chalk",
-      "norm_label": "draw an elliptical hold in place and return its mask.      `shade` darkens towar"
+      "norm_label": "draw an elliptical hold in place and return its mask.      `shade` darkens tow"
     },
     {
       "label": "Cover `frac` of the mask with chalk, in place. Returns the chalked-pixel mask.",
@@ -1867,10 +1867,32 @@
       "norm_label": "2026-11-08.md"
     },
     {
+      "label": "2026-11-08",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_2026_11_08",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "2026-11-08"
+    },
+    {
+      "label": "Expanded the plan and scaffolded climb-beta",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_expanded_the_plan_and_scaffolded_climb_beta",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "expanded the plan and scaffolded climb-beta"
+    },
+    {
       "label": "Initial commit and repo creation",
       "file_type": "document",
       "source_file": "logs/2026-11-08.md",
-      "source_location": "L2",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "logs_2026_11_08_initial_commit_and_repo_creation",
       "community": 22,
@@ -1881,12 +1903,23 @@
       "label": "Synthetic hold images for tests (#1)",
       "file_type": "document",
       "source_file": "logs/2026-11-08.md",
-      "source_location": "L18",
+      "source_location": "L54",
       "_origin": "ast",
       "id": "logs_2026_11_08_synthetic_hold_images_for_tests_1",
       "community": 22,
       "community_name": "2026-11-08.md",
       "norm_label": "synthetic hold images for tests (#1)"
+    },
+    {
+      "label": ".gitattributes and this log's first entry (#31)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_gitattributes_and_this_log_s_first_entry_31",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": ".gitattributes and this log's first entry (#31)"
     },
     {
       "label": "plan.md",
@@ -4288,10 +4321,43 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/2026-11-08.md",
-      "source_location": "L2",
+      "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
       "source": "logs_2026_11_08",
+      "target": "logs_2026_11_08_2026_11_08",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_expanded_the_plan_and_scaffolded_climb_beta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_gitattributes_and_this_log_s_first_entry_31",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
       "target": "logs_2026_11_08_initial_commit_and_repo_creation",
       "confidence_score": 1.0
     },
@@ -4299,10 +4365,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/2026-11-08.md",
-      "source_location": "L18",
+      "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "logs_2026_11_08",
+      "source": "logs_2026_11_08_2026_11_08",
       "target": "logs_2026_11_08_synthetic_hold_images_for_tests_1",
       "confidence_score": 1.0
     },
@@ -4429,5 +4495,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8df6a9b44ab755ed4bfd7edeb632db7f2917a8c2"
+  "built_at_commit": "2d66609a2820de0f0552ec92159b389f58cccfcd"
 }
