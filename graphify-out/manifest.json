@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794122974.2270617,
-    "ast_hash": "fa3be3d9be019dbb015cca5a72bf09cc",
+    "mtime": 1794123117.3858826,
+    "ast_hash": "6bf6eea82843273c9419e91a337b6c7e",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -425,18 +425,33 @@
     "semantic_hash": ""
   },
   "colour/make_crops.py": {
-    "mtime": 1794122948.9434388,
+    "mtime": 1794123019.4029646,
     "ast_hash": "eb332d8e3967834f5c514a99b9172852",
     "semantic_hash": ""
   },
   "src/climb_beta/colour/crops.py": {
-    "mtime": 1794122944.350541,
+    "mtime": 1794123019.4098597,
     "ast_hash": "117dc2ab14243a0d9e6698b8701e3e66",
     "semantic_hash": ""
   },
   "tests/test_crops.py": {
-    "mtime": 1794122973.9520023,
+    "mtime": 1794123019.41038,
     "ast_hash": "1b970732cef43ce4f43c387807851ea8",
+    "semantic_hash": ""
+  },
+  "colour/train_classifier.py": {
+    "mtime": 1794123076.0330784,
+    "ast_hash": "47d05aafc2c0efe46eaa5df0b445f95e",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/colour/classifier.py": {
+    "mtime": 1794123048.5573063,
+    "ast_hash": "65603b1d5b011b44e116289b438ce076",
+    "semantic_hash": ""
+  },
+  "tests/test_crop_classifier.py": {
+    "mtime": 1794123076.0330784,
+    "ast_hash": "771d42b76ce9bf8e8bc3680577994e5c",
     "semantic_hash": ""
   }
 }
