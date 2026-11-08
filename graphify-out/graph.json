@@ -294,6 +294,127 @@
       "norm_label": "climb-beta: colour-blind hold segmentation plus a separate hold-colour step."
     },
     {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_init",
+      "community": 25,
+      "community_name": "__init__.py",
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "Colour step: white balance, rule-based hold colour, crop classifier.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_init_rationale_1",
+      "community": 25,
+      "community_name": "__init__.py",
+      "norm_label": "colour step: white balance, rule-based hold colour, crop classifier."
+    },
+    {
+      "label": "white_balance.py",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "white_balance.py"
+    },
+    {
+      "label": "grey_world_gains()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance_grey_world_gains",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "grey_world_gains()"
+    },
+    {
+      "label": "ImageBGR",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "imagebgr",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "imagebgr"
+    },
+    {
+      "label": "Mask",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance_py_mask",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "mask"
+    },
+    {
+      "label": "apply_gains()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance_apply_gains",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "apply_gains()"
+    },
+    {
+      "label": "grey_world()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance_grey_world",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "grey_world()"
+    },
+    {
+      "label": "Grey-world white balance.  The grey-world assumption says the average of a scene",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance_rationale_1",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "grey-world white balance.  the grey-world assumption says the average of a scene"
+    },
+    {
+      "label": "Per-channel (B, G, R) gains that make the reference pixels' mean neutral.      P",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance_rationale_24",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "per-channel (b, g, r) gains that make the reference pixels' mean neutral.      p"
+    },
+    {
+      "label": "White-balance `img` so the reference (default: whole image) averages to grey.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance_rationale_58",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "white-balance `img` so the reference (default: whole image) averages to grey."
+    },
+    {
       "label": "config.py",
       "file_type": "code",
       "source_file": "src/climb_beta/config.py",
@@ -734,7 +855,7 @@
       "norm_label": "dilate by `px` pixels."
     },
     {
-      "label": "The ring of mask pixels within `width` px of the mask boundary.      For a hol",
+      "label": "The ring of mask pixels within `width` px of the mask boundary.      For a hold",
       "file_type": "rationale",
       "source_file": "src/climb_beta/masks.py",
       "source_location": "L42",
@@ -742,7 +863,7 @@
       "id": "src_climb_beta_masks_rationale_42",
       "community": 23,
       "community_name": "masks.py",
-      "norm_label": "the ring of mask pixels within `width` px of the mask boundary.      for a hol"
+      "norm_label": "the ring of mask pixels within `width` px of the mask boundary.      for a hold"
     },
     {
       "label": "IoU for every (pred, gt) pair; shape (len(preds), len(gts)).",
@@ -789,7 +910,7 @@
       "norm_label": "rasterise an (n, 2) polygon in pixel coords (x, y)."
     },
     {
-      "label": "Outer contour of the largest component as an (N, 2) pixel polygon (x, y).",
+      "label": "Outer contour of the largest component as an (N, 2) pixel polygon (x, y).      `",
       "file_type": "rationale",
       "source_file": "src/climb_beta/masks.py",
       "source_location": "L109",
@@ -797,7 +918,7 @@
       "id": "src_climb_beta_masks_rationale_109",
       "community": 23,
       "community_name": "masks.py",
-      "norm_label": "outer contour of the largest component as an (n, 2) pixel polygon (x, y)."
+      "norm_label": "outer contour of the largest component as an (n, 2) pixel polygon (x, y).      `"
     },
     {
       "label": "Pixel polygon -> YOLO normalised [0, 1] coords.",
@@ -1381,6 +1502,105 @@
       "community": 5,
       "community_name": "Detection",
       "norm_label": "test_empty_detection_is_safe()"
+    },
+    {
+      "label": "test_white_balance.py",
+      "file_type": "code",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_white_balance",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_white_balance.py"
+    },
+    {
+      "label": "_neutral_err()",
+      "file_type": "code",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "tests_test_white_balance_neutral_err",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "_neutral_err()"
+    },
+    {
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_white_balance_py_ndarray",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "ndarray"
+    },
+    {
+      "label": "slice",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "slice",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "slice"
+    },
+    {
+      "label": "test_restores_warm_tint_on_neutral_wall()",
+      "file_type": "code",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "tests_test_white_balance_test_restores_warm_tint_on_neutral_wall",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_restores_warm_tint_on_neutral_wall()"
+    },
+    {
+      "label": "test_wall_reference_beats_whole_image_when_holds_dominate()",
+      "file_type": "code",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_wall_reference_beats_whole_image_when_holds_dominate()"
+    },
+    {
+      "label": "test_tiny_reference_falls_back_to_whole_image()",
+      "file_type": "code",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "tests_test_white_balance_test_tiny_reference_falls_back_to_whole_image",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_tiny_reference_falls_back_to_whole_image()"
+    },
+    {
+      "label": "test_gains_are_clipped_and_black_image_is_identity()",
+      "file_type": "code",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "tests_test_white_balance_test_gains_are_clipped_and_black_image_is_identity",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_gains_are_clipped_and_black_image_is_identity()"
+    },
+    {
+      "label": "test_apply_gains_saturates()",
+      "file_type": "code",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "tests_test_white_balance_test_apply_gains_saturates",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_apply_gains_saturates()"
     },
     {
       "label": "CLAUDE.md",
@@ -2417,6 +2637,17 @@
       "norm_label": "add mask utilities (#2)"
     },
     {
+      "label": "Add grey-world white balance with wall reference (#3)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_add_grey_world_white_balance_with_wall_reference_3",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "add grey-world white balance with wall reference (#3)"
+    },
+    {
       "label": "plan.md",
       "file_type": "document",
       "source_file": "plan.md",
@@ -2948,6 +3179,239 @@
       "source": "src_climb_beta_init_rationale_1",
       "target": "src_climb_beta_init",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_init_rationale_1",
+      "target": "src_climb_beta_colour_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance",
+      "target": "src_climb_beta_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance",
+      "target": "src_climb_beta_colour_white_balance_apply_gains",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance",
+      "target": "src_climb_beta_colour_white_balance_grey_world",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance",
+      "target": "src_climb_beta_colour_white_balance_grey_world_gains",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance_rationale_1",
+      "target": "src_climb_beta_colour_white_balance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance_grey_world",
+      "target": "src_climb_beta_colour_white_balance_grey_world_gains",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance_grey_world_gains",
+      "target": "imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance_grey_world_gains",
+      "target": "src_climb_beta_colour_white_balance_py_mask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance_rationale_24",
+      "target": "src_climb_beta_colour_white_balance_grey_world_gains",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_gains_are_clipped_and_black_image_is_identity",
+      "target": "src_climb_beta_colour_white_balance_grey_world_gains"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_tiny_reference_falls_back_to_whole_image",
+      "target": "src_climb_beta_colour_white_balance_grey_world_gains"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance_apply_gains",
+      "target": "imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance_grey_world",
+      "target": "imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance_grey_world",
+      "target": "src_climb_beta_colour_white_balance_py_mask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance_grey_world",
+      "target": "src_climb_beta_colour_white_balance_apply_gains",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_apply_gains_saturates",
+      "target": "src_climb_beta_colour_white_balance_apply_gains"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_white_balance_rationale_58",
+      "target": "src_climb_beta_colour_white_balance_grey_world",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_restores_warm_tint_on_neutral_wall",
+      "target": "src_climb_beta_colour_white_balance_grey_world"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
+      "target": "src_climb_beta_colour_white_balance_grey_world"
     },
     {
       "relation": "contains",
@@ -4183,6 +4647,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance",
+      "target": "tests_synth",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/synth.py",
@@ -4251,6 +4727,42 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_synth_test_wall_is_deterministic_bgr_uint8",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_restores_warm_tint_on_neutral_wall",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_tiny_reference_falls_back_to_whole_image",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
       "target": "tests_synth_wall"
     },
     {
@@ -4349,6 +4861,18 @@
       "target": "tests_synth_draw_hold"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
+      "target": "tests_synth_draw_hold"
+    },
+    {
       "relation": "references",
       "context": "return_type",
       "confidence": "EXTRACTED",
@@ -4416,6 +4940,42 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_synth_test_tint_scales_channels",
+      "target": "tests_synth_tint"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_restores_warm_tint_on_neutral_wall",
+      "target": "tests_synth_tint"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_tiny_reference_falls_back_to_whole_image",
+      "target": "tests_synth_tint"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
       "target": "tests_synth_tint"
     },
     {
@@ -4788,6 +5348,144 @@
       "_origin": "ast",
       "source": "tests_test_types",
       "target": "tests_test_types_test_empty_detection_is_safe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance",
+      "target": "tests_test_white_balance_neutral_err",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance",
+      "target": "tests_test_white_balance_test_apply_gains_saturates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance",
+      "target": "tests_test_white_balance_test_gains_are_clipped_and_black_image_is_identity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance",
+      "target": "tests_test_white_balance_test_restores_warm_tint_on_neutral_wall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance",
+      "target": "tests_test_white_balance_test_tiny_reference_falls_back_to_whole_image",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance",
+      "target": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_neutral_err",
+      "target": "slice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_neutral_err",
+      "target": "tests_test_white_balance_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_restores_warm_tint_on_neutral_wall",
+      "target": "tests_test_white_balance_neutral_err",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
+      "target": "tests_test_white_balance_neutral_err",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_restores_warm_tint_on_neutral_wall",
+      "target": "slice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_white_balance.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
+      "target": "slice",
       "confidence_score": 1.0
     },
     {
@@ -5608,6 +6306,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/2026-11-08.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_add_grey_world_white_balance_with_wall_reference_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
       "source_location": "L82",
       "weight": 1.0,
       "_origin": "ast",
@@ -5782,5 +6491,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "53177135f94e3ea8d81f4c1823a37a97ae32453c"
+  "built_at_commit": "5f0a1dc2c8ae1ad7fe36feaaa410cbf7c8e6da30"
 }
