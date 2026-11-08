@@ -20,7 +20,7 @@
     "semantic_hash": ""
   },
   "pyproject.toml": {
-    "mtime": 1794122159.243896,
+    "mtime": 1794122227.3448832,
     "ast_hash": "67cd69641f6254f3111172bc5031e88c",
     "semantic_hash": ""
   },
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794122195.8010216,
-    "ast_hash": "50a7f0e0c07fe766d76ece04074fb3dd",
+    "mtime": 1794122308.5264268,
+    "ast_hash": "e78b22305bb34fd58dc8db25d0f40e84",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -320,18 +320,43 @@
     "semantic_hash": ""
   },
   "data/sync_hf.py": {
-    "mtime": 1794122175.4200473,
+    "mtime": 1794122227.3347545,
     "ast_hash": "c84ccfcca49c7fd64337502bc013b8f4",
     "semantic_hash": ""
   },
   "src/climb_beta/data/hf_sync.py": {
-    "mtime": 1794122170.7228208,
+    "mtime": 1794122227.3458912,
     "ast_hash": "57d92878ac429f27ff937aeb296b205b",
     "semantic_hash": ""
   },
   "tests/test_hf_sync.py": {
-    "mtime": 1794122182.3846154,
+    "mtime": 1794122227.3468907,
     "ast_hash": "ba954d5c11e3a4a2c684c7b5582e6cb9",
+    "semantic_hash": ""
+  },
+  "labelling/export_to_yolo.py": {
+    "mtime": 1794122277.8733752,
+    "ast_hash": "cca0d98608648508494d58f02bb3a879",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/data/ls_export.py": {
+    "mtime": 1794122272.820487,
+    "ast_hash": "5f9610ca06860c9eb60098a5a5b14aaf",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/labelling/__init__.py": {
+    "mtime": 1794122253.1052725,
+    "ast_hash": "0573f04f9ee6485833e5c0ec5d646022",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/labelling/schema.py": {
+    "mtime": 1794122255.9123993,
+    "ast_hash": "f1c878fecaf2a134c3997975a975c7cb",
+    "semantic_hash": ""
+  },
+  "tests/test_ls_export.py": {
+    "mtime": 1794122291.9269805,
+    "ast_hash": "15d637e812ce34717b4d8e05594cb50b",
     "semantic_hash": ""
   }
 }
