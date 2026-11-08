@@ -1,0 +1,9 @@
+# Basecamp Climbing walls. One entry per physical wall section; the id is the folder
+# name under data/basecamp/raw/<id>/ (lowercase, a-z0-9-). Photos of one wall always
+# land in one split (see data/split_by_wall.py).
+#
+# Example:
+#   - id: cave-left
+#     angle: overhang     # slab | vertical | overhang | roof
+#     notes: "left half of the cave, under the skylight"
+walls: []

@@ -27,8 +27,8 @@ data/raw/
 data/roboflow/
 data/yolo/
 data/crops/
-data/basecamp/raw/
-data/basecamp/labels/
+data/basecamp/raw/*
+data/basecamp/labels/*
 data/basecamp/exports/
 !data/basecamp/raw/.gitkeep
 !data/basecamp/labels/.gitkeep
