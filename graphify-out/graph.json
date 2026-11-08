@@ -275,8 +275,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "colour_classify_rules_main",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 0,
+      "community_name": "parse_colour_config",
       "norm_label": "main()"
     },
     {
@@ -289,6 +289,39 @@
       "community": 0,
       "community_name": "parse_colour_config",
       "norm_label": "label each hold's colour in a photo with the rule-based colour step.  usage:"
+    },
+    {
+      "label": "convert_roboflow.py",
+      "file_type": "code",
+      "source_file": "data/convert_roboflow.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_convert_roboflow",
+      "community": 0,
+      "community_name": "parse_colour_config",
+      "norm_label": "convert_roboflow.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "data/convert_roboflow.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "data_convert_roboflow_main",
+      "community": 0,
+      "community_name": "parse_colour_config",
+      "norm_label": "main()"
+    },
+    {
+      "label": "Convert a Roboflow `coco-segmentation` export to a YOLO-seg dataset.  Usage:",
+      "file_type": "rationale",
+      "source_file": "data/convert_roboflow.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_convert_roboflow_rationale_1",
+      "community": 0,
+      "community_name": "parse_colour_config",
+      "norm_label": "convert a roboflow `coco-segmentation` export to a yolo-seg dataset.  usage:"
     },
     {
       "label": "climb-beta",
@@ -487,8 +520,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_hold_pixels",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "hold_pixels()"
     },
     {
@@ -498,8 +531,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_py_imagebgr",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "imagebgr"
     },
     {
@@ -509,8 +542,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_py_mask",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "mask"
     },
     {
@@ -619,8 +652,8 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_classify_hold",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "classify_hold()"
     },
     {
@@ -685,8 +718,8 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_rationale_166",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "colour of the hold under `mask` in a (white-balanced) bgr image.      white rule"
     },
     {
@@ -996,6 +1029,204 @@
       "community": 29,
       "community_name": "__init__.py",
       "norm_label": "dataset io and conversion: yolo-seg labels, roboflow, label studio, wall splits."
+    },
+    {
+      "label": "coco_to_yolo.py",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "coco_to_yolo.py"
+    },
+    {
+      "label": "BoxOnly",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_boxonly",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "boxonly"
+    },
+    {
+      "label": "ConversionReport",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_conversionreport",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "conversionreport"
+    },
+    {
+      "label": ".to_json()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_conversionreport_to_json",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": ".to_json()"
+    },
+    {
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_py_any",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "any"
+    },
+    {
+      "label": "default_class_for()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_default_class_for",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "default_class_for()"
+    },
+    {
+      "label": "polygon_area()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_polygon_area",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "polygon_area()"
+    },
+    {
+      "label": "FloatArray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_py_floatarray",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "floatarray"
+    },
+    {
+      "label": "best_polygon()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_best_polygon",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "best_polygon()"
+    },
+    {
+      "label": "convert_split()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_convert_split",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "convert_split()"
+    },
+    {
+      "label": "write_dataset_yaml()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_write_dataset_yaml",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "write_dataset_yaml()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_py_path",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "path"
+    },
+    {
+      "label": "convert_export()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L145",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_convert_export",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "convert_export()"
+    },
+    {
+      "label": "Convert a COCO-segmentation export (e.g. Roboflow's) to Ultralytics YOLO-seg.  R",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_rationale_1",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "convert a coco-segmentation export (e.g. roboflow's) to ultralytics yolo-seg.  r"
+    },
+    {
+      "label": "Map a source category name to one of our classes by keyword, or None.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_rationale_64",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "map a source category name to one of our classes by keyword, or none."
+    },
+    {
+      "label": "Largest polygon of a COCO polygon list, and how many polygons there were.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_rationale_78",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "largest polygon of a coco polygon list, and how many polygons there were."
+    },
+    {
+      "label": "Return {file_name: instances} for images that are safe to write.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_rationale_92",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "return {file_name: instances} for images that are safe to write."
+    },
+    {
+      "label": "Convert every split folder under `src` that has a COCO json.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_coco_to_yolo_rationale_151",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "convert every split folder under `src` that has a coco json."
     },
     {
       "label": "yolo.py",
@@ -1565,8 +1796,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_scripts",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "scripts.py"
     },
     {
@@ -1576,8 +1807,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_scripts_load_script",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "load_script()"
     },
     {
@@ -1587,8 +1818,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "moduletype",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "moduletype"
     },
     {
@@ -1598,8 +1829,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_scripts_rationale_1",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "load a top-level cli script (e.g. colour/classify_rules.py) as a module for test"
     },
     {
@@ -1741,8 +1972,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_classify_rules_cli.py"
     },
     {
@@ -1752,8 +1983,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_scene",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "_scene()"
     },
     {
@@ -1763,8 +1994,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_py_path",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "path"
     },
     {
@@ -1774,8 +2005,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_cli_labels_holds_and_skips_tape",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_cli_labels_holds_and_skips_tape()"
     },
     {
@@ -1785,8 +2016,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_cli_missing_image",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_cli_missing_image()"
     },
     {
@@ -1799,6 +2030,116 @@
       "community": 28,
       "community_name": "_scene",
       "norm_label": "test_label_line_roundtrip_and_validation()"
+    },
+    {
+      "label": "test_coco_to_yolo.py",
+      "file_type": "code",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_coco_to_yolo",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "test_coco_to_yolo.py"
+    },
+    {
+      "label": "_coco()",
+      "file_type": "code",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "tests_test_coco_to_yolo_coco",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "_coco()"
+    },
+    {
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_coco_to_yolo_py_any",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "any"
+    },
+    {
+      "label": "_export()",
+      "file_type": "code",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "tests_test_coco_to_yolo_export",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "_export()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_coco_to_yolo_py_path",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "path"
+    },
+    {
+      "label": "test_convert_export()",
+      "file_type": "code",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "tests_test_coco_to_yolo_test_convert_export",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "test_convert_export()"
+    },
+    {
+      "label": "test_explicit_class_map_wins()",
+      "file_type": "code",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "tests_test_coco_to_yolo_test_explicit_class_map_wins",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "test_explicit_class_map_wins()"
+    },
+    {
+      "label": "test_default_class_for()",
+      "file_type": "code",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "tests_test_coco_to_yolo_test_default_class_for",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "test_default_class_for()"
+    },
+    {
+      "label": "test_best_polygon_ignores_degenerate()",
+      "file_type": "code",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "tests_test_coco_to_yolo_test_best_polygon_ignores_degenerate",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "test_best_polygon_ignores_degenerate()"
+    },
+    {
+      "label": "test_cli()",
+      "file_type": "code",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "tests_test_coco_to_yolo_test_cli",
+      "community": 30,
+      "community_name": "convert_export",
+      "norm_label": "test_cli()"
     },
     {
       "label": "test_colour_pink_red.py",
@@ -1983,8 +2324,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_colour_white",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_colour_white.py"
     },
     {
@@ -1994,8 +2335,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_test_colour_white_hold",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "_hold()"
     },
     {
@@ -2005,8 +2346,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_white_hold_is_white",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_white_hold_is_white()"
     },
     {
@@ -2016,8 +2357,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_chalked_white_hold_is_white",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_chalked_white_hold_is_white()"
     },
     {
@@ -2027,8 +2368,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_heavily_chalked_colour_hold_votes_on_ring",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_heavily_chalked_colour_hold_votes_on_ring()"
     },
     {
@@ -2038,8 +2379,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_grey_hold_stays_grey",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_grey_hold_stays_grey()"
     },
     {
@@ -2049,8 +2390,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_light_grey_chalk_like_body_but_dim_ring_is_grey",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_light_grey_chalk_like_body_but_dim_ring_is_grey()"
     },
     {
@@ -2060,8 +2401,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_colour_white_rationale_1",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "white holds vs chalk: the chalk filter must not delete white holds."
     },
     {
@@ -3583,6 +3924,17 @@
       "norm_label": "add colour/classify_rules.py cli (#7)"
     },
     {
+      "label": "Add COCO-segmentation to YOLO-seg converter (#9)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_add_coco_segmentation_to_yolo_seg_converter_9",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "add coco-segmentation to yolo-seg converter (#9)"
+    },
+    {
       "label": "plan.md",
       "file_type": "document",
       "source_file": "plan.md",
@@ -4197,6 +4549,64 @@
       "_origin": "ast",
       "source": "colour_classify_rules_main",
       "target": "src_climb_beta_data_yolo_read_labels"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "data/convert_roboflow.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_convert_roboflow",
+      "target": "src_climb_beta_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/convert_roboflow.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_convert_roboflow",
+      "target": "data_convert_roboflow_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "data/convert_roboflow.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_convert_roboflow_rationale_1",
+      "target": "data_convert_roboflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/convert_roboflow.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_convert_roboflow_main",
+      "target": "src_climb_beta_config_load_classes"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/convert_roboflow.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_convert_roboflow_main",
+      "target": "src_climb_beta_data_coco_to_yolo_convert_export"
     },
     {
       "relation": "rationale_for",
@@ -5970,6 +6380,458 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo",
+      "target": "src_climb_beta_masks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo",
+      "target": "src_climb_beta_data_coco_to_yolo_best_polygon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo",
+      "target": "src_climb_beta_data_coco_to_yolo_boxonly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo",
+      "target": "src_climb_beta_data_coco_to_yolo_conversionreport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo",
+      "target": "src_climb_beta_data_coco_to_yolo_convert_export",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo",
+      "target": "src_climb_beta_data_coco_to_yolo_convert_split",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo",
+      "target": "src_climb_beta_data_coco_to_yolo_default_class_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo",
+      "target": "src_climb_beta_data_coco_to_yolo_polygon_area",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo",
+      "target": "src_climb_beta_data_coco_to_yolo_write_dataset_yaml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_rationale_1",
+      "target": "src_climb_beta_data_coco_to_yolo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L31",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_boxonly",
+      "target": "src_climb_beta_data_yolo_yoloinstance",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_split",
+      "target": "src_climb_beta_data_coco_to_yolo_boxonly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_conversionreport",
+      "target": "src_climb_beta_data_coco_to_yolo_conversionreport_to_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L31",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_conversionreport",
+      "target": "src_climb_beta_data_yolo_yoloinstance",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_export",
+      "target": "src_climb_beta_data_coco_to_yolo_conversionreport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_split",
+      "target": "src_climb_beta_data_coco_to_yolo_conversionreport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_conversionreport_to_json",
+      "target": "src_climb_beta_data_coco_to_yolo_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_export",
+      "target": "src_climb_beta_data_coco_to_yolo_conversionreport_to_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_split",
+      "target": "src_climb_beta_data_coco_to_yolo_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_split",
+      "target": "src_climb_beta_data_coco_to_yolo_default_class_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_rationale_64",
+      "target": "src_climb_beta_data_coco_to_yolo_default_class_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_default_class_for",
+      "target": "src_climb_beta_data_coco_to_yolo_default_class_for"
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_best_polygon",
+      "target": "src_climb_beta_data_coco_to_yolo_polygon_area",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_polygon_area",
+      "target": "src_climb_beta_data_coco_to_yolo_py_floatarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_best_polygon",
+      "target": "src_climb_beta_data_coco_to_yolo_py_floatarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_split",
+      "target": "src_climb_beta_data_coco_to_yolo_best_polygon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_rationale_78",
+      "target": "src_climb_beta_data_coco_to_yolo_best_polygon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_best_polygon_ignores_degenerate",
+      "target": "src_climb_beta_data_coco_to_yolo_best_polygon"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_export",
+      "target": "src_climb_beta_data_coco_to_yolo_convert_split",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_split",
+      "target": "src_climb_beta_data_yolo_yoloinstance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_split",
+      "target": "src_climb_beta_masks_normalise"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_rationale_92",
+      "target": "src_climb_beta_data_coco_to_yolo_convert_split",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L171",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_export",
+      "target": "src_climb_beta_data_coco_to_yolo_write_dataset_yaml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_write_dataset_yaml",
+      "target": "src_climb_beta_data_coco_to_yolo_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_export",
+      "target": "src_climb_beta_data_coco_to_yolo_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_convert_export",
+      "target": "src_climb_beta_data_yolo_write_labels"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/coco_to_yolo.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_coco_to_yolo_rationale_151",
+      "target": "src_climb_beta_data_coco_to_yolo_convert_export",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_convert_export",
+      "target": "src_climb_beta_data_coco_to_yolo_convert_export"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_explicit_class_map_wins",
+      "target": "src_climb_beta_data_coco_to_yolo_convert_export"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/data/yolo.py",
       "source_location": "L15",
       "weight": 1.0,
@@ -6184,6 +7046,30 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_classify_rules_cli_test_label_line_roundtrip_and_validation",
+      "target": "src_climb_beta_data_yolo_read_labels"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_convert_export",
+      "target": "src_climb_beta_data_yolo_read_labels"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_explicit_class_map_wins",
       "target": "src_climb_beta_data_yolo_read_labels"
     },
     {
@@ -7112,6 +7998,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo",
+      "target": "tests_scripts",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "context": "return_type",
       "confidence": "EXTRACTED",
@@ -7145,6 +8043,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_classify_rules_cli_test_cli_missing_image",
+      "target": "tests_scripts_load_script"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_cli",
       "target": "tests_scripts_load_script"
     },
     {
@@ -7996,6 +8906,191 @@
       "_origin": "ast",
       "source": "tests_test_classify_rules_cli_test_label_line_roundtrip_and_validation",
       "target": "tests_test_classify_rules_cli_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo",
+      "target": "tests_test_coco_to_yolo_coco",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo",
+      "target": "tests_test_coco_to_yolo_export",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo",
+      "target": "tests_test_coco_to_yolo_test_best_polygon_ignores_degenerate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo",
+      "target": "tests_test_coco_to_yolo_test_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo",
+      "target": "tests_test_coco_to_yolo_test_convert_export",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo",
+      "target": "tests_test_coco_to_yolo_test_default_class_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo",
+      "target": "tests_test_coco_to_yolo_test_explicit_class_map_wins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_coco",
+      "target": "tests_test_coco_to_yolo_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_export",
+      "target": "tests_test_coco_to_yolo_coco",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_export",
+      "target": "tests_test_coco_to_yolo_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_cli",
+      "target": "tests_test_coco_to_yolo_export",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_convert_export",
+      "target": "tests_test_coco_to_yolo_export",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_explicit_class_map_wins",
+      "target": "tests_test_coco_to_yolo_export",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_cli",
+      "target": "tests_test_coco_to_yolo_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_convert_export",
+      "target": "tests_test_coco_to_yolo_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_coco_to_yolo.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_coco_to_yolo_test_explicit_class_map_wins",
+      "target": "tests_test_coco_to_yolo_py_path",
       "confidence_score": 1.0
     },
     {
@@ -9688,6 +10783,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/2026-11-08.md",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_add_coco_segmentation_to_yolo_seg_converter_9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
       "source_location": "L122",
       "weight": 1.0,
       "_origin": "ast",
@@ -9906,5 +11012,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7d8836e53a18b423e0dfc496c875a486b8f0cbb3"
+  "built_at_commit": "d7683e19948952a20606624c58db5ff26fcd77e1"
 }
