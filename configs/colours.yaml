@@ -1,0 +1,52 @@
+# Hold colours used at Basecamp Climbing, plus the thresholds of the rule-based colour step.
+#
+# To add or remove a colour: edit `colours` below. The Label Studio config
+# (`labelling/make_config.py`), the rules and the classifier all read this file.
+#
+# OpenCV conventions: HSV hue is 0-179 (degrees / 2), S and V are 0-255.
+# Lab: L* is scaled to 0-255 by OpenCV (L* x 255/100).
+
+colours:
+  # family: which per-pixel family votes for this colour.
+  #   chromatic families are matched by `hue` ranges ([lo, hi), may wrap past 179)
+  #   "redpink" holds are split into red vs pink by saturation/lightness (see pink_red)
+  #   achromatic colours (black/grey/white) are matched by brightness (see achromatic)
+  - {name: red,    family: redpink,    swatch: "#d7263d"}
+  - {name: pink,   family: redpink,    swatch: "#ff77c8"}
+  - {name: orange, family: orange,     swatch: "#f77f00"}
+  - {name: yellow, family: yellow,     swatch: "#fcbf49"}
+  - {name: green,  family: green,      swatch: "#2a9d8f"}
+  - {name: blue,   family: blue,       swatch: "#277da1"}
+  - {name: purple, family: purple,     swatch: "#7b2cbf"}
+  - {name: black,  family: achromatic, swatch: "#111111"}
+  - {name: white,  family: achromatic, swatch: "#f5f5f5"}
+  - {name: grey,   family: achromatic, swatch: "#8d99ae"}
+
+families:
+  # Hue ranges in OpenCV units. redpink wraps around 0.
+  redpink: {hue: [[0, 9], [150, 180]]}
+  orange:  {hue: [[9, 21]]}
+  yellow:  {hue: [[21, 36]]}
+  green:   {hue: [[36, 86]]}
+  blue:    {hue: [[86, 128]]}
+  purple:  {hue: [[128, 150]]}
+
+thresholds:
+  # A pixel is chalk if it's both unsaturated and bright.
+  chalk_s_max: 45
+  chalk_v_min: 170
+  # Below this saturation a (non-chalk) pixel is achromatic.
+  achromatic_s_max: 60
+  achromatic:
+    black_v_max: 70     # V below this -> black
+    white_v_min: 185    # V at/above this -> white (otherwise grey)
+  pink_red:
+    # Decided on the most saturated `quantile` of the hold's redpink pixels.
+    quantile: 0.75
+    red_s_min: 190      # pigment saturation at/above this can be red...
+    red_l_max: 150      # ...if Lab L* (0-255) of those pixels is at/below this
+  white_ring:
+    ring_px: 4               # width of the inner edge ring, in pixels
+    chalk_frac_min: 0.55     # mask mostly chalk-like -> check the ring
+    ring_white_frac_min: 0.6 # ring mostly achromatic+bright -> white
+  min_pixels: 30          # fewer voting pixels than this -> "unknown"

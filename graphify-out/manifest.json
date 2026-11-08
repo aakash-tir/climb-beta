@@ -1,0 +1,157 @@
+{
+  ".claude/.mcp.json": {
+    "mtime": 1794120157.3764765,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  ".claude/hooks/protect-main.sh": {
+    "mtime": 1794120278.1442838,
+    "ast_hash": "2dabb6f3a72452a8f1364519aa057d76",
+    "semantic_hash": ""
+  },
+  ".claude/settings.json": {
+    "mtime": 1794120346.9937336,
+    "ast_hash": "153e84378fb966919e321701810d3fbb",
+    "semantic_hash": ""
+  },
+  ".claude/skills/architecture-diagram/resources/generate_diagram.py": {
+    "mtime": 1794120157.426473,
+    "ast_hash": "2691dbf85c989570823e2d462eed60d9",
+    "semantic_hash": ""
+  },
+  "pyproject.toml": {
+    "mtime": 1794120166.8874793,
+    "ast_hash": "cc00b66d9bbb4a1ff2a51b8fdfb39f8a",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/__init__.py": {
+    "mtime": 1794120179.8855965,
+    "ast_hash": "c35a21543ff531687fe49d6eb678e270",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/config.py": {
+    "mtime": 1794120226.4482987,
+    "ast_hash": "716d349330c2292bbbed4b3ffb3d27ab",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/types.py": {
+    "mtime": 1794120202.328143,
+    "ast_hash": "555793f9704064e907d2d08a05e91562",
+    "semantic_hash": ""
+  },
+  "tests/test_config.py": {
+    "mtime": 1794120226.5655546,
+    "ast_hash": "494dbe94186f6479516f502e642404ba",
+    "semantic_hash": ""
+  },
+  "tests/test_types.py": {
+    "mtime": 1794120204.888481,
+    "ast_hash": "e6662b8f743477fd1ad70044cf6b915e",
+    "semantic_hash": ""
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1794120303.3355646,
+    "ast_hash": "c23eb0e8da39762e4004c8fdc66c54fc",
+    "semantic_hash": ""
+  },
+  ".claude/progress.md": {
+    "mtime": 1794120317.9288218,
+    "ast_hash": "ce49ac91c316291f91a88db0c330abb6",
+    "semantic_hash": ""
+  },
+  ".claude/project-context.md": {
+    "mtime": 1794120316.2786877,
+    "ast_hash": "2875de4769f92a088c542491d0ad8e9b",
+    "semantic_hash": ""
+  },
+  ".claude/rules/frontend/react.md": {
+    "mtime": 1794120157.3782253,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  ".claude/rules/issue-workflow.md": {
+    "mtime": 1794120329.7987013,
+    "ast_hash": "77f8cce0a55655e336691c74b3832ebe",
+    "semantic_hash": ""
+  },
+  ".claude/skills/architecture-diagram/SKILL.md": {
+    "mtime": 1794120157.4274716,
+    "ast_hash": "4c12623371ec585544e5b77cfd66d0e0",
+    "semantic_hash": ""
+  },
+  ".claude/skills/architecture-diagram/resources/template.html": {
+    "mtime": 1794120157.413678,
+    "ast_hash": "523f7b64b1b5741cfe48fa553fe1e7f1",
+    "semantic_hash": ""
+  },
+  ".github/ISSUE_TEMPLATE/bug.yml": {
+    "mtime": 1794120251.7935555,
+    "ast_hash": "f4824c1e60c76de8468e821fc46f136a",
+    "semantic_hash": ""
+  },
+  ".github/ISSUE_TEMPLATE/feature.yml": {
+    "mtime": 1794120249.1006072,
+    "ast_hash": "b9441c0214314392e7bab5fe60984d02",
+    "semantic_hash": ""
+  },
+  ".github/pull_request_template.md": {
+    "mtime": 1794120246.5881886,
+    "ast_hash": "efde320f9fb8eea473c0295be8b1ba0a",
+    "semantic_hash": ""
+  },
+  ".github/workflows/python.yml": {
+    "mtime": 1794120243.5937796,
+    "ast_hash": "65b40694e00c73f75bd69a0365776b0a",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1794120342.7080266,
+    "ast_hash": "e92178a0544802bda95c080983ae215d",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1794120272.0680604,
+    "ast_hash": "985bf32c3efd2292914a971b4cab8ac8",
+    "semantic_hash": ""
+  },
+  "configs/classes.yaml": {
+    "mtime": 1794120179.0068953,
+    "ast_hash": "da98a05111d17a3a44b599cb4e534d54",
+    "semantic_hash": ""
+  },
+  "configs/colours.yaml": {
+    "mtime": 1794120178.0531085,
+    "ast_hash": "9b268fae91c0f545e66f16dd334ae588",
+    "semantic_hash": ""
+  },
+  "docs/future.md": {
+    "mtime": 1794120255.3082438,
+    "ast_hash": "9d5034ab170e3e4fe7526a86ecd943a5",
+    "semantic_hash": ""
+  },
+  "docs/research/colour-rules.md": {
+    "mtime": 1794120101.6729126,
+    "ast_hash": "41124c18bbda12065b4688bb1c28f112",
+    "semantic_hash": ""
+  },
+  "docs/research/datasets-and-labelling.md": {
+    "mtime": 1794120090.5288608,
+    "ast_hash": "87f6905f8056140bef9fc06e2ac4e8af",
+    "semantic_hash": ""
+  },
+  "docs/research/prior-art-and-approach.md": {
+    "mtime": 1794120076.7502172,
+    "ast_hash": "a63612f0f21b27bf99ccafcb332503e8",
+    "semantic_hash": ""
+  },
+  "docs/research/stack-and-hosting.md": {
+    "mtime": 1794120112.8137586,
+    "ast_hash": "903b60cb1cdf5baa14c5361b7c51b5ff",
+    "semantic_hash": ""
+  },
+  "plan.md": {
+    "mtime": 1794120151.7262094,
+    "ast_hash": "73d107f912682add90a1d2a45a6ce6c6",
+    "semantic_hash": ""
+  }
+}

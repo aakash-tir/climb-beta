@@ -1,0 +1,33 @@
+name: Bug
+description: Something is wrong; one bug per issue
+labels: [bug]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What happened vs. what was expected.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      value: |
+        **In:**
+        -
+        **Out:**
+        -
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] A test reproduces the bug and now passes
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Evidence
+      description: Traceback, image, version, steps to reproduce.

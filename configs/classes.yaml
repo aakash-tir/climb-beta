@@ -1,0 +1,5 @@
+# Detector classes, in YOLO class-id order. The detector never sees colour.
+classes:
+  - hold
+  - volume
+  - tape

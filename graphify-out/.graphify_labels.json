@@ -1,0 +1,23 @@
+{
+  "0": "parse_colour_config",
+  "1": "generate_diagram.py",
+  "2": "Design System",
+  "3": "climb-beta",
+  "4": "climb-beta — Plan",
+  "5": "Detection",
+  "6": "climb-beta — project context",
+  "7": "Stack, training hardware and demo hosting (researched 2026-11-08)",
+  "8": "climb-beta",
+  "9": "Datasets and labelling tools (researched 2026-11-08)",
+  "10": "Prior art and approach (researched 2026-11-08)",
+  "11": "pull_request_template.md",
+  "12": "Issue → PR → CI workflow (required for all development)",
+  "13": "Backlog (unscheduled)",
+  "14": "Colour step: why rules first, and how they handle chalk (2026-11-08)",
+  "15": "protect-main.sh",
+  "16": "CLAUDE.md",
+  "17": "progress.md",
+  "18": "__init__.py",
+  "19": "react.md",
+  "20": "climb-beta"
+}

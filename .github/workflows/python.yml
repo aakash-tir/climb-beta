@@ -1,0 +1,58 @@
+# Python checks: ruff lint + format, mypy, pytest. This is the merge gate.
+#
+# Kept lean on Actions minutes:
+#   - runs on pull_request (and manual dispatch) only, never on push to main
+#     (the PR run already tested what merges)
+#   - workflow-level paths filter: docs-only changes (docs/, logs/, graphify-out/, *.md)
+#     run nothing
+#   - never installs torch/ultralytics/timm (the `ml` extra); tests marked `ml` are skipped
+# Path-filtered workflows can't be required status checks, so "merge only when every
+# check that started is green" is enforced by .claude/rules/issue-workflow.md.
+name: python
+
+on:
+  pull_request:
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "data/**/*.py"
+      - "labelling/**/*.py"
+      - "train/**"
+      - "colour/**/*.py"
+      - "route/**/*.py"
+      - "eval/**/*.py"
+      - "app/**/*.py"
+      - "configs/**"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".python-version"
+      - ".github/workflows/python.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: python-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+      - name: Install (core + dev, no ML extras)
+        run: uv sync --locked
+      - name: Ruff lint
+        run: uv run ruff check .
+      - name: Ruff format
+        run: uv run ruff format --check .
+      - name: Mypy
+        run: uv run mypy
+      - name: Pytest
+        run: uv run pytest
