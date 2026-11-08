@@ -100,8 +100,8 @@
     "semantic_hash": ""
   },
   ".github/workflows/python.yml": {
-    "mtime": 1794122390.2122967,
-    "ast_hash": "8d3d5b976e6b5a25137226cef522b41a",
+    "mtime": 1794122541.6005995,
+    "ast_hash": "835409131327ba443b49482e7dda124b",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794122403.8091033,
-    "ast_hash": "849253bef7f2625bf6d8c6c81d067243",
+    "mtime": 1794122558.4089024,
+    "ast_hash": "b5220cefe6f34a3683bda5c3690b0648",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -360,18 +360,33 @@
     "semantic_hash": ""
   },
   "labelling/make_config.py": {
-    "mtime": 1794122390.3341606,
+    "mtime": 1794122447.026641,
     "ast_hash": "0d4fdfc37f0445014e220a0cd8aa34e3",
     "semantic_hash": ""
   },
   "src/climb_beta/labelling/make_config.py": {
-    "mtime": 1794122375.9604535,
+    "mtime": 1794122447.0291588,
     "ast_hash": "49eed61cb9915daaa9ec51c448f50c66",
     "semantic_hash": ""
   },
   "tests/test_ls_config.py": {
-    "mtime": 1794122387.7562132,
+    "mtime": 1794122447.0301542,
     "ast_hash": "d9559454c8632a89d9cba195f90844d7",
+    "semantic_hash": ""
+  },
+  "tests/test_labelling_compose.py": {
+    "mtime": 1794122538.765439,
+    "ast_hash": "14860fccb92e5b58b122da43c1564052",
+    "semantic_hash": ""
+  },
+  "docs/runbooks/labelling.md": {
+    "mtime": 1794122533.6153786,
+    "ast_hash": "3ec7c99401c37290b8cd8e2223e173a7",
+    "semantic_hash": ""
+  },
+  "labelling/docker-compose.yml": {
+    "mtime": 1794122518.5697954,
+    "ast_hash": "c2f86e2774b415d3d60dd62cf3018916",
     "semantic_hash": ""
   }
 }

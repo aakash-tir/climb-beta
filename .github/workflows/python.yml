@@ -19,6 +19,8 @@ on:
       - "data/**/*.yaml"
       - "labelling/**/*.py"
       - "labelling/**/*.xml"
+      - "labelling/**/*.yml"
+      - "labelling/**/Dockerfile"
       - "train/**"
       - "colour/**/*.py"
       - "route/**/*.py"

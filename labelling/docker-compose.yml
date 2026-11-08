@@ -1,0 +1,59 @@
+# Label Studio + SAM 2.1 ML backend for labelling Basecamp photos.
+#
+#   cp .env.example .env            # at the repo root; fill LABEL_STUDIO_* values
+#   docker compose -f labelling/docker-compose.yml up -d --build
+#   open http://localhost:8080      # runbook: docs/runbooks/labelling.md
+#
+# Needs an NVIDIA GPU (the SAM 2 backend is CUDA-only) and the NVIDIA container runtime.
+# Photos are mounted read-only from data/basecamp (gitignored); Label Studio's own
+# state lives in labelling/.ls-data (gitignored).
+name: climb-labelling
+
+services:
+  label-studio:
+    image: heartexlabs/label-studio:1.23.2
+    ports:
+      - "8080:8080"
+    env_file:
+      - path: ../.env
+        required: false
+    environment:
+      LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED: "true"
+      # image URLs become /data/local-files/?d=raw/<wall_id>/<photo>
+      LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT: /data/basecamp
+      LABEL_STUDIO_DISABLE_SIGNUP_WITHOUT_LINK: "true"
+    volumes:
+      - ./.ls-data:/label-studio/data
+      - ../data/basecamp:/data/basecamp:ro
+    restart: unless-stopped
+
+  sam2:
+    build:
+      context: ./sam2-backend
+    image: climb-beta/sam2-backend:sm120
+    ports:
+      - "9090:9090"
+    env_file:
+      - path: ../.env
+        required: false
+    environment:
+      DEVICE: cuda
+      MODEL_CONFIG: configs/sam2.1/sam2.1_hiera_l.yaml
+      MODEL_CHECKPOINT: sam2.1_hiera_large.pt
+      # reach Label Studio by its service name (localhost doesn't work between containers)
+      LABEL_STUDIO_URL: http://label-studio:8080
+      WORKERS: "1"
+      THREADS: "4"
+      LOG_LEVEL: INFO
+    volumes:
+      - ./.sam2-models:/data/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    depends_on:
+      - label-studio
+    restart: unless-stopped
