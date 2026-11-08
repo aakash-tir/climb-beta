@@ -1,16 +1,16 @@
 # Graph Report - climb  (2026-11-08)
 
 ## Corpus Check
-- 30 files · ~15,555 words
+- 33 files · ~16,238 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 230 nodes · 285 edges · 25 communities (20 shown, 5 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 21 edges (avg confidence: 0.8)
+- 251 nodes · 326 edges · 26 communities (20 shown, 6 thin omitted)
+- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 33 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `53177135`
+- Built from commit: `5f0a1dc2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -39,20 +39,23 @@
 - 2026-11-08.md
 - masks.py
 - test_masks.py
+- __init__.py
 
 ## God Nodes (most connected - your core abstractions)
 1. `parse_colour_config()` - 11 edges
 2. `climb-beta` - 11 edges
 3. `climb-beta — Plan` - 11 edges
-4. `Design System` - 10 edges
-5. `ConfigError` - 9 edges
-6. `Detection` - 7 edges
-7. `wall()` - 7 edges
-8. `draw_hold()` - 7 edges
-9. `chalk()` - 7 edges
-10. `Node` - 6 edges
+4. `wall()` - 10 edges
+5. `Design System` - 10 edges
+6. `ConfigError` - 9 edges
+7. `grey_world()` - 8 edges
+8. `draw_hold()` - 8 edges
+9. `grey_world_gains()` - 7 edges
+10. `Detection` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `test_gains_are_clipped_and_black_image_is_identity()` --calls--> `grey_world_gains()`  [INFERRED]
+  tests/test_white_balance.py → src/climb_beta/colour/white_balance.py
 - `test_repo_colour_config_has_the_ten_brief_colours()` --calls--> `load_colour_config()`  [INFERRED]
   tests/test_config.py → src/climb_beta/config.py
 - `test_repo_classes_are_hold_volume_tape_in_order()` --calls--> `load_classes()`  [INFERRED]
@@ -61,13 +64,11 @@
   tests/test_types.py → src/climb_beta/types.py
 - `test_empty_detection_is_safe()` --calls--> `Detection`  [INFERRED]
   tests/test_types.py → src/climb_beta/types.py
-- `test_bad_hue_range_rejected()` --indirect_call--> `ConfigError`  [INFERRED]
-  tests/test_config.py → src/climb_beta/config.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (25 total, 5 thin omitted)
+## Communities (26 total, 6 thin omitted)
 
 ### Community 0 - "parse_colour_config"
 Cohesion: 0.17
@@ -130,12 +131,12 @@ Cohesion: 0.40
 Nodes (4): Colour step: why rules first, and how they handle chalk (2026-11-08), Decisions, Rejected, The hard part
 
 ### Community 21 - "chalk"
-Cohesion: 0.19
-Nodes (17): Image, chalk(), draw_hold(), Mask, Synthetic wall photos for tests: grey wall, coloured holds, chalk, tinted light., A near-neutral textured wall., Draw an elliptical hold in place and return its mask.      `shade` darkens tow, Cover `frac` of the mask with chalk, in place. Returns the chalked-pixel mask. (+9 more)
+Cohesion: 0.11
+Nodes (33): Image, ImageBGR, slice, apply_gains(), grey_world(), grey_world_gains(), Mask, Grey-world white balance.  The grey-world assumption says the average of a scene (+25 more)
 
 ### Community 22 - "2026-11-08.md"
-Cohesion: 0.29
-Nodes (6): 2026-11-08, Add mask utilities (#2), Expanded the plan and scaffolded climb-beta, .gitattributes and this log's first entry (#31), Initial commit and repo creation, Synthetic hold images for tests (#1)
+Cohesion: 0.25
+Nodes (7): 2026-11-08, Add grey-world white balance with wall reference (#3), Add mask utilities (#2), Expanded the plan and scaffolded climb-beta, .gitattributes and this log's first entry (#31), Initial commit and repo creation, Synthetic hold images for tests (#1)
 
 ### Community 23 - "masks.py"
 Cohesion: 0.11
@@ -146,20 +147,24 @@ Cohesion: 0.21
 Nodes (6): disk(), ndarray, test_dilate_grows_and_zero_is_copy(), test_edge_ring_is_inside_and_thin(), test_iou_matrix_matches_pairwise_and_skips_far_pairs(), test_polygon_roundtrip()
 
 ## Knowledge Gaps
-- **78 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+73 more)
+- **79 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+74 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ConfigError` connect `parse_colour_config` to `chalk`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+  _High betweenness centrality (0.060) - this node is a cross-community bridge._
 - **Are the 3 inferred relationships involving `parse_colour_config()` (e.g. with `test_bad_hue_range_rejected()` and `test_duplicate_colour_rejected()`) actually correct?**
   _`parse_colour_config()` has 3 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 7 inferred relationships involving `wall()` (e.g. with `test_centre_chalk_leaves_edges()` and `test_chalk_fraction()`) actually correct?**
+  _`wall()` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `climb-beta`, `Tech stack`, `Conventions` to the rest of the system?**
-  _78 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _79 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Design System` be split into smaller, more focused modules?**
   _Cohesion score 0.125 - nodes in this community are weakly interconnected._
+- **Should `chalk` be split into smaller, more focused modules?**
+  _Cohesion score 0.10510510510510511 - nodes in this community are weakly interconnected._
 - **Should `masks.py` be split into smaller, more focused modules?**
   _Cohesion score 0.10967741935483871 - nodes in this community are weakly interconnected._
