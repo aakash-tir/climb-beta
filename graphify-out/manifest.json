@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "src/climb_beta/config.py": {
-    "mtime": 1794120226.4482987,
-    "ast_hash": "716d349330c2292bbbed4b3ffb3d27ab",
+    "mtime": 1794124151.9855893,
+    "ast_hash": "03d14944ea53cc8be7ed6bfa367535f4",
     "semantic_hash": ""
   },
   "src/climb_beta/types.py": {
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794124063.1505544,
-    "ast_hash": "3bf790b4ddcd86160c8e411b34006eb4",
+    "mtime": 1794124272.388965,
+    "ast_hash": "3468d97df7a7bd89b2d9bf3f2ac7feed",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -550,13 +550,38 @@
     "semantic_hash": ""
   },
   "src/climb_beta/overlay.py": {
-    "mtime": 1794124038.8032162,
+    "mtime": 1794124115.7285357,
     "ast_hash": "864d93b62e8bbfdcf1823aacee04bf80",
     "semantic_hash": ""
   },
   "tests/test_overlay.py": {
-    "mtime": 1794124047.1674142,
-    "ast_hash": "aa67d5d6c996e1505c483d94e2752ffe",
+    "mtime": 1794124115.7291708,
+    "ast_hash": "04bda3d7a6943b7414c79428434ea930",
+    "semantic_hash": ""
+  },
+  "app/app.py": {
+    "mtime": 1794124229.258378,
+    "ast_hash": "944c83f80762459b2685281ed9e4ffe9",
+    "semantic_hash": ""
+  },
+  "app/build_space.py": {
+    "mtime": 1794124233.9205954,
+    "ast_hash": "0b6421e573a834533ac6570b1aec9f28",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/demo.py": {
+    "mtime": 1794124197.692094,
+    "ast_hash": "3ca79391e899b283fbb86a1345e478f3",
+    "semantic_hash": ""
+  },
+  "tests/test_demo.py": {
+    "mtime": 1794124197.692094,
+    "ast_hash": "fa3cce91af404c03540aa2a23eff64a7",
+    "semantic_hash": ""
+  },
+  "docs/runbooks/deploy-space.md": {
+    "mtime": 1794124187.2672296,
+    "ast_hash": "d8c70ee067bd3c17b4da9fe2e4624015",
     "semantic_hash": ""
   }
 }

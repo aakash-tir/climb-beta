@@ -258,6 +258,105 @@
       "norm_label": "orthogonal routing: adjacent columns via gutter lanes; same-column     via short"
     },
     {
+      "label": "app.py",
+      "file_type": "code",
+      "source_file": "app/app.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_app",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "app.py"
+    },
+    {
+      "label": "build_ui()",
+      "file_type": "code",
+      "source_file": "app/app.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "app_app_build_ui",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "build_ui()"
+    },
+    {
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "app_app_py_any",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "any"
+    },
+    {
+      "label": "climb-beta demo: upload a wall photo, pick a colour, see that route highlighted.",
+      "file_type": "rationale",
+      "source_file": "app/app.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_app_rationale_1",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "climb-beta demo: upload a wall photo, pick a colour, see that route highlighted."
+    },
+    {
+      "label": "build_space.py",
+      "file_type": "code",
+      "source_file": "app/build_space.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_build_space",
+      "community": 52,
+      "community_name": "build_space.py",
+      "norm_label": "build_space.py"
+    },
+    {
+      "label": "build()",
+      "file_type": "code",
+      "source_file": "app/build_space.py",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "app_build_space_build",
+      "community": 52,
+      "community_name": "build_space.py",
+      "norm_label": "build()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "app_build_space_py_path",
+      "community": 52,
+      "community_name": "build_space.py",
+      "norm_label": "path"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "app/build_space.py",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "app_build_space_main",
+      "community": 52,
+      "community_name": "build_space.py",
+      "norm_label": "main()"
+    },
+    {
+      "label": "Assemble a self-contained Hugging Face Space folder (Gradio, CPU Basic).  Usag",
+      "file_type": "rationale",
+      "source_file": "app/build_space.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_build_space_rationale_1",
+      "community": 52,
+      "community_name": "build_space.py",
+      "norm_label": "assemble a self-contained hugging face space folder (gradio, cpu basic).  usag"
+    },
+    {
       "label": "classify_rules.py",
       "file_type": "code",
       "source_file": "colour/classify_rules.py",
@@ -275,8 +374,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "colour_classify_rules_main",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "main()"
     },
     {
@@ -297,8 +396,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "colour_eval_colour",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "eval_colour.py"
     },
     {
@@ -308,8 +407,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "colour_eval_colour_as_json",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "_as_json()"
     },
     {
@@ -319,8 +418,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "colour_eval_colour_py_any",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "any"
     },
     {
@@ -330,8 +429,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "colour_eval_colour_main",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "main()"
     },
     {
@@ -341,8 +440,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "colour_eval_colour_rationale_1",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "print a per-colour confusion matrix for the rules and (optionally) the classifie"
     },
     {
@@ -660,8 +759,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "eval_check_exit_criteria_main",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 44,
+      "community_name": "run",
       "norm_label": "main()"
     },
     {
@@ -762,7 +861,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "route_find_route",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "find_route.py"
     },
@@ -773,7 +872,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "route_find_route_main",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "main()"
     },
@@ -784,7 +883,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "route_find_route_rationale_1",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "find the route of a chosen colour in a wall photo (detector + colour + route)."
     },
@@ -1477,8 +1576,8 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_classify_hold",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "classify_hold()"
     },
     {
@@ -1543,8 +1642,8 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_rationale_166",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "colour of the hold under `mask` in a (white-balanced) bgr image.      white rule"
     },
     {
@@ -1661,7 +1760,7 @@
       "label": "ConfigError",
       "file_type": "code",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L17",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "src_climb_beta_config_configerror",
       "community": 0,
@@ -1683,7 +1782,7 @@
       "label": "Colour",
       "file_type": "code",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L22",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "src_climb_beta_config_colour",
       "community": 0,
@@ -1694,7 +1793,7 @@
       "label": "ColourConfig",
       "file_type": "code",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L29",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig",
       "community": 45,
@@ -1705,7 +1804,7 @@
       "label": ".names()",
       "file_type": "code",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L35",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig_names",
       "community": 45,
@@ -1716,18 +1815,18 @@
       "label": ".by_family()",
       "file_type": "code",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L38",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig_by_family",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 0,
+      "community_name": "parse_colour_config",
       "norm_label": ".by_family()"
     },
     {
       "label": ".has()",
       "file_type": "code",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L41",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig_has",
       "community": 45,
@@ -1738,7 +1837,7 @@
       "label": "_require()",
       "file_type": "code",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L45",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "src_climb_beta_config_require",
       "community": 0,
@@ -1760,7 +1859,7 @@
       "label": "parse_colour_config()",
       "file_type": "code",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L51",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "src_climb_beta_config_parse_colour_config",
       "community": 0,
@@ -1771,7 +1870,7 @@
       "label": "load_colour_config()",
       "file_type": "code",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L85",
+      "source_location": "L87",
       "_origin": "ast",
       "id": "src_climb_beta_config_load_colour_config",
       "community": 0,
@@ -1793,7 +1892,7 @@
       "label": "load_classes()",
       "file_type": "code",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L91",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "src_climb_beta_config_load_classes",
       "community": 0,
@@ -1815,9 +1914,9 @@
       "label": "Raised when a config file is malformed.",
       "file_type": "rationale",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L18",
+      "source_location": "L20",
       "_origin": "ast",
-      "id": "src_climb_beta_config_rationale_18",
+      "id": "src_climb_beta_config_rationale_20",
       "community": 0,
       "community_name": "parse_colour_config",
       "norm_label": "raised when a config file is malformed."
@@ -1826,9 +1925,9 @@
       "label": "Validate a parsed colours.yaml mapping.",
       "file_type": "rationale",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L52",
+      "source_location": "L54",
       "_origin": "ast",
-      "id": "src_climb_beta_config_rationale_52",
+      "id": "src_climb_beta_config_rationale_54",
       "community": 0,
       "community_name": "parse_colour_config",
       "norm_label": "validate a parsed colours.yaml mapping."
@@ -2962,8 +3061,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_instances_to_detections",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "instances_to_detections()"
     },
     {
@@ -2984,9 +3083,108 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_rationale_58",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "rasterise label polygons into full-resolution detection masks."
+    },
+    {
+      "label": "demo.py",
+      "file_type": "code",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_demo",
+      "community": 34,
+      "community_name": "detect.py",
+      "norm_label": "demo.py"
+    },
+    {
+      "label": "default_detector_factory()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "src_climb_beta_demo_default_detector_factory",
+      "community": 34,
+      "community_name": "detect.py",
+      "norm_label": "default_detector_factory()"
+    },
+    {
+      "label": "_downscale()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "src_climb_beta_demo_downscale",
+      "community": 50,
+      "community_name": "draw_route",
+      "norm_label": "_downscale()"
+    },
+    {
+      "label": "RGB",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "rgb",
+      "community": 50,
+      "community_name": "draw_route",
+      "norm_label": "rgb"
+    },
+    {
+      "label": "DemoService",
+      "file_type": "code",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "src_climb_beta_demo_demoservice",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "demoservice"
+    },
+    {
+      "label": ".colours()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "src_climb_beta_demo_demoservice_colours",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": ".colours()"
+    },
+    {
+      "label": ".detector()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "src_climb_beta_demo_demoservice_detector",
+      "community": 50,
+      "community_name": "draw_route",
+      "norm_label": ".detector()"
+    },
+    {
+      "label": ".handle()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "src_climb_beta_demo_demoservice_handle",
+      "community": 50,
+      "community_name": "draw_route",
+      "norm_label": ".handle()"
+    },
+    {
+      "label": "Logic behind the Gradio demo: photo + colour -> highlighted route + summary.  Ke",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_demo_rationale_1",
+      "community": 34,
+      "community_name": "detect.py",
+      "norm_label": "logic behind the gradio demo: photo + colour -> highlighted route + summary.  ke"
     },
     {
       "label": "detect.py",
@@ -2995,8 +3193,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_detect",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "detect.py"
     },
     {
@@ -3006,7 +3204,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_climb_beta_detect_detectorlike",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "detectorlike"
     },
@@ -3017,7 +3215,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_detect_py_protocol",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "protocol"
     },
@@ -3028,8 +3226,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_climb_beta_detect_detectorlike_predict",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": ".predict()"
     },
     {
@@ -3039,8 +3237,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_detect_py_imagebgr",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": "imagebgr"
     },
     {
@@ -3050,8 +3248,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "src_climb_beta_detect_results_to_detections",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "results_to_detections()"
     },
     {
@@ -3061,8 +3259,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_detect_py_arraylike",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "arraylike"
     },
     {
@@ -3072,8 +3270,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "src_climb_beta_detect_resolve_weights",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "resolve_weights()"
     },
     {
@@ -3083,8 +3281,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_detect_py_path",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "path"
     },
     {
@@ -3094,8 +3292,8 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "src_climb_beta_detect_detector",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "detector"
     },
     {
@@ -3105,8 +3303,8 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "src_climb_beta_detect_detector_init",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": ".__init__()"
     },
     {
@@ -3116,8 +3314,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "src_climb_beta_detect_detector_names",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": ".names()"
     },
     {
@@ -3127,8 +3325,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "src_climb_beta_detect_detector_predict",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": ".predict()"
     },
     {
@@ -3138,8 +3336,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_detect_rationale_1",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "run the yolo11-seg detector and return full-resolution `detection` masks.  ultra"
     },
     {
@@ -3149,8 +3347,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "src_climb_beta_detect_rationale_35",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "build detections from per-instance pixel polygons (original image coords)."
     },
     {
@@ -3160,8 +3358,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "src_climb_beta_detect_rationale_47",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "a local path, or `hf://<user>/<repo>/<file>` downloaded from the hf hub."
     },
     {
@@ -3171,8 +3369,8 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "src_climb_beta_detect_rationale_62",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "ultralytics yolo11-seg wrapper (needs the `ml` extra)."
     },
     {
@@ -3721,8 +3919,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_metrics_colour",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "colour.py"
     },
     {
@@ -3732,8 +3930,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_climb_beta_metrics_colour_colourreport",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "colourreport"
     },
     {
@@ -3743,8 +3941,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "src_climb_beta_metrics_colour_acc",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "_acc()"
     },
     {
@@ -3754,8 +3952,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "src_climb_beta_metrics_colour_colour_report",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "colour_report()"
     },
     {
@@ -3765,8 +3963,8 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "src_climb_beta_metrics_colour_format_report",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "format_report()"
     },
     {
@@ -3776,8 +3974,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_metrics_colour_rationale_1",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "colour accuracy: overall, per colour, and the two subsets the exit criteria name"
     },
     {
@@ -4293,8 +4491,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_overlay",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 50,
+      "community_name": "draw_route",
       "norm_label": "overlay.py"
     },
     {
@@ -4304,8 +4502,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_climb_beta_overlay_hex_to_bgr",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 50,
+      "community_name": "draw_route",
       "norm_label": "hex_to_bgr()"
     },
     {
@@ -4315,8 +4513,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "src_climb_beta_overlay_draw_route",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 50,
+      "community_name": "draw_route",
       "norm_label": "draw_route()"
     },
     {
@@ -4326,8 +4524,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_overlay_py_imagebgr",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 50,
+      "community_name": "draw_route",
       "norm_label": "imagebgr"
     },
     {
@@ -4337,8 +4535,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_overlay_rationale_1",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 50,
+      "community_name": "draw_route",
       "norm_label": "draw a chosen route on the photo: everything else dimmed, route holds outlined,"
     },
     {
@@ -4348,8 +4546,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_climb_beta_overlay_rationale_33",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 50,
+      "community_name": "draw_route",
       "norm_label": "return a copy with the route highlighted. with no route, the whole photo is dimm"
     },
     {
@@ -4359,7 +4557,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "pipeline.py"
     },
@@ -4370,7 +4568,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_classifierlike",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "classifierlike"
     },
@@ -4381,7 +4579,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_py_protocol",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "protocol"
     },
@@ -4392,7 +4590,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_classifierlike_classes",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": ".classes()"
     },
@@ -4403,7 +4601,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_classifierlike_predict",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": ".predict()"
     },
@@ -4414,7 +4612,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_py_imagebgr",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "imagebgr"
     },
@@ -4425,7 +4623,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_pipelineresult",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "pipelineresult"
     },
@@ -4436,7 +4634,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_pipelineresult_colours_present",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": ".colours_present()"
     },
@@ -4447,7 +4645,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_pipelineresult_to_json",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": ".to_json()"
     },
@@ -4458,7 +4656,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_py_any",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "any"
     },
@@ -4469,7 +4667,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_run",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "run()"
     },
@@ -4480,7 +4678,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_py_colourmethod",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "colourmethod"
     },
@@ -4491,7 +4689,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_rationale_1",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "photo -> detections -> hold colours -> routes, in one call.  detector (colour-bl"
     },
@@ -4502,7 +4700,7 @@
       "source_location": "L79",
       "_origin": "ast",
       "id": "src_climb_beta_pipeline_rationale_79",
-      "community": 44,
+      "community": 41,
       "community_name": "run",
       "norm_label": "run the whole phase 1 pipeline on one photo.      `colours`: which colours to gr"
     },
@@ -4535,8 +4733,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_route_group",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "group.py"
     },
     {
@@ -4546,8 +4744,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_routeconfig",
-      "community": 44,
-      "community_name": "run",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "routeconfig"
     },
     {
@@ -4557,8 +4755,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_load_route_config",
-      "community": 44,
-      "community_name": "run",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "load_route_config()"
     },
     {
@@ -4568,8 +4766,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_py_path",
-      "community": 44,
-      "community_name": "run",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "path"
     },
     {
@@ -4579,8 +4777,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_route",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "route"
     },
     {
@@ -4590,8 +4788,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_route_size",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": ".size()"
     },
     {
@@ -4601,8 +4799,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_routeresult",
-      "community": 44,
-      "community_name": "run",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "routeresult"
     },
     {
@@ -4612,8 +4810,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_routeresult_named_route",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": ".named_route()"
     },
     {
@@ -4623,8 +4821,8 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_bbox",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "_bbox()"
     },
     {
@@ -4634,8 +4832,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_py_mask",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "mask"
     },
     {
@@ -4645,8 +4843,8 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_box_gap",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "_box_gap()"
     },
     {
@@ -4656,8 +4854,8 @@
       "source_location": "L83",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_gap",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "_gap()"
     },
     {
@@ -4667,8 +4865,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_unionfind",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "_unionfind"
     },
     {
@@ -4678,8 +4876,8 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_unionfind_init",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": ".__init__()"
     },
     {
@@ -4689,8 +4887,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_unionfind_find",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": ".find()"
     },
     {
@@ -4700,8 +4898,8 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_unionfind_union",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": ".union()"
     },
     {
@@ -4711,8 +4909,8 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_group_routes",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "group_routes()"
     },
     {
@@ -4722,8 +4920,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_rationale_1",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "group same-colour holds into routes; tape near a hold marks it as a start.  hold"
     },
     {
@@ -4733,8 +4931,8 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_rationale_64",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "the route the user means by a colour: the one with start tape, else the largest."
     },
     {
@@ -4744,8 +4942,8 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_rationale_84",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "mask gap, computed on the union bbox crop (fast on 12 mp photos)."
     },
     {
@@ -4909,8 +5107,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_types",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": "types.py"
     },
     {
@@ -4920,8 +5118,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_climb_beta_types_detection",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": "detection"
     },
     {
@@ -4931,8 +5129,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "src_climb_beta_types_detection_area",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": ".area()"
     },
     {
@@ -4942,8 +5140,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "src_climb_beta_types_detection_centroid",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": ".centroid()"
     },
     {
@@ -4953,8 +5151,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "src_climb_beta_types_detection_bbox",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": ".bbox()"
     },
     {
@@ -4964,8 +5162,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_types_rationale_1",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": "core data types shared by detector, colour, route, eval and app."
     },
     {
@@ -4975,8 +5173,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "src_climb_beta_types_rationale_19",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": "one detector instance: a mask and a class (hold, volume or tape)."
     },
     {
@@ -4986,8 +5184,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_climb_beta_types_rationale_33",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": "(x, y) centroid of the mask in pixels."
     },
     {
@@ -4997,8 +5195,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "src_climb_beta_types_rationale_40",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": "(x0, y0, x1, y1), inclusive-exclusive."
     },
     {
@@ -5008,8 +5206,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_fakes",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "fakes.py"
     },
     {
@@ -5052,8 +5250,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "tests_fakes_fakedetector_predict",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": ".predict()"
     },
     {
@@ -5063,8 +5261,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_fakes_py_imagebgr",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "imagebgr"
     },
     {
@@ -5074,8 +5272,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "tests_fakes_fakeclassifier",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "fakeclassifier"
     },
     {
@@ -5085,8 +5283,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "tests_fakes_fakeclassifier_init",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": ".__init__()"
     },
     {
@@ -5096,8 +5294,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "tests_fakes_fakeclassifier_classes",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": ".classes()"
     },
     {
@@ -5107,8 +5305,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "tests_fakes_fakeclassifier_predict",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": ".predict()"
     },
     {
@@ -5118,8 +5316,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "tests_fakes_wall_scene",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "wall_scene()"
     },
     {
@@ -5129,8 +5327,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_fakes_rationale_1",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test doubles for the detector and the crop classifier."
     },
     {
@@ -5151,8 +5349,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "tests_fakes_rationale_36",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "a 600x800 wall: a 5-hold red route with start tape, a 4-hold blue route, warm li"
     },
     {
@@ -5514,8 +5712,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_colour_eval",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "test_colour_eval.py"
     },
     {
@@ -5525,8 +5723,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "tests_test_colour_eval_test_report_numbers",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "test_report_numbers()"
     },
     {
@@ -5536,8 +5734,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "tests_test_colour_eval_test_unknown_prediction_label_is_wrong_and_bad_truth_raises",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "test_unknown_prediction_label_is_wrong_and_bad_truth_raises()"
     },
     {
@@ -5547,8 +5745,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "tests_test_colour_eval_test_empty_subsets_are_none",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 48,
+      "community_name": "main",
       "norm_label": "test_empty_subsets_are_none()"
     },
     {
@@ -5558,8 +5756,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "tests_test_colour_eval_test_cli_end_to_end",
-      "community": 30,
-      "community_name": "convert_export",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_cli_end_to_end()"
     },
     {
@@ -5569,8 +5767,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_colour_eval_py_path",
-      "community": 30,
-      "community_name": "convert_export",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "path"
     },
     {
@@ -5756,8 +5954,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_colour_white",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_colour_white.py"
     },
     {
@@ -5767,8 +5965,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_test_colour_white_hold",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "_hold()"
     },
     {
@@ -5778,8 +5976,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_white_hold_is_white",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_white_hold_is_white()"
     },
     {
@@ -5789,8 +5987,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_chalked_white_hold_is_white",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_chalked_white_hold_is_white()"
     },
     {
@@ -5800,8 +5998,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_heavily_chalked_colour_hold_votes_on_ring",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_heavily_chalked_colour_hold_votes_on_ring()"
     },
     {
@@ -5811,8 +6009,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_grey_hold_stays_grey",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_grey_hold_stays_grey()"
     },
     {
@@ -5822,8 +6020,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_light_grey_chalk_like_body_but_dim_ring_is_grey",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_light_grey_chalk_like_body_but_dim_ring_is_grey()"
     },
     {
@@ -5833,8 +6031,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_colour_white_rationale_1",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "white holds vs chalk: the chalk filter must not delete white holds."
     },
     {
@@ -5943,8 +6141,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "tests_test_crop_classifier_test_preprocess_rgb_order_and_shape",
-      "community": 39,
-      "community_name": "_dataset",
+      "community": 40,
+      "community_name": "preprocess",
       "norm_label": "test_preprocess_rgb_order_and_shape()"
     },
     {
@@ -6102,14 +6300,124 @@
       "norm_label": "test_cli()"
     },
     {
+      "label": "test_demo.py",
+      "file_type": "code",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_demo",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "test_demo.py"
+    },
+    {
+      "label": "_no_weights()",
+      "file_type": "code",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "tests_test_demo_no_weights",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "_no_weights()"
+    },
+    {
+      "label": "test_handle_highlights_route_and_summarises()",
+      "file_type": "code",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "tests_test_demo_test_handle_highlights_route_and_summarises",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "test_handle_highlights_route_and_summarises()"
+    },
+    {
+      "label": "test_handle_without_weights_explains()",
+      "file_type": "code",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "tests_test_demo_test_handle_without_weights_explains",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "test_handle_without_weights_explains()"
+    },
+    {
+      "label": "test_handle_edge_cases()",
+      "file_type": "code",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "tests_test_demo_test_handle_edge_cases",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "test_handle_edge_cases()"
+    },
+    {
+      "label": "test_default_factory_requires_env()",
+      "file_type": "code",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "tests_test_demo_test_default_factory_requires_env",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "test_default_factory_requires_env()"
+    },
+    {
+      "label": "MonkeyPatch",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_demo_py_monkeypatch",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "monkeypatch"
+    },
+    {
+      "label": "test_build_space_folder()",
+      "file_type": "code",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "tests_test_demo_test_build_space_folder",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "test_build_space_folder()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_demo_py_path",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "path"
+    },
+    {
+      "label": "test_ui_builds()",
+      "file_type": "code",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "tests_test_demo_test_ui_builds",
+      "community": 28,
+      "community_name": "load_script",
+      "norm_label": "test_ui_builds()"
+    },
+    {
       "label": "test_detect.py",
       "file_type": "code",
       "source_file": "tests/test_detect.py",
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_detect",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "test_detect.py"
     },
     {
@@ -6119,8 +6427,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "tests_test_detect_test_results_to_detections_full_resolution_masks",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "test_results_to_detections_full_resolution_masks()"
     },
     {
@@ -6130,8 +6438,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "tests_test_detect_test_results_to_detections_empty",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "test_results_to_detections_empty()"
     },
     {
@@ -6141,8 +6449,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "tests_test_detect_test_resolve_weights",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "test_resolve_weights()"
     },
     {
@@ -6152,8 +6460,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_detect_py_path",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "path"
     },
     {
@@ -6163,8 +6471,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "tests_test_detect_test_detector_smoke",
-      "community": 44,
-      "community_name": "run",
+      "community": 34,
+      "community_name": "detect.py",
       "norm_label": "test_detector_smoke()"
     },
     {
@@ -6977,8 +7285,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_overlay",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 50,
+      "community_name": "draw_route",
       "norm_label": "test_overlay.py"
     },
     {
@@ -6988,8 +7296,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "tests_test_overlay_test_route_pixels_kept_rest_dimmed_start_marked",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 50,
+      "community_name": "draw_route",
       "norm_label": "test_route_pixels_kept_rest_dimmed_start_marked()"
     },
     {
@@ -6999,8 +7307,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "tests_test_overlay_test_no_route_dims_everything",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 50,
+      "community_name": "draw_route",
       "norm_label": "test_no_route_dims_everything()"
     },
     {
@@ -7010,8 +7318,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "tests_test_overlay_test_hex_to_bgr",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 50,
+      "community_name": "draw_route",
       "norm_label": "test_hex_to_bgr()"
     },
     {
@@ -7021,8 +7329,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_pipeline",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_pipeline.py"
     },
     {
@@ -7032,8 +7340,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "tests_test_pipeline_test_pipeline_finds_both_routes_and_red_start",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_pipeline_finds_both_routes_and_red_start()"
     },
     {
@@ -7043,8 +7351,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "tests_test_pipeline_test_pipeline_selected_colour_only",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_pipeline_selected_colour_only()"
     },
     {
@@ -7054,8 +7362,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "tests_test_pipeline_test_classifier_method_overrides_rules",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_classifier_method_overrides_rules()"
     },
     {
@@ -7065,8 +7373,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "tests_test_pipeline_test_find_route_cli",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_find_route_cli()"
     },
     {
@@ -7076,8 +7384,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_pipeline_py_path",
-      "community": 28,
-      "community_name": "load_script",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "path"
     },
     {
@@ -7163,7 +7471,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "monkeypatch",
+      "id": "tests_test_roboflow_py_monkeypatch",
       "community": 26,
       "community_name": "roboflow.py",
       "norm_label": "monkeypatch"
@@ -7186,8 +7494,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_route_group",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "test_route_group.py"
     },
     {
@@ -7197,8 +7505,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "tests_test_route_group_hold",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "hold()"
     },
     {
@@ -7208,8 +7516,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "tests_test_route_group_tape",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "tape()"
     },
     {
@@ -7219,8 +7527,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "tests_test_route_group_ladder",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "ladder()"
     },
     {
@@ -7230,8 +7538,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "tests_test_route_group_test_two_same_colour_routes_split_and_other_colours_ignored",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "test_two_same_colour_routes_split_and_other_colours_ignored()"
     },
     {
@@ -7241,8 +7549,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "tests_test_route_group_test_tape_marks_start_hold_only",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "test_tape_marks_start_hold_only()"
     },
     {
@@ -7252,8 +7560,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "tests_test_route_group_test_named_route_prefers_the_taped_route_over_the_larger",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "test_named_route_prefers_the_taped_route_over_the_larger()"
     },
     {
@@ -7263,8 +7571,8 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "tests_test_route_group_test_stray_far_hold_is_not_part_of_route",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "test_stray_far_hold_is_not_part_of_route()"
     },
     {
@@ -7274,8 +7582,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "tests_test_route_group_test_scale_invariance",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "test_scale_invariance()"
     },
     {
@@ -7285,8 +7593,8 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "tests_test_route_group_test_no_holds_of_colour",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 49,
+      "community_name": "group_routes",
       "norm_label": "test_no_holds_of_colour()"
     },
     {
@@ -7296,8 +7604,8 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "tests_test_route_group_test_config_loading_and_validation",
-      "community": 44,
-      "community_name": "run",
+      "community": 47,
+      "community_name": "group.py",
       "norm_label": "test_config_loading_and_validation()"
     },
     {
@@ -7725,8 +8033,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_types",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": "test_types.py"
     },
     {
@@ -7736,8 +8044,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "tests_test_types_test_detection_geometry",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": "test_detection_geometry()"
     },
     {
@@ -7747,8 +8055,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "tests_test_types_test_empty_detection_is_safe",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": "test_empty_detection_is_safe()"
     },
     {
@@ -7758,8 +8066,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "tests_test_types_test_imageio_roundtrip_and_missing",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 46,
+      "community_name": "Detection",
       "norm_label": "test_imageio_roundtrip_and_missing()"
     },
     {
@@ -8874,6 +9182,72 @@
       "norm_label": "sources"
     },
     {
+      "label": "deploy-space.md",
+      "file_type": "document",
+      "source_file": "docs/runbooks/deploy-space.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_runbooks_deploy_space",
+      "community": 51,
+      "community_name": "Runbook: deploy the demo to Hugging Face Spaces",
+      "norm_label": "deploy-space.md"
+    },
+    {
+      "label": "Runbook: deploy the demo to Hugging Face Spaces",
+      "file_type": "document",
+      "source_file": "docs/runbooks/deploy-space.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_runbooks_deploy_space_runbook_deploy_the_demo_to_hugging_face_spaces",
+      "community": 51,
+      "community_name": "Runbook: deploy the demo to Hugging Face Spaces",
+      "norm_label": "runbook: deploy the demo to hugging face spaces"
+    },
+    {
+      "label": "1. Publish the detector weights",
+      "file_type": "document",
+      "source_file": "docs/runbooks/deploy-space.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "docs_runbooks_deploy_space_1_publish_the_detector_weights",
+      "community": 51,
+      "community_name": "Runbook: deploy the demo to Hugging Face Spaces",
+      "norm_label": "1. publish the detector weights"
+    },
+    {
+      "label": "2. Build the Space folder",
+      "file_type": "document",
+      "source_file": "docs/runbooks/deploy-space.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "docs_runbooks_deploy_space_2_build_the_space_folder",
+      "community": 51,
+      "community_name": "Runbook: deploy the demo to Hugging Face Spaces",
+      "norm_label": "2. build the space folder"
+    },
+    {
+      "label": "3. Create and push the Space",
+      "file_type": "document",
+      "source_file": "docs/runbooks/deploy-space.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "docs_runbooks_deploy_space_3_create_and_push_the_space",
+      "community": 51,
+      "community_name": "Runbook: deploy the demo to Hugging Face Spaces",
+      "norm_label": "3. create and push the space"
+    },
+    {
+      "label": "Check",
+      "file_type": "document",
+      "source_file": "docs/runbooks/deploy-space.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "docs_runbooks_deploy_space_check",
+      "community": 51,
+      "community_name": "Runbook: deploy the demo to Hugging Face Spaces",
+      "norm_label": "check"
+    },
+    {
       "label": "labelling.md",
       "file_type": "document",
       "source_file": "docs/runbooks/labelling.md",
@@ -9345,6 +9719,17 @@
       "community": 22,
       "community_name": "2026-11-08.md",
       "norm_label": "add route highlight overlay (#28)"
+    },
+    {
+      "label": "Add Gradio demo and Hugging Face Spaces packaging (#29)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L311",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_add_gradio_demo_and_hugging_face_spaces_packaging_29",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "add gradio demo and hugging face spaces packaging (#29)"
     },
     {
       "label": "plan.md",
@@ -9866,6 +10251,121 @@
       "_origin": "ast",
       "source": "claude_skills_architecture_diagram_resources_generate_diagram_main",
       "target": "claude_skills_architecture_diagram_resources_generate_diagram_render_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/app.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_app",
+      "target": "app_app_build_ui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/app.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_app",
+      "target": "src_climb_beta_demo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/app.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_app_rationale_1",
+      "target": "app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/app.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_app_build_ui",
+      "target": "app_app_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/app.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_app_build_ui",
+      "target": "src_climb_beta_demo_demoservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/build_space.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_build_space",
+      "target": "app_build_space_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/build_space.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_build_space",
+      "target": "app_build_space_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "app/build_space.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_build_space_rationale_1",
+      "target": "app_build_space",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/build_space.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_build_space_build",
+      "target": "app_build_space_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/build_space.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_build_space_main",
+      "target": "app_build_space_build",
       "confidence_score": 1.0
     },
     {
@@ -13363,7 +13863,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config",
@@ -13374,7 +13874,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L29",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config",
@@ -13385,7 +13885,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config",
@@ -13396,7 +13896,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L91",
+      "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config",
@@ -13407,7 +13907,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L85",
+      "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config",
@@ -13418,7 +13918,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L51",
+      "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config",
@@ -13429,7 +13929,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L45",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config",
@@ -13456,6 +13956,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_data_ls_export",
+      "target": "src_climb_beta_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo",
       "target": "src_climb_beta_config",
       "confidence_score": 1.0
     },
@@ -13619,7 +14131,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_configerror",
@@ -13631,7 +14143,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L97",
+      "source_location": "L99",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_load_classes",
@@ -13643,7 +14155,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L63",
+      "source_location": "L65",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_parse_colour_config",
@@ -13654,10 +14166,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L18",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_climb_beta_config_rationale_18",
+      "source": "src_climb_beta_config_rationale_20",
       "target": "src_climb_beta_config_configerror",
       "confidence_score": 1.0
     },
@@ -13666,7 +14178,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L47",
+      "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_require",
@@ -13714,7 +14226,7 @@
       "context": "generic_arg",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L38",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_colourconfig_by_family",
@@ -13726,7 +14238,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L67",
+      "source_location": "L69",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_parse_colour_config",
@@ -13737,7 +14249,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L38",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_colourconfig",
@@ -13748,7 +14260,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L41",
+      "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_colourconfig",
@@ -13759,7 +14271,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L35",
+      "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_colourconfig",
@@ -13771,7 +14283,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L85",
+      "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_load_colour_config",
@@ -13783,7 +14295,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L51",
+      "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_parse_colour_config",
@@ -13824,6 +14336,17 @@
       "source": "src_climb_beta_data_ls_export_task_regions",
       "target": "src_climb_beta_config_colourconfig",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L17",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 0.5
     },
     {
       "relation": "references",
@@ -13910,7 +14433,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L95",
+      "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_load_classes",
@@ -13922,7 +14445,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L53",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_parse_colour_config",
@@ -13934,7 +14457,7 @@
       "context": "return_type",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L45",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_require",
@@ -13946,7 +14469,7 @@
       "context": "generic_arg",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L51",
+      "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_parse_colour_config",
@@ -13958,7 +14481,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L88",
+      "source_location": "L90",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_load_colour_config",
@@ -13969,10 +14492,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L52",
+      "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_climb_beta_config_rationale_52",
+      "source": "src_climb_beta_config_rationale_54",
       "target": "src_climb_beta_config_parse_colour_config",
       "confidence_score": 1.0
     },
@@ -14029,7 +14552,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L85",
+      "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_load_colour_config",
@@ -14089,7 +14612,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/config.py",
-      "source_location": "L91",
+      "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_load_classes",
@@ -17085,6 +17608,344 @@
       "_origin": "ast",
       "source": "src_climb_beta_metrics_exit_criteria_evaluate",
       "target": "src_climb_beta_data_yolo_instances_to_detections"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo",
+      "target": "src_climb_beta_detect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo",
+      "target": "src_climb_beta_overlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo",
+      "target": "src_climb_beta_pipeline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo",
+      "target": "src_climb_beta_demo_default_detector_factory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo",
+      "target": "src_climb_beta_demo_demoservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo",
+      "target": "src_climb_beta_demo_downscale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_rationale_1",
+      "target": "src_climb_beta_demo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo",
+      "target": "src_climb_beta_demo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_default_detector_factory",
+      "target": "src_climb_beta_detect_detector"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_default_detector_factory",
+      "target": "src_climb_beta_detect_detectorlike",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_demo.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_default_factory_requires_env",
+      "target": "src_climb_beta_demo_default_detector_factory"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice_handle",
+      "target": "src_climb_beta_demo_downscale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_downscale",
+      "target": "rgb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice_handle",
+      "target": "rgb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice",
+      "target": "src_climb_beta_demo_demoservice_colours",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice",
+      "target": "src_climb_beta_demo_demoservice_detector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice",
+      "target": "src_climb_beta_demo_demoservice_handle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L35",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice",
+      "target": "src_climb_beta_detect_detector",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L18",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice",
+      "target": "src_climb_beta_detect_detectorlike",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice",
+      "target": "src_climb_beta_route_group_routeconfig",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_demo.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_handle_edge_cases",
+      "target": "src_climb_beta_demo_demoservice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_demo.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_handle_highlights_route_and_summarises",
+      "target": "src_climb_beta_demo_demoservice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_demo.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_handle_without_weights_explains",
+      "target": "src_climb_beta_demo_demoservice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_demo.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_ui_builds",
+      "target": "src_climb_beta_demo_demoservice"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice_detector",
+      "target": "src_climb_beta_detect_detectorlike",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice_handle",
+      "target": "src_climb_beta_demo_demoservice_detector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice_handle",
+      "target": "src_climb_beta_overlay_draw_route"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice_handle",
+      "target": "src_climb_beta_overlay_hex_to_bgr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/demo.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_demo_demoservice_handle",
+      "target": "src_climb_beta_pipeline_run"
     },
     {
       "relation": "imports_from",
@@ -21837,6 +22698,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo",
+      "target": "tests_fakes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_exit_criteria.py",
       "source_location": "L6",
       "weight": 1.0,
@@ -22107,6 +22980,54 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "tests/test_demo.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_handle_edge_cases",
+      "target": "tests_fakes_wall_scene"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_demo.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_handle_highlights_route_and_summarises",
+      "target": "tests_fakes_wall_scene"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_demo.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_handle_without_weights_explains",
+      "target": "tests_fakes_wall_scene"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_demo.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_ui_builds",
+      "target": "tests_fakes_wall_scene"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "tests/test_exit_criteria.py",
       "source_location": "L32",
       "weight": 1.0,
@@ -22265,6 +23186,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_crops",
+      "target": "tests_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo",
       "target": "tests_scripts",
       "confidence_score": 1.0
     },
@@ -22470,6 +23403,30 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_crops_test_cli",
+      "target": "tests_scripts_load_script"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_demo.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_build_space_folder",
+      "target": "tests_scripts_load_script"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_demo.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_ui_builds",
       "target": "tests_scripts_load_script"
     },
     {
@@ -24680,6 +25637,119 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo",
+      "target": "tests_test_demo_no_weights",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo",
+      "target": "tests_test_demo_test_build_space_folder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo",
+      "target": "tests_test_demo_test_default_factory_requires_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo",
+      "target": "tests_test_demo_test_handle_edge_cases",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo",
+      "target": "tests_test_demo_test_handle_highlights_route_and_summarises",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo",
+      "target": "tests_test_demo_test_handle_without_weights_explains",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo",
+      "target": "tests_test_demo_test_ui_builds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_handle_without_weights_explains",
+      "target": "tests_test_demo_no_weights",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_default_factory_requires_env",
+      "target": "tests_test_demo_py_monkeypatch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_demo.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_demo_test_build_space_folder",
+      "target": "tests_test_demo_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_detect.py",
       "source_location": "L39",
       "weight": 1.0,
@@ -26102,7 +27172,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_roboflow_test_cli_fails_cleanly_without_pin_or_key",
-      "target": "monkeypatch",
+      "target": "tests_test_roboflow_py_monkeypatch",
       "confidence_score": 1.0
     },
     {
@@ -28011,6 +29081,61 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/runbooks/deploy-space.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_runbooks_deploy_space",
+      "target": "docs_runbooks_deploy_space_runbook_deploy_the_demo_to_hugging_face_spaces",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/runbooks/deploy-space.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_runbooks_deploy_space_runbook_deploy_the_demo_to_hugging_face_spaces",
+      "target": "docs_runbooks_deploy_space_1_publish_the_detector_weights",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/runbooks/deploy-space.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_runbooks_deploy_space_runbook_deploy_the_demo_to_hugging_face_spaces",
+      "target": "docs_runbooks_deploy_space_2_build_the_space_folder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/runbooks/deploy-space.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_runbooks_deploy_space_runbook_deploy_the_demo_to_hugging_face_spaces",
+      "target": "docs_runbooks_deploy_space_3_create_and_push_the_space",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/runbooks/deploy-space.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_runbooks_deploy_space_runbook_deploy_the_demo_to_hugging_face_spaces",
+      "target": "docs_runbooks_deploy_space_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/runbooks/labelling.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -28226,6 +29351,17 @@
       "_origin": "ast",
       "source": "logs_2026_11_08_2026_11_08",
       "target": "logs_2026_11_08_add_eval_check_exit_criteria_py_27",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L311",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_add_gradio_demo_and_hugging_face_spaces_packaging_29",
       "confidence_score": 1.0
     },
     {
@@ -28582,5 +29718,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "50ecc8fef5219983e9fab1d289b5837bd39d4e45"
+  "built_at_commit": "a799c9f7be1e5bf94ab693a8a622816d447e7e32"
 }

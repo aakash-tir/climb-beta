@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -9,7 +10,8 @@ from typing import Any
 import yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-CONFIG_DIR = REPO_ROOT / "configs"
+# Overridable so a packaged copy (e.g. the HF Space) can ship configs next to the package.
+CONFIG_DIR = Path(os.environ.get("CLIMB_CONFIG_DIR", str(REPO_ROOT / "configs")))
 CHROMATIC_FAMILIES = ("redpink", "orange", "yellow", "green", "blue", "purple")
 ACHROMATIC = "achromatic"
 
