@@ -264,8 +264,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "colour_classify_rules",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "classify_rules.py"
     },
     {
@@ -275,8 +275,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "colour_classify_rules_main",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "main()"
     },
     {
@@ -286,8 +286,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "colour_classify_rules_rationale_1",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "label each hold's colour in a photo with the rule-based colour step.  usage:"
     },
     {
@@ -723,6 +723,39 @@
       "norm_label": "climb-beta"
     },
     {
+      "label": "find_route.py",
+      "file_type": "code",
+      "source_file": "route/find_route.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "route_find_route",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "find_route.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "route/find_route.py",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "route_find_route_main",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "main()"
+    },
+    {
+      "label": "Find the route of a chosen colour in a wall photo (detector + colour + route).",
+      "file_type": "rationale",
+      "source_file": "route/find_route.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "route_find_route_rationale_1",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "find the route of a chosen colour in a wall photo (detector + colour + route)."
+    },
+    {
       "label": "__init__.py",
       "file_type": "code",
       "source_file": "src/climb_beta/__init__.py",
@@ -773,8 +806,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "batch.py"
     },
     {
@@ -784,8 +817,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_wall_mask",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "wall_mask()"
     },
     {
@@ -795,8 +828,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_py_imagebgr",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "imagebgr"
     },
     {
@@ -806,8 +839,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_py_ndarray",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "ndarray"
     },
     {
@@ -817,8 +850,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_colour_detections",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "colour_detections()"
     },
     {
@@ -828,8 +861,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_rationale_1",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "colour every hold in a photo: wall-referenced white balance, then the rules."
     },
     {
@@ -839,8 +872,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_rationale_18",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "pixels outside every detection: the wall, used as the white-balance reference."
     },
     {
@@ -850,8 +883,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_rationale_31",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "set `.colour`/`.colour_conf` on every hold detection (in place).      returns th"
     },
     {
@@ -1488,8 +1521,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "white_balance.py"
     },
     {
@@ -1499,8 +1532,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_grey_world_gains",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "grey_world_gains()"
     },
     {
@@ -1510,8 +1543,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_py_imagebgr",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "imagebgr"
     },
     {
@@ -1521,8 +1554,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_py_mask",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "mask"
     },
     {
@@ -1532,8 +1565,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_apply_gains",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "apply_gains()"
     },
     {
@@ -1543,8 +1576,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_grey_world",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "grey_world()"
     },
     {
@@ -1554,8 +1587,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_1",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "grey-world white balance.  the grey-world assumption says the average of a scene"
     },
     {
@@ -1565,8 +1598,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_24",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "per-channel (b, g, r) gains that make the reference pixels' mean neutral.      p"
     },
     {
@@ -1576,8 +1609,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_58",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "white-balance `img` so the reference (default: whole image) averages to grey."
     },
     {
@@ -2170,8 +2203,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "src_climb_beta_data_ls_export_sdk_rle_decoder",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "sdk_rle_decoder()"
     },
     {
@@ -2181,8 +2214,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_data_ls_export_py_mask",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "mask"
     },
     {
@@ -2291,8 +2324,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "src_climb_beta_data_ls_export_rationale_37",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "decode label studio brush rle (needs the `label` extra)."
     },
     {
@@ -2808,8 +2841,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "yolo.py"
     },
     {
@@ -2819,8 +2852,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_yoloinstance",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "yoloinstance"
     },
     {
@@ -2830,8 +2863,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_parse_label_line",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "parse_label_line()"
     },
     {
@@ -2841,8 +2874,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_read_labels",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "read_labels()"
     },
     {
@@ -2852,8 +2885,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_py_path",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "path"
     },
     {
@@ -2863,8 +2896,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_format_label_line",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "format_label_line()"
     },
     {
@@ -2874,8 +2907,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_py_floatarray",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "floatarray"
     },
     {
@@ -2885,8 +2918,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_write_labels",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "write_labels()"
     },
     {
@@ -2896,8 +2929,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_instances_to_detections",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "instances_to_detections()"
     },
     {
@@ -2907,8 +2940,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_rationale_1",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "read and write ultralytics yolo-seg label files.  one instance per line: `<class"
     },
     {
@@ -2918,8 +2951,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_rationale_58",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "rasterise label polygons into full-resolution detection masks."
     },
     {
@@ -2940,8 +2973,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_climb_beta_detect_detectorlike",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 44,
+      "community_name": "run",
       "norm_label": "detectorlike"
     },
     {
@@ -2950,9 +2983,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "protocol",
-      "community": 28,
-      "community_name": "_scene",
+      "id": "src_climb_beta_detect_py_protocol",
+      "community": 44,
+      "community_name": "run",
       "norm_label": "protocol"
     },
     {
@@ -3715,6 +3748,160 @@
       "norm_label": "colour accuracy: overall, per colour, and the two subsets the exit criteria name"
     },
     {
+      "label": "pipeline.py",
+      "file_type": "code",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "pipeline.py"
+    },
+    {
+      "label": "ClassifierLike",
+      "file_type": "code",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_classifierlike",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "classifierlike"
+    },
+    {
+      "label": "Protocol",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_py_protocol",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "protocol"
+    },
+    {
+      "label": ".classes()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_classifierlike_classes",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": ".classes()"
+    },
+    {
+      "label": ".predict()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_classifierlike_predict",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": ".predict()"
+    },
+    {
+      "label": "ImageBGR",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_py_imagebgr",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "imagebgr"
+    },
+    {
+      "label": "PipelineResult",
+      "file_type": "code",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_pipelineresult",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "pipelineresult"
+    },
+    {
+      "label": ".colours_present()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_pipelineresult_colours_present",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": ".colours_present()"
+    },
+    {
+      "label": ".to_json()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_pipelineresult_to_json",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": ".to_json()"
+    },
+    {
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_py_any",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "any"
+    },
+    {
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_run",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "run()"
+    },
+    {
+      "label": "ColourMethod",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "colourmethod",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "colourmethod"
+    },
+    {
+      "label": "Photo -> detections -> hold colours -> routes, in one call.  detector (colour-",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_rationale_1",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "photo -> detections -> hold colours -> routes, in one call.  detector (colour-"
+    },
+    {
+      "label": "Run the whole Phase 1 pipeline on one photo.      `colours`: which colours to",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "src_climb_beta_pipeline_rationale_79",
+      "community": 44,
+      "community_name": "run",
+      "norm_label": "run the whole phase 1 pipeline on one photo.      `colours`: which colours to"
+    },
+    {
       "label": "__init__.py",
       "file_type": "code",
       "source_file": "src/climb_beta/route/__init__.py",
@@ -3875,8 +4062,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_unionfind",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "_unionfind"
     },
     {
@@ -3886,8 +4073,8 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_unionfind_init",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": ".__init__()"
     },
     {
@@ -3897,8 +4084,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_unionfind_find",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": ".find()"
     },
     {
@@ -3908,8 +4095,8 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_unionfind_union",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": ".union()"
     },
     {
@@ -3919,8 +4106,8 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "src_climb_beta_route_group_group_routes",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "group_routes()"
     },
     {
@@ -4117,8 +4304,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_types",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": "types.py"
     },
     {
@@ -4128,8 +4315,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_climb_beta_types_detection",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": "detection"
     },
     {
@@ -4139,8 +4326,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "src_climb_beta_types_detection_area",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": ".area()"
     },
     {
@@ -4150,8 +4337,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "src_climb_beta_types_detection_centroid",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": ".centroid()"
     },
     {
@@ -4161,8 +4348,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "src_climb_beta_types_detection_bbox",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": ".bbox()"
     },
     {
@@ -4172,8 +4359,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_types_rationale_1",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": "core data types shared by detector, colour, route, eval and app."
     },
     {
@@ -4183,8 +4370,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "src_climb_beta_types_rationale_19",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": "one detector instance: a mask and a class (hold, volume or tape)."
     },
     {
@@ -4194,8 +4381,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_climb_beta_types_rationale_33",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": "(x, y) centroid of the mask in pixels."
     },
     {
@@ -4205,9 +4392,163 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "src_climb_beta_types_rationale_40",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": "(x0, y0, x1, y1), inclusive-exclusive."
+    },
+    {
+      "label": "fakes.py",
+      "file_type": "code",
+      "source_file": "tests/fakes.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_fakes",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "fakes.py"
+    },
+    {
+      "label": "FakeDetector",
+      "file_type": "code",
+      "source_file": "tests/fakes.py",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "tests_fakes_fakedetector",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "fakedetector"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "tests/fakes.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "tests_fakes_fakedetector_init",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": "Mask",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_fakes_py_mask",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "mask"
+    },
+    {
+      "label": ".predict()",
+      "file_type": "code",
+      "source_file": "tests/fakes.py",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "tests_fakes_fakedetector_predict",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": ".predict()"
+    },
+    {
+      "label": "ImageBGR",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_fakes_py_imagebgr",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "imagebgr"
+    },
+    {
+      "label": "FakeClassifier",
+      "file_type": "code",
+      "source_file": "tests/fakes.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "tests_fakes_fakeclassifier",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "fakeclassifier"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "tests/fakes.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "tests_fakes_fakeclassifier_init",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".classes()",
+      "file_type": "code",
+      "source_file": "tests/fakes.py",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "tests_fakes_fakeclassifier_classes",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": ".classes()"
+    },
+    {
+      "label": ".predict()",
+      "file_type": "code",
+      "source_file": "tests/fakes.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "tests_fakes_fakeclassifier_predict",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": ".predict()"
+    },
+    {
+      "label": "wall_scene()",
+      "file_type": "code",
+      "source_file": "tests/fakes.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "tests_fakes_wall_scene",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "wall_scene()"
+    },
+    {
+      "label": "Test doubles for the detector and the crop classifier.",
+      "file_type": "rationale",
+      "source_file": "tests/fakes.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_fakes_rationale_1",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "test doubles for the detector and the crop classifier."
+    },
+    {
+      "label": "Returns fixed masks, as a perfect colour-blind detector would.",
+      "file_type": "rationale",
+      "source_file": "tests/fakes.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "tests_fakes_rationale_14",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "returns fixed masks, as a perfect colour-blind detector would."
+    },
+    {
+      "label": "A 600x800 wall: a 5-hold red route with start tape, a 4-hold blue route, warm li",
+      "file_type": "rationale",
+      "source_file": "tests/fakes.py",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "tests_fakes_rationale_36",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "a 600x800 wall: a 5-hold red route with start tape, a 4-hold blue route, warm li"
     },
     {
       "label": "scripts.py",
@@ -4216,8 +4557,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_scripts",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "scripts.py"
     },
     {
@@ -4227,8 +4568,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_scripts_load_script",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "load_script()"
     },
     {
@@ -4238,8 +4579,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "moduletype",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "moduletype"
     },
     {
@@ -4249,8 +4590,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_scripts_rationale_1",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "load a top-level cli script (e.g. colour/classify_rules.py) as a module for test"
     },
     {
@@ -4392,8 +4733,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "test_classify_rules_cli.py"
     },
     {
@@ -4403,8 +4744,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_scene",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "_scene()"
     },
     {
@@ -4414,8 +4755,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_py_path",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "path"
     },
     {
@@ -4425,8 +4766,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_cli_labels_holds_and_skips_tape",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "test_cli_labels_holds_and_skips_tape()"
     },
     {
@@ -4436,8 +4777,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_cli_missing_image",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "test_cli_missing_image()"
     },
     {
@@ -4447,8 +4788,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_label_line_roundtrip_and_validation",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "test_label_line_roundtrip_and_validation()"
     },
     {
@@ -4612,8 +4953,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "tests_test_colour_eval_test_cli_end_to_end",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_cli_end_to_end()"
     },
     {
@@ -4623,8 +4964,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_colour_eval_py_path",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "path"
     },
     {
@@ -4986,8 +5327,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_crop_classifier",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "test_crop_classifier.py"
     },
     {
@@ -5019,8 +5360,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "tests_test_crop_classifier_test_augment_never_changes_hue",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "test_augment_never_changes_hue()"
     },
     {
@@ -5030,8 +5371,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "tests_test_crop_classifier_crops",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "_crops()"
     },
     {
@@ -5041,8 +5382,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_crop_classifier_py_path",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "path"
     },
     {
@@ -5052,8 +5393,8 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "tests_test_crop_classifier_test_unknown_colour_folder_rejected",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "test_unknown_colour_folder_rejected()"
     },
     {
@@ -5063,8 +5404,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "tests_test_crop_classifier_test_train_and_predict_smoke",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "test_train_and_predict_smoke()"
     },
     {
@@ -5085,8 +5426,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "tests_test_crops_test_crop_is_square_masked_and_centred",
-      "community": 39,
-      "community_name": "_dataset",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_crop_is_square_masked_and_centred()"
     },
     {
@@ -5096,8 +5437,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "tests_test_crops_test_crop_at_image_edge_and_empty",
-      "community": 39,
-      "community_name": "_dataset",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_crop_at_image_edge_and_empty()"
     },
     {
@@ -5393,8 +5734,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_labelling_compose",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "test_labelling_compose.py"
     },
     {
@@ -5404,8 +5745,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "tests_test_labelling_compose_test_compose_wires_label_studio_and_gpu_sam2",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "test_compose_wires_label_studio_and_gpu_sam2()"
     },
     {
@@ -5415,8 +5756,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "tests_test_labelling_compose_test_local_state_dirs_are_gitignored",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "test_local_state_dirs_are_gitignored()"
     },
     {
@@ -5426,8 +5767,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_labelling_compose_test_backend_image_targets_blackwell",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "test_backend_image_targets_blackwell()"
     },
     {
@@ -5437,8 +5778,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_labelling_compose_rationale_1",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "static checks on the labelling stack (ci can't run docker or a gpu)."
     },
     {
@@ -5514,8 +5855,8 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "tests_test_ls_config_test_check_detects_stale",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 0,
+      "community_name": "parse_colour_config",
       "norm_label": "test_check_detects_stale()"
     },
     {
@@ -5525,8 +5866,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_ls_config_py_path",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 0,
+      "community_name": "parse_colour_config",
       "norm_label": "path"
     },
     {
@@ -5536,8 +5877,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_ls_export",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_ls_export.py"
     },
     {
@@ -5547,8 +5888,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "tests_test_ls_export_fake_decode",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "fake_decode()"
     },
     {
@@ -5558,8 +5899,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_ls_export_py_ndarray",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "ndarray"
     },
     {
@@ -5569,8 +5910,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_ls_export_region",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "region()"
     },
     {
@@ -5580,8 +5921,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_ls_export_py_any",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "any"
     },
     {
@@ -5591,8 +5932,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "tests_test_ls_export_choice",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "choice()"
     },
     {
@@ -5602,8 +5943,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "tests_test_ls_export_export",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "_export()"
     },
     {
@@ -5613,8 +5954,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_ls_export_py_path",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "path"
     },
     {
@@ -5624,8 +5965,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "tests_test_ls_export_test_convert",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_convert()"
     },
     {
@@ -5635,8 +5976,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "tests_test_ls_export_test_unknown_colour_rejected",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_unknown_colour_rejected()"
     },
     {
@@ -5657,8 +5998,8 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "tests_test_ls_export_test_sdk_decoder_roundtrip",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_sdk_decoder_roundtrip()"
     },
     {
@@ -5668,8 +6009,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "tests_test_ls_export_test_cli",
-      "community": 32,
-      "community_name": "convert_ls_export",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_cli()"
     },
     {
@@ -5816,6 +6157,72 @@
       "norm_label": "test_normalise_roundtrip()"
     },
     {
+      "label": "test_pipeline.py",
+      "file_type": "code",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_pipeline",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "test_pipeline.py"
+    },
+    {
+      "label": "test_pipeline_finds_both_routes_and_red_start()",
+      "file_type": "code",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "tests_test_pipeline_test_pipeline_finds_both_routes_and_red_start",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "test_pipeline_finds_both_routes_and_red_start()"
+    },
+    {
+      "label": "test_pipeline_selected_colour_only()",
+      "file_type": "code",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "tests_test_pipeline_test_pipeline_selected_colour_only",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "test_pipeline_selected_colour_only()"
+    },
+    {
+      "label": "test_classifier_method_overrides_rules()",
+      "file_type": "code",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "tests_test_pipeline_test_classifier_method_overrides_rules",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "test_classifier_method_overrides_rules()"
+    },
+    {
+      "label": "test_find_route_cli()",
+      "file_type": "code",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "tests_test_pipeline_test_find_route_cli",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "test_find_route_cli()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_pipeline_py_path",
+      "community": 32,
+      "community_name": "convert_ls_export",
+      "norm_label": "path"
+    },
+    {
       "label": "test_roboflow.py",
       "file_type": "code",
       "source_file": "tests/test_roboflow.py",
@@ -5921,8 +6328,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_route_group",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "test_route_group.py"
     },
     {
@@ -5932,8 +6339,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "tests_test_route_group_hold",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "hold()"
     },
     {
@@ -5943,8 +6350,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "tests_test_route_group_tape",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "tape()"
     },
     {
@@ -5954,8 +6361,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "tests_test_route_group_ladder",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "ladder()"
     },
     {
@@ -5965,8 +6372,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "tests_test_route_group_test_two_same_colour_routes_split_and_other_colours_ignored",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "test_two_same_colour_routes_split_and_other_colours_ignored()"
     },
     {
@@ -5976,8 +6383,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "tests_test_route_group_test_tape_marks_start_hold_only",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "test_tape_marks_start_hold_only()"
     },
     {
@@ -5987,8 +6394,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "tests_test_route_group_test_named_route_prefers_the_taped_route_over_the_larger",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "test_named_route_prefers_the_taped_route_over_the_larger()"
     },
     {
@@ -5998,8 +6405,8 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "tests_test_route_group_test_stray_far_hold_is_not_part_of_route",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "test_stray_far_hold_is_not_part_of_route()"
     },
     {
@@ -6009,8 +6416,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "tests_test_route_group_test_scale_invariance",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "test_scale_invariance()"
     },
     {
@@ -6020,8 +6427,8 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "tests_test_route_group_test_no_holds_of_colour",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 46,
+      "community_name": "group_routes",
       "norm_label": "test_no_holds_of_colour()"
     },
     {
@@ -6460,8 +6867,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_types",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": "test_types.py"
     },
     {
@@ -6471,8 +6878,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "tests_test_types_test_detection_geometry",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": "test_detection_geometry()"
     },
     {
@@ -6482,8 +6889,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "tests_test_types_test_empty_detection_is_safe",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": "test_empty_detection_is_safe()"
     },
     {
@@ -6493,8 +6900,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "tests_test_types_test_imageio_roundtrip_and_missing",
-      "community": 34,
-      "community_name": "sam_masks.py",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": "test_imageio_roundtrip_and_missing()"
     },
     {
@@ -6581,8 +6988,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_gains_are_clipped_and_black_image_is_identity",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "test_gains_are_clipped_and_black_image_is_identity()"
     },
     {
@@ -6592,8 +6999,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_apply_gains_saturates",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "test_apply_gains_saturates()"
     },
     {
@@ -8014,6 +8421,17 @@
       "community": 22,
       "community_name": "2026-11-08.md",
       "norm_label": "add route grouping and tape-start detection (#23)"
+    },
+    {
+      "label": "Add end-to-end pipeline and route CLI (#24)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L259",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_add_end_to_end_pipeline_and_route_cli_24",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "add end-to-end pipeline and route cli (#24)"
     },
     {
       "label": "plan.md",
@@ -9627,6 +10045,136 @@
       "target": "src_climb_beta_labelling_make_config_build_config"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "route/find_route.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "route_find_route",
+      "target": "src_climb_beta_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "route/find_route.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "route_find_route",
+      "target": "src_climb_beta_imageio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "route/find_route.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "route_find_route",
+      "target": "src_climb_beta_pipeline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "route/find_route.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "route_find_route",
+      "target": "route_find_route_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "route/find_route.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "route_find_route_rationale_1",
+      "target": "route_find_route",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "route/find_route.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "route_find_route_main",
+      "target": "src_climb_beta_colour_classifier_cropclassifier"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "route/find_route.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "route_find_route_main",
+      "target": "src_climb_beta_config_load_colour_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "route/find_route.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "route_find_route_main",
+      "target": "src_climb_beta_detect_detector"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "route/find_route.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "route_find_route_main",
+      "target": "src_climb_beta_imageio_read_bgr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "route/find_route.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "route_find_route_main",
+      "target": "src_climb_beta_pipeline_run"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "route/find_route.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "route_find_route_main",
+      "target": "src_climb_beta_route_group_load_route_config"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/__init__.py",
@@ -9846,6 +10394,18 @@
       "source": "src_climb_beta_colour_batch_rationale_31",
       "target": "src_climb_beta_colour_batch_colour_detections",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
+      "target": "src_climb_beta_colour_batch_colour_detections"
     },
     {
       "relation": "imports_from",
@@ -10384,6 +10944,18 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
+      "target": "src_climb_beta_colour_crops_extract_crop"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "tests/test_crop_classifier.py",
       "source_location": "L52",
       "weight": 1.0,
@@ -10845,6 +11417,28 @@
       "_origin": "ast",
       "source": "src_climb_beta_colour_rules_colourresult",
       "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L15",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_classifierlike",
+      "target": "src_climb_beta_colour_rules_colourresult",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L15",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_pipelineresult",
+      "target": "src_climb_beta_colour_rules_colourresult",
       "confidence_score": 0.5
     },
     {
@@ -11814,6 +12408,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline",
+      "target": "src_climb_beta_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/route/group.py",
       "source_location": "L19",
       "weight": 1.0,
@@ -11891,6 +12497,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_ls_export",
+      "target": "src_climb_beta_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline",
       "target": "src_climb_beta_config",
       "confidence_score": 1.0
     },
@@ -12125,6 +12743,40 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_labelling_make_config_build_config",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L16",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_classifierlike",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L16",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_pipelineresult",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
       "target": "src_climb_beta_config_colourconfig",
       "confidence_score": 1.0
     },
@@ -15296,23 +15948,24 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline",
+      "target": "src_climb_beta_detect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_detect.py",
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_detect",
       "target": "src_climb_beta_detect",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "source_file": "src/climb_beta/detect.py",
-      "source_location": "L23",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_climb_beta_detect_detectorlike",
-      "target": "protocol",
       "confidence_score": 1.0
     },
     {
@@ -15327,6 +15980,17 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/detect.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_detect_detectorlike",
+      "target": "src_climb_beta_detect_py_protocol",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "src/climb_beta/detect.py",
@@ -15336,6 +16000,40 @@
       "source": "src_climb_beta_detect_detectorlike",
       "target": "src_climb_beta_types_detection",
       "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L17",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_classifierlike",
+      "target": "src_climb_beta_detect_detectorlike",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L17",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_pipelineresult",
+      "target": "src_climb_beta_detect_detectorlike",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
+      "target": "src_climb_beta_detect_detectorlike",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -15679,6 +16377,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline",
+      "target": "src_climb_beta_imageio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_train_detector.py",
       "source_location": "L13",
       "weight": 1.0,
@@ -15804,6 +16514,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_crops_dataset",
+      "target": "src_climb_beta_imageio_write_bgr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_test_find_route_cli",
       "target": "src_climb_beta_imageio_write_bgr"
     },
     {
@@ -16864,6 +17586,362 @@
       "target": "src_climb_beta_metrics_colour_format_report"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline",
+      "target": "src_climb_beta_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline",
+      "target": "src_climb_beta_pipeline_classifierlike",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline",
+      "target": "src_climb_beta_pipeline_pipelineresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline",
+      "target": "src_climb_beta_pipeline_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_rationale_1",
+      "target": "src_climb_beta_pipeline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline",
+      "target": "src_climb_beta_pipeline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_classifierlike",
+      "target": "src_climb_beta_pipeline_classifierlike_classes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_classifierlike",
+      "target": "src_climb_beta_pipeline_classifierlike_predict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_classifierlike",
+      "target": "src_climb_beta_pipeline_py_protocol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L18",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_classifierlike",
+      "target": "src_climb_beta_route_group_routeconfig",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L18",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_classifierlike",
+      "target": "src_climb_beta_route_group_routeresult",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L19",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_classifierlike",
+      "target": "src_climb_beta_types_detection",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
+      "target": "src_climb_beta_pipeline_classifierlike",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_classifierlike_predict",
+      "target": "src_climb_beta_pipeline_py_imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
+      "target": "src_climb_beta_pipeline_classifierlike_predict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
+      "target": "src_climb_beta_pipeline_py_imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_pipelineresult",
+      "target": "src_climb_beta_pipeline_pipelineresult_colours_present",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_pipelineresult",
+      "target": "src_climb_beta_pipeline_pipelineresult_to_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L18",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_pipelineresult",
+      "target": "src_climb_beta_route_group_routeconfig",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L18",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_pipelineresult",
+      "target": "src_climb_beta_route_group_routeresult",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L19",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_pipelineresult",
+      "target": "src_climb_beta_types_detection",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
+      "target": "src_climb_beta_pipeline_pipelineresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
+      "target": "src_climb_beta_pipeline_pipelineresult_colours_present",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_pipelineresult_to_json",
+      "target": "src_climb_beta_pipeline_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_rationale_79",
+      "target": "src_climb_beta_pipeline_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
+      "target": "colourmethod",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
+      "target": "src_climb_beta_route_group_group_routes"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/pipeline.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_pipeline_run",
+      "target": "src_climb_beta_route_group_routeconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_test_classifier_method_overrides_rules",
+      "target": "src_climb_beta_pipeline_run"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_test_pipeline_finds_both_routes_and_red_start",
+      "target": "src_climb_beta_pipeline_run"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_test_pipeline_selected_colour_only",
+      "target": "src_climb_beta_pipeline_run"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/route/__init__.py",
@@ -17840,6 +18918,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes",
+      "target": "src_climb_beta_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/scripts.py",
       "source_location": "L7",
       "weight": 1.0,
@@ -17913,6 +19003,40 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_types_rationale_19",
+      "target": "src_climb_beta_types_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L10",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "tests_fakes_fakeclassifier",
+      "target": "src_climb_beta_types_detection",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L10",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "tests_fakes_fakedetector",
+      "target": "src_climb_beta_types_detection",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_fakedetector_predict",
       "target": "src_climb_beta_types_detection",
       "confidence_score": 1.0
     },
@@ -17997,6 +19121,319 @@
       "source": "src_climb_beta_types_rationale_40",
       "target": "src_climb_beta_types_detection_bbox",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes",
+      "target": "tests_synth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes",
+      "target": "tests_fakes_fakeclassifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes",
+      "target": "tests_fakes_fakedetector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes",
+      "target": "tests_fakes_wall_scene",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_rationale_1",
+      "target": "tests_fakes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline",
+      "target": "tests_fakes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_fakedetector",
+      "target": "tests_fakes_fakedetector_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_fakedetector",
+      "target": "tests_fakes_fakedetector_predict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_rationale_14",
+      "target": "tests_fakes_fakedetector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_wall_scene",
+      "target": "tests_fakes_fakedetector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_fakedetector_init",
+      "target": "tests_fakes_py_mask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_fakedetector_predict",
+      "target": "tests_fakes_py_imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_fakeclassifier_predict",
+      "target": "tests_fakes_py_imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_wall_scene",
+      "target": "tests_fakes_py_imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_fakeclassifier",
+      "target": "tests_fakes_fakeclassifier_classes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_fakeclassifier",
+      "target": "tests_fakes_fakeclassifier_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_fakeclassifier",
+      "target": "tests_fakes_fakeclassifier_predict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_test_classifier_method_overrides_rules",
+      "target": "tests_fakes_fakeclassifier"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fakes.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_rationale_36",
+      "target": "tests_fakes_wall_scene",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/fakes.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_wall_scene",
+      "target": "tests_synth_chalk"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/fakes.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_wall_scene",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/fakes.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_wall_scene",
+      "target": "tests_synth_tint"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/fakes.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_fakes_wall_scene",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_test_classifier_method_overrides_rules",
+      "target": "tests_fakes_wall_scene"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_test_find_route_cli",
+      "target": "tests_fakes_wall_scene"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_test_pipeline_finds_both_routes_and_red_start",
+      "target": "tests_fakes_wall_scene"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_test_pipeline_selected_colour_only",
+      "target": "tests_fakes_wall_scene"
     },
     {
       "relation": "contains",
@@ -18113,6 +19550,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_ls_export",
+      "target": "tests_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline",
       "target": "tests_scripts",
       "confidence_score": 1.0
     },
@@ -18294,6 +19743,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_ls_export_test_cli",
+      "target": "tests_scripts_load_script"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_test_find_route_cli",
       "target": "tests_scripts_load_script"
     },
     {
@@ -21311,6 +22772,62 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline",
+      "target": "tests_test_pipeline_test_classifier_method_overrides_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline",
+      "target": "tests_test_pipeline_test_find_route_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline",
+      "target": "tests_test_pipeline_test_pipeline_finds_both_routes_and_red_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline",
+      "target": "tests_test_pipeline_test_pipeline_selected_colour_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_test_find_route_cli",
+      "target": "tests_test_pipeline_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_roboflow.py",
       "source_location": "L36",
       "weight": 1.0,
@@ -23481,6 +24998,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/2026-11-08.md",
+      "source_location": "L259",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_add_end_to_end_pipeline_and_route_cli_24",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
       "source_location": "L90",
       "weight": 1.0,
       "_origin": "ast",
@@ -23798,5 +25326,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a4f3f8f735f1175757b8deca1640dc55ac7872e6"
+  "built_at_commit": "b78fd2efe8830fbe0c4ed3883b8c21bb6c7fd73b"
 }
