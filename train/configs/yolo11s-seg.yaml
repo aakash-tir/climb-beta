@@ -1,0 +1,20 @@
+# yolo11s-seg: accuracy option. 10M params; use if n misses the mask mAP50 target.
+name: yolo11s-seg
+model: yolo11s-seg.pt
+datasets:
+  - data/yolo/roboflow
+  - data/yolo/basecamp
+val_dataset: data/yolo/basecamp
+epochs: 150
+imgsz: 1024
+batch: 6
+patience: 30
+seed: 0
+augment:
+  hsv_h: 0.5
+  hsv_s: 0.9
+  hsv_v: 0.4
+  degrees: 5.0
+  fliplr: 0.5
+  mosaic: 1.0
+  scale: 0.5

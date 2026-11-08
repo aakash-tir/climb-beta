@@ -100,7 +100,7 @@
     "semantic_hash": ""
   },
   ".github/workflows/python.yml": {
-    "mtime": 1794122541.6005995,
+    "mtime": 1794122602.6384032,
     "ast_hash": "835409131327ba443b49482e7dda124b",
     "semantic_hash": ""
   },
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794122558.4089024,
-    "ast_hash": "b5220cefe6f34a3683bda5c3690b0648",
+    "mtime": 1794122766.349405,
+    "ast_hash": "0372b7e44e3e83ea182e9ace3767bdc8",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -375,18 +375,43 @@
     "semantic_hash": ""
   },
   "tests/test_labelling_compose.py": {
-    "mtime": 1794122538.765439,
+    "mtime": 1794122602.6486163,
     "ast_hash": "14860fccb92e5b58b122da43c1564052",
     "semantic_hash": ""
   },
   "docs/runbooks/labelling.md": {
-    "mtime": 1794122533.6153786,
+    "mtime": 1794122602.6394045,
     "ast_hash": "3ec7c99401c37290b8cd8e2223e173a7",
     "semantic_hash": ""
   },
   "labelling/docker-compose.yml": {
-    "mtime": 1794122518.5697954,
+    "mtime": 1794122602.6460145,
     "ast_hash": "c2f86e2774b415d3d60dd62cf3018916",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/train_config.py": {
+    "mtime": 1794122643.6756542,
+    "ast_hash": "0251d66345cae28a89323801792b5c69",
+    "semantic_hash": ""
+  },
+  "tests/test_train_detector.py": {
+    "mtime": 1794122681.3124177,
+    "ast_hash": "407cddac9948ba45a075290d98593490",
+    "semantic_hash": ""
+  },
+  "train/train_detector.py": {
+    "mtime": 1794122658.8689404,
+    "ast_hash": "2670ac1b9f7e2830eac9bc1d2072b5ed",
+    "semantic_hash": ""
+  },
+  "train/configs/yolo11n-seg.yaml": {
+    "mtime": 1794122646.8711746,
+    "ast_hash": "9930192c0d22ed9519e7119f6607af79",
+    "semantic_hash": ""
+  },
+  "train/configs/yolo11s-seg.yaml": {
+    "mtime": 1794122649.0262365,
+    "ast_hash": "e3358c78f9b0edc9d461b9d18f9d917b",
     "semantic_hash": ""
   }
 }
