@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "pyproject.toml": {
-    "mtime": 1794121848.4039135,
-    "ast_hash": "1d5bc7e126766e33217018af63ce439a",
+    "mtime": 1794121925.6556084,
+    "ast_hash": "81b2bfde1b21ad77b0c4033077e360a4",
     "semantic_hash": ""
   },
   "src/climb_beta/__init__.py": {
@@ -100,8 +100,8 @@
     "semantic_hash": ""
   },
   ".github/workflows/python.yml": {
-    "mtime": 1794120243.5937796,
-    "ast_hash": "65b40694e00c73f75bd69a0365776b0a",
+    "mtime": 1794121974.794784,
+    "ast_hash": "e3bc60841d4db7071614302e208dd42d",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794121894.1670556,
-    "ast_hash": "1e8eb0b0e83206b8df1728c6e1c39b09",
+    "mtime": 1794121974.9872825,
+    "ast_hash": "65e6e914173f27136592fc3a2c71ad4c",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -272,6 +272,26 @@
   "tests/test_sam_fallback.py": {
     "mtime": 1794121793.9667199,
     "ast_hash": "200f2784d72de0ff7ae2c0a6075783cb",
+    "semantic_hash": ""
+  },
+  "data/download_roboflow.py": {
+    "mtime": 1794121952.3953075,
+    "ast_hash": "540b6dd0cb610acf09d0423b84054072",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/data/roboflow.py": {
+    "mtime": 1794121961.3959427,
+    "ast_hash": "943ead6cbb2871e76506dc89dc4fb413",
+    "semantic_hash": ""
+  },
+  "tests/test_roboflow.py": {
+    "mtime": 1794121959.0531366,
+    "ast_hash": "b27feeddb9473a1a8d2d42e958199dd7",
+    "semantic_hash": ""
+  },
+  "data/roboflow.yaml": {
+    "mtime": 1794121938.7660198,
+    "ast_hash": "762e3af8a93852d7b3926f99f0b8a77f",
     "semantic_hash": ""
   }
 }

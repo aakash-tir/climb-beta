@@ -16,6 +16,7 @@ on:
       - "src/**"
       - "tests/**"
       - "data/**/*.py"
+      - "data/**/*.yaml"
       - "labelling/**/*.py"
       - "train/**"
       - "colour/**/*.py"
