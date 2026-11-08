@@ -1,0 +1,5 @@
+# Route grouping. Distances are in units of the median hold size on the photo
+# (sqrt of median hold mask area), so they don't depend on photo resolution or distance.
+link_factor: 6.0        # two same-colour holds this close (mask gap) belong to one route
+tape_reach_factor: 0.6  # a tape strip this close to a hold marks it as a start hold
+min_route_holds: 3      # smaller same-colour clusters are reported as stray holds
