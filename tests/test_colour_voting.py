@@ -45,12 +45,9 @@ def test_scattered_chalk_on_green() -> None:
     assert classify_hold(img, m, CFG).name == "green"
 
 
-def test_fully_chalked_or_empty_is_unknown_without_white_rule() -> None:
+def test_empty_mask_is_unknown() -> None:
     img = wall()
-    m = draw_hold(img, (160, 120), 20, GREEN)
-    chalk(img, m, 1.0)
-    assert classify_hold(img, m, CFG).name == UNKNOWN
-    assert classify_hold(img, np.zeros_like(m), CFG).name == UNKNOWN
+    assert classify_hold(img, np.zeros(img.shape[:2], dtype=bool), CFG).name == UNKNOWN
 
 
 def test_pixel_labels_cover_hue_circle() -> None:

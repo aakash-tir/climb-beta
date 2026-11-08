@@ -4,7 +4,9 @@ Pipeline for one hold (all thresholds from `configs/colours.yaml`):
 1. drop chalk pixels: HSV S < chalk_s_max and V > chalk_v_min;
 2. give each remaining pixel one label: black (V < black_v_max), white/grey (S below
    achromatic_s_max, split by V), or a chromatic family by hue range;
-3. take the majority label; resolve its family to a named colour.
+3. take the majority label; resolve its family to a named colour (red vs pink by
+   saturation/lightness);
+4. white rule: a mostly chalk-like mask is white only if its edge ring is too.
 
 OpenCV HSV: H in 0..179, S and V in 0..255. Lab: L* scaled to 0..255.
 """
@@ -19,6 +21,7 @@ import numpy as np
 import numpy.typing as npt
 
 from climb_beta.config import ACHROMATIC, ColourConfig
+from climb_beta.masks import edge_ring
 from climb_beta.types import ImageBGR, Mask
 
 UNKNOWN = "unknown"
@@ -160,7 +163,46 @@ def classify_pixels(px: HoldPixels, cfg: ColourConfig) -> ColourResult:
 
 
 def classify_hold(img: ImageBGR, mask: Mask, cfg: ColourConfig) -> ColourResult:
-    """Colour of the hold under `mask` in a (white-balanced) BGR image."""
+    """Colour of the hold under `mask` in a (white-balanced) BGR image.
+
+    White rule: a white hold looks exactly like chalk, so when most of the mask is
+    chalk-like, look at the inner edge ring (the hold's sides, which hands rarely
+    touch). A ring that is mostly achromatic and bright, *and* has almost no
+    chromatic pixels, means white (any real pigment in the ring means a chalked
+    coloured hold). Otherwise the vote is taken on the ring alone.
+    """
     if not mask.any():
         return ColourResult(UNKNOWN, 0.0, UNKNOWN, reason="empty mask")
-    return classify_pixels(hold_pixels(img, mask, cfg), cfg)
+    px = hold_pixels(img, mask, cfg)
+    t = cfg.thresholds
+    wr = t["white_ring"]
+    chalk_frac = float(px.chalk.mean())
+    if chalk_frac < wr["chalk_frac_min"]:
+        return classify_pixels(px, cfg)
+
+    ring = edge_ring(mask, int(wr["ring_px"]))
+    rpx = hold_pixels(img, ring, cfg)
+    s, v = rpx.hsv[:, 1], rpx.hsv[:, 2]
+    white_like = (s < t["achromatic_s_max"]) & (v >= t["achromatic"]["white_v_min"])
+    chromatic = (s >= t["achromatic_s_max"]) & (v >= t["achromatic"]["black_v_max"])
+    white_frac = float(white_like.mean()) if rpx.n else 0.0
+    colour_frac = float(chromatic.mean()) if rpx.n else 0.0
+    if (
+        white_frac >= wr["ring_white_frac_min"]
+        and colour_frac <= wr["ring_colour_frac_max"]
+        and cfg.has("white")
+    ):
+        return ColourResult(
+            "white",
+            white_frac,
+            ACHROMATIC,
+            {"white": int(white_like.sum())},
+            chalk_frac,
+            rpx.n,
+            "white: chalk-like body and bright achromatic edge ring",
+        )
+    # chalked coloured hold: the ring keeps the pigment, so vote there
+    ring_result = classify_pixels(rpx, cfg)
+    ring_result.chalk_frac = chalk_frac
+    ring_result.reason = f"chalked ({chalk_frac:.0%}): voted on edge ring; " + ring_result.reason
+    return ring_result

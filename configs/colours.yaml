@@ -49,4 +49,5 @@ thresholds:
     ring_px: 4               # width of the inner edge ring, in pixels
     chalk_frac_min: 0.55     # mask mostly chalk-like -> check the ring
     ring_white_frac_min: 0.6 # ring mostly achromatic+bright -> white
+    ring_colour_frac_max: 0.15 # ...and almost no chromatic ring pixels (a white hold has none)
   min_pixels: 30          # fewer voting pixels than this -> "unknown"
