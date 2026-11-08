@@ -54,10 +54,20 @@ class CropRecord:
     idx: int
 
 
-def iter_hold_crops(
-    dataset: Path, split: str, classes: tuple[str, ...], size: int = 96
-) -> Iterator[tuple[ImageBGR, CropRecord]]:
-    """Crops of every labelled hold in a YOLO-seg dataset split with colour sidecars."""
+@dataclass
+class LabelledHold:
+    image: ImageBGR  # white-balanced photo (shared between holds of one photo)
+    mask: Mask
+    record: CropRecord
+
+
+def iter_labelled_holds(
+    dataset: Path, split: str, classes: tuple[str, ...]
+) -> Iterator[LabelledHold]:
+    """Every labelled hold (with a colour) in a YOLO-seg dataset split with sidecars.
+
+    The photo is white-balanced on its wall pixels first, the same as at inference.
+    """
     img_dir, lab_dir, col_dir = (dataset / k / split for k in ("images", "labels", "colours"))
     if not img_dir.is_dir():
         return
@@ -80,8 +90,19 @@ def iter_hold_crops(
         for i, (d, rec) in enumerate(zip(dets, side, strict=True)):
             if d.cls != "hold" or not rec.get("colour"):
                 continue
-            crop = extract_crop(balanced, d.mask, size)
-            yield crop, CropRecord(split, "", rec["colour"], bool(rec.get("chalked")), ip.name, i)
+            yield LabelledHold(
+                balanced,
+                d.mask,
+                CropRecord(split, "", rec["colour"], bool(rec.get("chalked")), ip.name, i),
+            )
+
+
+def iter_hold_crops(
+    dataset: Path, split: str, classes: tuple[str, ...], size: int = 96
+) -> Iterator[tuple[ImageBGR, CropRecord]]:
+    """Crops of every labelled hold in a YOLO-seg dataset split with colour sidecars."""
+    for lh in iter_labelled_holds(dataset, split, classes):
+        yield extract_crop(lh.image, lh.mask, size), lh.record
 
 
 def write_crops(
