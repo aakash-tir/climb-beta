@@ -1,16 +1,16 @@
 # Graph Report - climb  (2026-11-08)
 
 ## Corpus Check
-- 33 files · ~16,238 words
+- 35 files · ~17,280 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 251 nodes · 326 edges · 26 communities (20 shown, 6 thin omitted)
-- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 33 edges (avg confidence: 0.8)
+- 280 nodes · 401 edges · 27 communities (21 shown, 6 thin omitted)
+- Extraction: 86% EXTRACTED · 14% INFERRED · 0% AMBIGUOUS · INFERRED: 56 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5f0a1dc2`
+- Built from commit: `c301cdc3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -40,20 +40,23 @@
 - masks.py
 - test_masks.py
 - __init__.py
+- grey_world
 
 ## God Nodes (most connected - your core abstractions)
-1. `parse_colour_config()` - 11 edges
-2. `climb-beta` - 11 edges
-3. `climb-beta — Plan` - 11 edges
-4. `wall()` - 10 edges
-5. `Design System` - 10 edges
-6. `ConfigError` - 9 edges
-7. `grey_world()` - 8 edges
-8. `draw_hold()` - 8 edges
-9. `grey_world_gains()` - 7 edges
-10. `Detection` - 7 edges
+1. `wall()` - 15 edges
+2. `ColourConfig` - 14 edges
+3. `classify_hold()` - 13 edges
+4. `draw_hold()` - 13 edges
+5. `parse_colour_config()` - 11 edges
+6. `climb-beta` - 11 edges
+7. `climb-beta — Plan` - 11 edges
+8. `chalk()` - 10 edges
+9. `Design System` - 10 edges
+10. `pixel_labels()` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `test_pixel_labels_cover_hue_circle()` --calls--> `pixel_labels()`  [INFERRED]
+  tests/test_colour_voting.py → src/climb_beta/colour/rules.py
 - `test_gains_are_clipped_and_black_image_is_identity()` --calls--> `grey_world_gains()`  [INFERRED]
   tests/test_white_balance.py → src/climb_beta/colour/white_balance.py
 - `test_repo_colour_config_has_the_ten_brief_colours()` --calls--> `load_colour_config()`  [INFERRED]
@@ -62,17 +65,15 @@
   tests/test_config.py → src/climb_beta/config.py
 - `test_detection_geometry()` --calls--> `Detection`  [INFERRED]
   tests/test_types.py → src/climb_beta/types.py
-- `test_empty_detection_is_safe()` --calls--> `Detection`  [INFERRED]
-  tests/test_types.py → src/climb_beta/types.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (26 total, 6 thin omitted)
+## Communities (27 total, 6 thin omitted)
 
 ### Community 0 - "parse_colour_config"
-Cohesion: 0.17
-Nodes (19): Path, Colour, ColourConfig, ConfigError, load_classes(), load_colour_config(), parse_colour_config(), Any (+11 more)
+Cohesion: 0.19
+Nodes (18): Path, Colour, ConfigError, load_classes(), load_colour_config(), parse_colour_config(), Any, Load and validate `configs/colours.yaml` and `configs/classes.yaml`. (+10 more)
 
 ### Community 1 - "generate_diagram.py"
 Cohesion: 0.18
@@ -91,8 +92,8 @@ Cohesion: 0.17
 Nodes (11): Architecture, climb-beta — Plan, External dependencies, Milestones, Open questions, Phase 1 exit criteria (gate for Phase 2), Scope, Tech stack (+3 more)
 
 ### Community 5 - "Detection"
-Cohesion: 0.20
-Nodes (7): Detection, Core data types shared by detector, colour, route, eval and app., One detector instance: a mask and a class (hold, volume or tape)., (x, y) centroid of the mask in pixels., (x0, y0, x1, y1), inclusive-exclusive., test_detection_geometry(), test_empty_detection_is_safe()
+Cohesion: 0.10
+Nodes (22): bool_, classify_pixels(), ColourResult, _first_in_family(), HoldPixels, pixel_labels(), NDArray, Rule-based hold colour from the pixels inside a mask.  Pipeline for one hold ( (+14 more)
 
 ### Community 6 - "climb-beta — project context"
 Cohesion: 0.29
@@ -131,12 +132,12 @@ Cohesion: 0.40
 Nodes (4): Colour step: why rules first, and how they handle chalk (2026-11-08), Decisions, Rejected, The hard part
 
 ### Community 21 - "chalk"
-Cohesion: 0.11
-Nodes (33): Image, ImageBGR, slice, apply_gains(), grey_world(), grey_world_gains(), Mask, Grey-world white balance.  The grey-world assumption says the average of a scene (+25 more)
+Cohesion: 0.14
+Nodes (28): Image, classify_hold(), hold_pixels(), ImageBGR, Mask, Colour of the hold under `mask` in a (white-balanced) BGR image., chalk(), draw_hold() (+20 more)
 
 ### Community 22 - "2026-11-08.md"
-Cohesion: 0.25
-Nodes (7): 2026-11-08, Add grey-world white balance with wall reference (#3), Add mask utilities (#2), Expanded the plan and scaffolded climb-beta, .gitattributes and this log's first entry (#31), Initial commit and repo creation, Synthetic hold images for tests (#1)
+Cohesion: 0.22
+Nodes (8): 2026-11-08, Add chalk-aware per-pixel colour family voting (#4), Add grey-world white balance with wall reference (#3), Add mask utilities (#2), Expanded the plan and scaffolded climb-beta, .gitattributes and this log's first entry (#31), Initial commit and repo creation, Synthetic hold images for tests (#1)
 
 ### Community 23 - "masks.py"
 Cohesion: 0.11
@@ -146,25 +147,29 @@ Nodes (30): ArrayLike, float32, FloatArray, _bbox(), denormalise(), dilate(), di
 Cohesion: 0.21
 Nodes (6): disk(), ndarray, test_dilate_grows_and_zero_is_copy(), test_edge_ring_is_inside_and_thin(), test_iou_matrix_matches_pairwise_and_skips_far_pairs(), test_polygon_roundtrip()
 
+### Community 26 - "grey_world"
+Cohesion: 0.20
+Nodes (16): slice, apply_gains(), grey_world(), grey_world_gains(), ImageBGR, Mask, Grey-world white balance.  The grey-world assumption says the average of a scene, Per-channel (B, G, R) gains that make the reference pixels' mean neutral.      P (+8 more)
+
 ## Knowledge Gaps
-- **79 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+74 more)
+- **80 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+75 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ConfigError` connect `parse_colour_config` to `chalk`?**
-  _High betweenness centrality (0.060) - this node is a cross-community bridge._
+- **Why does `classify_hold()` connect `chalk` to `Detection`?**
+  _High betweenness centrality (0.038) - this node is a cross-community bridge._
+- **Why does `ColourConfig` connect `Detection` to `parse_colour_config`, `chalk`?**
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+- **Are the 12 inferred relationships involving `wall()` (e.g. with `test_chalked_blue_stays_blue()` and `test_fully_chalked_or_empty_is_unknown_without_white_rule()`) actually correct?**
+  _`wall()` has 12 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 2 inferred relationships involving `ColourConfig` (e.g. with `ColourResult` and `HoldPixels`) actually correct?**
+  _`ColourConfig` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 5 inferred relationships involving `classify_hold()` (e.g. with `test_chalked_blue_stays_blue()` and `test_fully_chalked_or_empty_is_unknown_without_white_rule()`) actually correct?**
+  _`classify_hold()` has 5 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 9 inferred relationships involving `draw_hold()` (e.g. with `test_chalked_blue_stays_blue()` and `test_fully_chalked_or_empty_is_unknown_without_white_rule()`) actually correct?**
+  _`draw_hold()` has 9 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `parse_colour_config()` (e.g. with `test_bad_hue_range_rejected()` and `test_duplicate_colour_rejected()`) actually correct?**
   _`parse_colour_config()` has 3 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 7 inferred relationships involving `wall()` (e.g. with `test_centre_chalk_leaves_edges()` and `test_chalk_fraction()`) actually correct?**
-  _`wall()` has 7 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `climb-beta`, `Tech stack`, `Conventions` to the rest of the system?**
-  _79 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Design System` be split into smaller, more focused modules?**
-  _Cohesion score 0.125 - nodes in this community are weakly interconnected._
-- **Should `chalk` be split into smaller, more focused modules?**
-  _Cohesion score 0.10510510510510511 - nodes in this community are weakly interconnected._
-- **Should `masks.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.10967741935483871 - nodes in this community are weakly interconnected._

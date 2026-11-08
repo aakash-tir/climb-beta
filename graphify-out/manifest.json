@@ -155,8 +155,8 @@
     "semantic_hash": ""
   },
   "tests/synth.py": {
-    "mtime": 1794120675.5035944,
-    "ast_hash": "ccb4340995e1e2c3d6ad3aec2598d8cd",
+    "mtime": 1794121000.8073528,
+    "ast_hash": "56d631c88ad83630cc476745af21cd82",
     "semantic_hash": ""
   },
   "tests/test_synth.py": {
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794120917.721984,
-    "ast_hash": "a0d7a0c42380de6ab7410b8526671eb1",
+    "mtime": 1794121027.5779948,
+    "ast_hash": "0be16d05229abc443e4f3016dd8e45ff",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -180,18 +180,28 @@
     "semantic_hash": ""
   },
   "src/climb_beta/colour/__init__.py": {
-    "mtime": 1794120890.1099906,
+    "mtime": 1794120948.5598078,
     "ast_hash": "61f4cc08b9f43623dc9459a18b8b88e4",
     "semantic_hash": ""
   },
   "src/climb_beta/colour/white_balance.py": {
-    "mtime": 1794120897.5492344,
+    "mtime": 1794120948.5603132,
     "ast_hash": "0720c57ec783a98d7e0d4f2c006280a3",
     "semantic_hash": ""
   },
   "tests/test_white_balance.py": {
-    "mtime": 1794120906.7065916,
+    "mtime": 1794120948.5603132,
     "ast_hash": "f6cef12067fcb58c9cd9bb4e2876010e",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/colour/rules.py": {
+    "mtime": 1794121017.517819,
+    "ast_hash": "a5352a3f402035210c3c3bfde7ef9d2e",
+    "semantic_hash": ""
+  },
+  "tests/test_colour_voting.py": {
+    "mtime": 1794121010.944434,
+    "ast_hash": "6767da6c4059ed901966eaeb6bc48afa",
     "semantic_hash": ""
   }
 }
