@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794122878.2683916,
-    "ast_hash": "6bf7526cd41050f63723c8ec350ca24c",
+    "mtime": 1794122974.2270617,
+    "ast_hash": "fa3be3d9be019dbb015cca5a72bf09cc",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -415,13 +415,28 @@
     "semantic_hash": ""
   },
   "src/climb_beta/detect.py": {
-    "mtime": 1794122840.0187488,
+    "mtime": 1794122922.2074935,
     "ast_hash": "621e2254d716766b8a5360ffc8271ea3",
     "semantic_hash": ""
   },
   "tests/test_detect.py": {
-    "mtime": 1794122840.0187488,
+    "mtime": 1794122922.2080185,
     "ast_hash": "da4eea7560b527acc905e42c6f3fcee9",
+    "semantic_hash": ""
+  },
+  "colour/make_crops.py": {
+    "mtime": 1794122948.9434388,
+    "ast_hash": "eb332d8e3967834f5c514a99b9172852",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/colour/crops.py": {
+    "mtime": 1794122944.350541,
+    "ast_hash": "117dc2ab14243a0d9e6698b8701e3e66",
+    "semantic_hash": ""
+  },
+  "tests/test_crops.py": {
+    "mtime": 1794122973.9520023,
+    "ast_hash": "1b970732cef43ce4f43c387807851ea8",
     "semantic_hash": ""
   }
 }

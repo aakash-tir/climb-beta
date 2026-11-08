@@ -275,8 +275,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "colour_classify_rules_main",
-      "community": 30,
-      "community_name": "convert_export",
+      "community": 0,
+      "community_name": "parse_colour_config",
       "norm_label": "main()"
     },
     {
@@ -289,6 +289,39 @@
       "community": 0,
       "community_name": "parse_colour_config",
       "norm_label": "label each hold's colour in a photo with the rule-based colour step.  usage:"
+    },
+    {
+      "label": "make_crops.py",
+      "file_type": "code",
+      "source_file": "colour/make_crops.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "colour_make_crops",
+      "community": 0,
+      "community_name": "parse_colour_config",
+      "norm_label": "make_crops.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "colour/make_crops.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "colour_make_crops_main",
+      "community": 0,
+      "community_name": "parse_colour_config",
+      "norm_label": "main()"
+    },
+    {
+      "label": "Cut a white-balanced, background-masked crop of every labelled hold.  Usage:",
+      "file_type": "rationale",
+      "source_file": "colour/make_crops.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "colour_make_crops_rationale_1",
+      "community": 0,
+      "community_name": "parse_colour_config",
+      "norm_label": "cut a white-balanced, background-masked crop of every labelled hold.  usage:"
     },
     {
       "label": "convert_roboflow.py",
@@ -677,6 +710,138 @@
       "community": 28,
       "community_name": "_scene",
       "norm_label": "set `.colour`/`.colour_conf` on every hold detection (in place).      returns th"
+    },
+    {
+      "label": "crops.py",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "crops.py"
+    },
+    {
+      "label": "extract_crop()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops_extract_crop",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "extract_crop()"
+    },
+    {
+      "label": "ImageBGR",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops_py_imagebgr",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "imagebgr"
+    },
+    {
+      "label": "Mask",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops_py_mask",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "mask"
+    },
+    {
+      "label": "CropRecord",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops_croprecord",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "croprecord"
+    },
+    {
+      "label": "iter_hold_crops()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops_iter_hold_crops",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "iter_hold_crops()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops_py_path",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "path"
+    },
+    {
+      "label": "write_crops()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops_write_crops",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "write_crops()"
+    },
+    {
+      "label": "Square, background-masked crops of single holds for the colour classifier.  Ever",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops_rationale_1",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "square, background-masked crops of single holds for the colour classifier.  ever"
+    },
+    {
+      "label": "Square crop centred on the mask's bbox, padded by `pad`, resized to `size`.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops_rationale_28",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "square crop centred on the mask's bbox, padded by `pad`, resized to `size`."
+    },
+    {
+      "label": "Crops of every labelled hold in a YOLO-seg dataset split with colour sidecars.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops_rationale_60",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "crops of every labelled hold in a yolo-seg dataset split with colour sidecars."
+    },
+    {
+      "label": "ImageFolder tree out/<split>/<colour>/<image>__<idx>.png plus out/index.csv.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_crops_rationale_90",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "imagefolder tree out/<split>/<colour>/<image>__<idx>.png plus out/index.csv."
     },
     {
       "label": "rules.py",
@@ -1103,8 +1268,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig_by_family",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 0,
+      "community_name": "parse_colour_config",
       "norm_label": ".by_family()"
     },
     {
@@ -2566,8 +2731,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_imageio",
-      "community": 36,
-      "community_name": "test_train_detector.py",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "imageio.py"
     },
     {
@@ -2577,8 +2742,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_read_bgr",
-      "community": 36,
-      "community_name": "test_train_detector.py",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "read_bgr()"
     },
     {
@@ -2588,8 +2753,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_py_path",
-      "community": 36,
-      "community_name": "test_train_detector.py",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "path"
     },
     {
@@ -2599,8 +2764,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_py_imagebgr",
-      "community": 36,
-      "community_name": "test_train_detector.py",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "imagebgr"
     },
     {
@@ -2610,8 +2775,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_write_bgr",
-      "community": 36,
-      "community_name": "test_train_detector.py",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "write_bgr()"
     },
     {
@@ -2621,8 +2786,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_rationale_1",
-      "community": 36,
-      "community_name": "test_train_detector.py",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "image read/write with the package's types (bgr uint8)."
     },
     {
@@ -2632,8 +2797,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_rationale_14",
-      "community": 36,
-      "community_name": "test_train_detector.py",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "read an image as bgr uint8, or none if it can't be read. handles non-ascii paths"
     },
     {
@@ -2940,8 +3105,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "src_climb_beta_masks_normalise",
-      "community": 30,
-      "community_name": "convert_export",
+      "community": 23,
+      "community_name": "masks.py",
       "norm_label": "normalise()"
     },
     {
@@ -3061,8 +3226,8 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "src_climb_beta_masks_rationale_123",
-      "community": 30,
-      "community_name": "convert_export",
+      "community": 23,
+      "community_name": "masks.py",
       "norm_label": "pixel polygon -> yolo normalised [0, 1] coords."
     },
     {
@@ -3336,8 +3501,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_scripts",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "scripts.py"
     },
     {
@@ -3347,8 +3512,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_scripts_load_script",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "load_script()"
     },
     {
@@ -3358,8 +3523,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "moduletype",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "moduletype"
     },
     {
@@ -3369,8 +3534,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_scripts_rationale_1",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "load a top-level cli script (e.g. colour/classify_rules.py) as a module for test"
     },
     {
@@ -3512,8 +3677,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "test_classify_rules_cli.py"
     },
     {
@@ -3534,8 +3699,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_py_path",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "path"
     },
     {
@@ -3545,8 +3710,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_cli_labels_holds_and_skips_tape",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "test_cli_labels_holds_and_skips_tape()"
     },
     {
@@ -3556,8 +3721,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_cli_missing_image",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "test_cli_missing_image()"
     },
     {
@@ -4034,6 +4199,94 @@
       "norm_label": "test_bad_hue_range_rejected()"
     },
     {
+      "label": "test_crops.py",
+      "file_type": "code",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_crops",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "test_crops.py"
+    },
+    {
+      "label": "test_crop_is_square_masked_and_centred()",
+      "file_type": "code",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "tests_test_crops_test_crop_is_square_masked_and_centred",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_crop_is_square_masked_and_centred()"
+    },
+    {
+      "label": "test_crop_at_image_edge_and_empty()",
+      "file_type": "code",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "tests_test_crops_test_crop_at_image_edge_and_empty",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_crop_at_image_edge_and_empty()"
+    },
+    {
+      "label": "_dataset()",
+      "file_type": "code",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "tests_test_crops_dataset",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "_dataset()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_crops_py_path",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "path"
+    },
+    {
+      "label": "test_write_crops_imagefolder_and_index()",
+      "file_type": "code",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "tests_test_crops_test_write_crops_imagefolder_and_index",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "test_write_crops_imagefolder_and_index()"
+    },
+    {
+      "label": "test_sidecar_mismatch_is_an_error()",
+      "file_type": "code",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "tests_test_crops_test_sidecar_mismatch_is_an_error",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "test_sidecar_mismatch_is_an_error()"
+    },
+    {
+      "label": "test_cli()",
+      "file_type": "code",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "tests_test_crops_test_cli",
+      "community": 39,
+      "community_name": "_dataset",
+      "norm_label": "test_cli()"
+    },
+    {
       "label": "test_detect.py",
       "file_type": "code",
       "source_file": "tests/test_detect.py",
@@ -4271,8 +4524,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_labelling_compose",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "test_labelling_compose.py"
     },
     {
@@ -4282,8 +4535,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "tests_test_labelling_compose_test_compose_wires_label_studio_and_gpu_sam2",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "test_compose_wires_label_studio_and_gpu_sam2()"
     },
     {
@@ -4293,8 +4546,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "tests_test_labelling_compose_test_local_state_dirs_are_gitignored",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "test_local_state_dirs_are_gitignored()"
     },
     {
@@ -4304,8 +4557,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_labelling_compose_test_backend_image_targets_blackwell",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "test_backend_image_targets_blackwell()"
     },
     {
@@ -4315,8 +4568,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_labelling_compose_rationale_1",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 36,
+      "community_name": "test_train_detector.py",
       "norm_label": "static checks on the labelling stack (ci can't run docker or a gpu)."
     },
     {
@@ -5250,8 +5503,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "tests_test_types_test_imageio_roundtrip_and_missing",
-      "community": 36,
-      "community_name": "test_train_detector.py",
+      "community": 39,
+      "community_name": "_dataset",
       "norm_label": "test_imageio_roundtrip_and_missing()"
     },
     {
@@ -6729,6 +6982,17 @@
       "norm_label": "add detector inference wrapper returning detection masks (#19)"
     },
     {
+      "label": "Add hold crop extraction from YOLO-seg labels and colour sidecars (#20)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L222",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_add_hold_crop_extraction_from_yolo_seg_labels_and_colour_sidecars_20",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "add hold crop extraction from yolo-seg labels and colour sidecars (#20)"
+    },
+    {
       "label": "plan.md",
       "file_type": "document",
       "source_file": "plan.md",
@@ -7343,6 +7607,76 @@
       "_origin": "ast",
       "source": "colour_classify_rules_main",
       "target": "src_climb_beta_data_yolo_read_labels"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "colour/make_crops.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "colour_make_crops",
+      "target": "src_climb_beta_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "colour/make_crops.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "colour_make_crops",
+      "target": "colour_make_crops_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "colour/make_crops.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "colour_make_crops_rationale_1",
+      "target": "colour_make_crops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "colour/make_crops.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "colour_make_crops_main",
+      "target": "counter"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "colour/make_crops.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "colour_make_crops_main",
+      "target": "src_climb_beta_colour_crops_write_crops"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "colour/make_crops.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "colour_make_crops_main",
+      "target": "src_climb_beta_config_load_classes"
     },
     {
       "relation": "imports_from",
@@ -8113,6 +8447,334 @@
       "source": "src_climb_beta_colour_batch_rationale_31",
       "target": "src_climb_beta_colour_batch_colour_detections",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops",
+      "target": "src_climb_beta_imageio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops",
+      "target": "src_climb_beta_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops",
+      "target": "src_climb_beta_colour_crops_croprecord",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops",
+      "target": "src_climb_beta_colour_crops_extract_crop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops",
+      "target": "src_climb_beta_colour_crops_iter_hold_crops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops",
+      "target": "src_climb_beta_colour_crops_write_crops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_rationale_1",
+      "target": "src_climb_beta_colour_crops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_extract_crop",
+      "target": "src_climb_beta_colour_crops_py_imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_extract_crop",
+      "target": "src_climb_beta_colour_crops_py_mask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_iter_hold_crops",
+      "target": "src_climb_beta_colour_crops_extract_crop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_rationale_28",
+      "target": "src_climb_beta_colour_crops_extract_crop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_crop_at_image_edge_and_empty",
+      "target": "src_climb_beta_colour_crops_extract_crop"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_crop_is_square_masked_and_centred",
+      "target": "src_climb_beta_colour_crops_extract_crop"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_iter_hold_crops",
+      "target": "src_climb_beta_colour_crops_py_imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_iter_hold_crops",
+      "target": "src_climb_beta_colour_crops_croprecord",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_write_crops",
+      "target": "src_climb_beta_colour_crops_croprecord",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_iter_hold_crops",
+      "target": "src_climb_beta_colour_crops_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_iter_hold_crops",
+      "target": "src_climb_beta_colour_white_balance_grey_world"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_iter_hold_crops",
+      "target": "src_climb_beta_data_yolo_instances_to_detections"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_iter_hold_crops",
+      "target": "src_climb_beta_data_yolo_read_labels"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_iter_hold_crops",
+      "target": "src_climb_beta_imageio_read_bgr"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_rationale_60",
+      "target": "src_climb_beta_colour_crops_iter_hold_crops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_write_crops",
+      "target": "src_climb_beta_colour_crops_iter_hold_crops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_write_crops",
+      "target": "src_climb_beta_colour_crops_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_rationale_90",
+      "target": "src_climb_beta_colour_crops_write_crops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/climb_beta/colour/crops.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_crops_write_crops",
+      "target": "src_climb_beta_imageio_write_bgr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_sidecar_mismatch_is_an_error",
+      "target": "src_climb_beta_colour_crops_write_crops"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_write_crops_imagefolder_and_index",
+      "target": "src_climb_beta_colour_crops_write_crops"
     },
     {
       "relation": "imports_from",
@@ -12369,6 +13031,18 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_dataset",
+      "target": "src_climb_beta_data_yolo_yoloinstance"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "tests/test_train_detector.py",
       "source_location": "L69",
       "weight": 1.0,
@@ -12542,6 +13216,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_classify_rules_cli_test_label_line_roundtrip_and_validation",
+      "target": "src_climb_beta_data_yolo_write_labels"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_dataset",
       "target": "src_climb_beta_data_yolo_write_labels"
     },
     {
@@ -13033,6 +13719,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops",
+      "target": "src_climb_beta_imageio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_train_detector.py",
       "source_location": "L13",
       "weight": 1.0,
@@ -13081,6 +13779,18 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_write_crops_imagefolder_and_index",
+      "target": "src_climb_beta_imageio_read_bgr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "tests/test_types.py",
       "source_location": "L31",
       "weight": 1.0,
@@ -13111,6 +13821,18 @@
       "source": "src_climb_beta_imageio_write_bgr",
       "target": "src_climb_beta_imageio_py_imagebgr",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_dataset",
+      "target": "src_climb_beta_imageio_write_bgr"
     },
     {
       "relation": "calls",
@@ -13414,6 +14136,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_classify_rules_cli",
+      "target": "src_climb_beta_masks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops",
       "target": "src_climb_beta_masks",
       "confidence_score": 1.0
     },
@@ -13858,6 +14592,18 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_dataset",
+      "target": "src_climb_beta_masks_mask_to_polygon"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "tests/test_train_detector.py",
       "source_location": "L69",
       "weight": 1.0,
@@ -13886,6 +14632,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_classify_rules_cli_scene",
+      "target": "src_climb_beta_masks_normalise"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_dataset",
       "target": "src_climb_beta_masks_normalise"
     },
     {
@@ -14506,6 +15264,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops",
+      "target": "tests_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_labelling_compose.py",
       "source_location": "L4",
       "weight": 1.0,
@@ -14620,6 +15390,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_coco_to_yolo_test_cli",
+      "target": "tests_scripts_load_script"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_cli",
       "target": "tests_scripts_load_script"
     },
     {
@@ -14825,6 +15607,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops",
+      "target": "tests_synth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_synth.py",
       "source_location": "L3",
       "weight": 1.0,
@@ -14986,6 +15780,42 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_colour_white_hold",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_dataset",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_crop_at_image_edge_and_empty",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_crop_is_square_masked_and_centred",
       "target": "tests_synth_wall"
     },
     {
@@ -15237,6 +16067,42 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_colour_white_hold",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_dataset",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_crop_at_image_edge_and_empty",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_crops.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_crop_is_square_masked_and_centred",
       "target": "tests_synth_draw_hold"
     },
     {
@@ -16253,6 +17119,156 @@
       "_origin": "ast",
       "source": "tests_test_config_test_unknown_family_rejected",
       "target": "tests_test_config_minimal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops",
+      "target": "tests_test_crops_dataset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops",
+      "target": "tests_test_crops_test_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops",
+      "target": "tests_test_crops_test_crop_at_image_edge_and_empty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops",
+      "target": "tests_test_crops_test_crop_is_square_masked_and_centred",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops",
+      "target": "tests_test_crops_test_sidecar_mismatch_is_an_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops",
+      "target": "tests_test_crops_test_write_crops_imagefolder_and_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_dataset",
+      "target": "tests_test_crops_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_cli",
+      "target": "tests_test_crops_dataset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_sidecar_mismatch_is_an_error",
+      "target": "tests_test_crops_dataset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_write_crops_imagefolder_and_index",
+      "target": "tests_test_crops_dataset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_cli",
+      "target": "tests_test_crops_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_sidecar_mismatch_is_an_error",
+      "target": "tests_test_crops_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_crops.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_crops_test_write_crops_imagefolder_and_index",
+      "target": "tests_test_crops_py_path",
       "confidence_score": 1.0
     },
     {
@@ -19077,6 +20093,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/2026-11-08.md",
+      "source_location": "L222",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_add_hold_crop_extraction_from_yolo_seg_labels_and_colour_sidecars_20",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
       "source_location": "L178",
       "weight": 1.0,
       "_origin": "ast",
@@ -19350,5 +20377,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6dd1770b32fc5f24451dcc3994ef1c9a34f3a595"
+  "built_at_commit": "2fde2d27e7e55c076c9e7cfa4fd42cf23ec13f29"
 }
