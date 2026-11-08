@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794121345.6553404,
-    "ast_hash": "7987f89ecf04317fe2a2eceea26b1aee",
+    "mtime": 1794121452.5279694,
+    "ast_hash": "f0758881eee05ef0a643c87a9eaa4d2a",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -215,33 +215,48 @@
     "semantic_hash": ""
   },
   "colour/classify_rules.py": {
-    "mtime": 1794121333.9532602,
+    "mtime": 1794121388.3687963,
     "ast_hash": "aa21ec6cb96ab7844e29b746d1c7eacb",
     "semantic_hash": ""
   },
   "src/climb_beta/colour/batch.py": {
-    "mtime": 1794121312.4793737,
+    "mtime": 1794121388.376429,
     "ast_hash": "dee6290790974a2616dbb506517897c3",
     "semantic_hash": ""
   },
   "src/climb_beta/data/__init__.py": {
-    "mtime": 1794121300.3226473,
+    "mtime": 1794121388.377434,
     "ast_hash": "9fd844a524210e702a6b787a01613bc7",
     "semantic_hash": ""
   },
   "src/climb_beta/data/yolo.py": {
-    "mtime": 1794121308.1206148,
+    "mtime": 1794121388.377434,
     "ast_hash": "4e5febabfb10502c46cb7773dd15b48d",
     "semantic_hash": ""
   },
   "tests/scripts.py": {
-    "mtime": 1794121323.8687823,
+    "mtime": 1794121388.377434,
     "ast_hash": "1b2f801a2f1be87d8697482355f85561",
     "semantic_hash": ""
   },
   "tests/test_classify_rules_cli.py": {
-    "mtime": 1794121332.5718756,
+    "mtime": 1794121388.37898,
     "ast_hash": "0a0be5aab96ed94ff66f140f1b893f79",
+    "semantic_hash": ""
+  },
+  "data/convert_roboflow.py": {
+    "mtime": 1794121440.3509347,
+    "ast_hash": "87d8ea7da6421ef348a9c6adae2c5525",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/data/coco_to_yolo.py": {
+    "mtime": 1794121440.3509347,
+    "ast_hash": "fe3634ba62b1d0f7cd7075289391ba83",
+    "semantic_hash": ""
+  },
+  "tests/test_coco_to_yolo.py": {
+    "mtime": 1794121440.3509347,
+    "ast_hash": "9662282b9341daac7e4c3add80501d56",
     "semantic_hash": ""
   }
 }
