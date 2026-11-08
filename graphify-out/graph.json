@@ -316,26 +316,59 @@
       "norm_label": "colour step: white balance, rule-based hold colour, crop classifier."
     },
     {
-      "label": "white_balance.py",
+      "label": "rules.py",
       "file_type": "code",
-      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_file": "src/climb_beta/colour/rules.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_climb_beta_colour_white_balance",
-      "community": 21,
-      "community_name": "chalk",
-      "norm_label": "white_balance.py"
+      "id": "src_climb_beta_colour_rules",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "rules.py"
     },
     {
-      "label": "grey_world_gains()",
+      "label": "ColourResult",
       "file_type": "code",
-      "source_file": "src/climb_beta/colour/white_balance.py",
-      "source_location": "L18",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L29",
       "_origin": "ast",
-      "id": "src_climb_beta_colour_white_balance_grey_world_gains",
+      "id": "src_climb_beta_colour_rules_colourresult",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "colourresult"
+    },
+    {
+      "label": "HoldPixels",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_holdpixels",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "holdpixels"
+    },
+    {
+      "label": ".n()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_holdpixels_n",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": ".n()"
+    },
+    {
+      "label": "hold_pixels()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_hold_pixels",
       "community": 21,
       "community_name": "chalk",
-      "norm_label": "grey_world_gains()"
+      "norm_label": "hold_pixels()"
     },
     {
       "label": "ImageBGR",
@@ -343,7 +376,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "imagebgr",
+      "id": "src_climb_beta_colour_rules_py_imagebgr",
       "community": 21,
       "community_name": "chalk",
       "norm_label": "imagebgr"
@@ -354,9 +387,207 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "src_climb_beta_colour_white_balance_py_mask",
+      "id": "src_climb_beta_colour_rules_py_mask",
       "community": 21,
       "community_name": "chalk",
+      "norm_label": "mask"
+    },
+    {
+      "label": "pixel_labels()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_pixel_labels",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "pixel_labels()"
+    },
+    {
+      "label": "U8",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "u8",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "u8"
+    },
+    {
+      "label": "NDArray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_py_ndarray",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "ndarray"
+    },
+    {
+      "label": "str_",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "str",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "str_"
+    },
+    {
+      "label": "_first_in_family()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_first_in_family",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "_first_in_family()"
+    },
+    {
+      "label": "bool_",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "bool",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "bool_"
+    },
+    {
+      "label": "_vote()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_vote",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "_vote()"
+    },
+    {
+      "label": "classify_pixels()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_classify_pixels",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "classify_pixels()"
+    },
+    {
+      "label": "classify_hold()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_classify_hold",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "classify_hold()"
+    },
+    {
+      "label": "Rule-based hold colour from the pixels inside a mask.  Pipeline for one hold (",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_rationale_1",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "rule-based hold colour from the pixels inside a mask.  pipeline for one hold ("
+    },
+    {
+      "label": "HSV and Lab values of the pixels inside one mask, plus the chalk flag.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_rationale_41",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "hsv and lab values of the pixels inside one mask, plus the chalk flag."
+    },
+    {
+      "label": "One label per pixel: a chromatic family name, or black / grey / white.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_rationale_62",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "one label per pixel: a chromatic family name, or black / grey / white."
+    },
+    {
+      "label": "Colour of one hold from its pixels.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_rationale_108",
+      "community": 5,
+      "community_name": "Detection",
+      "norm_label": "colour of one hold from its pixels."
+    },
+    {
+      "label": "Colour of the hold under `mask` in a (white-balanced) BGR image.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_rules_rationale_139",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "colour of the hold under `mask` in a (white-balanced) bgr image."
+    },
+    {
+      "label": "white_balance.py",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance",
+      "community": 26,
+      "community_name": "grey_world",
+      "norm_label": "white_balance.py"
+    },
+    {
+      "label": "grey_world_gains()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/colour/white_balance.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance_grey_world_gains",
+      "community": 26,
+      "community_name": "grey_world",
+      "norm_label": "grey_world_gains()"
+    },
+    {
+      "label": "ImageBGR",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance_py_imagebgr",
+      "community": 26,
+      "community_name": "grey_world",
+      "norm_label": "imagebgr"
+    },
+    {
+      "label": "Mask",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_colour_white_balance_py_mask",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "mask"
     },
     {
@@ -366,8 +597,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_apply_gains",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "apply_gains()"
     },
     {
@@ -377,8 +608,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_grey_world",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "grey_world()"
     },
     {
@@ -388,8 +619,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_1",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "grey-world white balance.  the grey-world assumption says the average of a scene"
     },
     {
@@ -399,8 +630,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_24",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "per-channel (b, g, r) gains that make the reference pixels' mean neutral.      p"
     },
     {
@@ -410,8 +641,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_58",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "white-balance `img` so the reference (default: whole image) averages to grey."
     },
     {
@@ -465,8 +696,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "colourconfig"
     },
     {
@@ -476,8 +707,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig_names",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": ".names()"
     },
     {
@@ -498,8 +729,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig_has",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": ".has()"
     },
     {
@@ -1141,7 +1372,7 @@
       "norm_label": "a near-neutral textured wall."
     },
     {
-      "label": "Draw an elliptical hold in place and return its mask.      `shade` darkens tow",
+      "label": "Draw an elliptical hold in place and return its mask.      `shade` darkens towar",
       "file_type": "rationale",
       "source_file": "tests/synth.py",
       "source_location": "L53",
@@ -1149,7 +1380,7 @@
       "id": "tests_synth_rationale_53",
       "community": 21,
       "community_name": "chalk",
-      "norm_label": "draw an elliptical hold in place and return its mask.      `shade` darkens tow"
+      "norm_label": "draw an elliptical hold in place and return its mask.      `shade` darkens towar"
     },
     {
       "label": "Cover `frac` of the mask with chalk, in place. Returns the chalked-pixel mask.",
@@ -1172,6 +1403,83 @@
       "community": 21,
       "community_name": "chalk",
       "norm_label": "return a copy lit by a coloured light: per-channel (b, g, r) gains."
+    },
+    {
+      "label": "test_colour_voting.py",
+      "file_type": "code",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_colour_voting",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_colour_voting.py"
+    },
+    {
+      "label": "test_plain_holds()",
+      "file_type": "code",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "tests_test_colour_voting_test_plain_holds",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_plain_holds()"
+    },
+    {
+      "label": "test_chalked_blue_stays_blue()",
+      "file_type": "code",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "tests_test_colour_voting_test_chalked_blue_stays_blue",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_chalked_blue_stays_blue()"
+    },
+    {
+      "label": "test_scattered_chalk_on_green()",
+      "file_type": "code",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "tests_test_colour_voting_test_scattered_chalk_on_green",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_scattered_chalk_on_green()"
+    },
+    {
+      "label": "test_fully_chalked_or_empty_is_unknown_without_white_rule()",
+      "file_type": "code",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "tests_test_colour_voting_test_fully_chalked_or_empty_is_unknown_without_white_rule",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_fully_chalked_or_empty_is_unknown_without_white_rule()"
+    },
+    {
+      "label": "test_pixel_labels_cover_hue_circle()",
+      "file_type": "code",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "tests_test_colour_voting_test_pixel_labels_cover_hue_circle",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_pixel_labels_cover_hue_circle()"
+    },
+    {
+      "label": "test_votes_and_reason_reported()",
+      "file_type": "code",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "tests_test_colour_voting_test_votes_and_reason_reported",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_votes_and_reason_reported()"
     },
     {
       "label": "test_config.py",
@@ -1510,8 +1818,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_white_balance",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "test_white_balance.py"
     },
     {
@@ -1521,8 +1829,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "tests_test_white_balance_neutral_err",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "_neutral_err()"
     },
     {
@@ -1532,8 +1840,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_white_balance_py_ndarray",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "ndarray"
     },
     {
@@ -1543,8 +1851,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "slice",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "slice"
     },
     {
@@ -1554,8 +1862,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_restores_warm_tint_on_neutral_wall",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "test_restores_warm_tint_on_neutral_wall()"
     },
     {
@@ -1565,8 +1873,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "test_wall_reference_beats_whole_image_when_holds_dominate()"
     },
     {
@@ -1576,8 +1884,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_tiny_reference_falls_back_to_whole_image",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "test_tiny_reference_falls_back_to_whole_image()"
     },
     {
@@ -1587,8 +1895,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_gains_are_clipped_and_black_image_is_identity",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "test_gains_are_clipped_and_black_image_is_identity()"
     },
     {
@@ -1598,8 +1906,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_apply_gains_saturates",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 26,
+      "community_name": "grey_world",
       "norm_label": "test_apply_gains_saturates()"
     },
     {
@@ -2648,6 +2956,17 @@
       "norm_label": "add grey-world white balance with wall reference (#3)"
     },
     {
+      "label": "Add chalk-aware per-pixel colour family voting (#4)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_add_chalk_aware_per_pixel_colour_family_voting_4",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "add chalk-aware per-pixel colour family voting (#4)"
+    },
+    {
       "label": "plan.md",
       "file_type": "document",
       "source_file": "plan.md",
@@ -3195,6 +3514,627 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules",
+      "target": "src_climb_beta_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules",
+      "target": "src_climb_beta_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules",
+      "target": "src_climb_beta_colour_rules_classify_hold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules",
+      "target": "src_climb_beta_colour_rules_classify_pixels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules",
+      "target": "src_climb_beta_colour_rules_colourresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules",
+      "target": "src_climb_beta_colour_rules_first_in_family",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules",
+      "target": "src_climb_beta_colour_rules_hold_pixels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "collection",
+      "source": "src_climb_beta_colour_rules",
+      "target": "src_climb_beta_colour_rules_holdpixels",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules",
+      "target": "src_climb_beta_colour_rules_pixel_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules",
+      "target": "src_climb_beta_colour_rules_vote",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_rationale_1",
+      "target": "src_climb_beta_colour_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_hold",
+      "target": "src_climb_beta_colour_rules_colourresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_pixels",
+      "target": "src_climb_beta_colour_rules_colourresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_colourresult",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_pixels",
+      "target": "src_climb_beta_colour_rules_holdpixels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_first_in_family",
+      "target": "src_climb_beta_colour_rules_holdpixels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_hold_pixels",
+      "target": "src_climb_beta_colour_rules_holdpixels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_holdpixels",
+      "target": "src_climb_beta_colour_rules_holdpixels_n",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_holdpixels",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_rationale_41",
+      "target": "src_climb_beta_colour_rules_holdpixels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_vote",
+      "target": "src_climb_beta_colour_rules_holdpixels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_hold",
+      "target": "src_climb_beta_colour_rules_hold_pixels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_hold_pixels",
+      "target": "src_climb_beta_colour_rules_py_imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_hold_pixels",
+      "target": "src_climb_beta_colour_rules_py_mask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_hold_pixels",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_hold",
+      "target": "src_climb_beta_colour_rules_py_imagebgr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_hold",
+      "target": "src_climb_beta_colour_rules_py_mask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_pixels",
+      "target": "src_climb_beta_colour_rules_pixel_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_pixel_labels",
+      "target": "src_climb_beta_colour_rules_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_pixel_labels",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_pixel_labels",
+      "target": "str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_pixel_labels",
+      "target": "u8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_rationale_62",
+      "target": "src_climb_beta_colour_rules_pixel_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_vote",
+      "target": "src_climb_beta_colour_rules_pixel_labels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_pixel_labels_cover_hue_circle",
+      "target": "src_climb_beta_colour_rules_pixel_labels"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_first_in_family",
+      "target": "src_climb_beta_colour_rules_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_vote",
+      "target": "src_climb_beta_colour_rules_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_pixels",
+      "target": "src_climb_beta_colour_rules_first_in_family",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_first_in_family",
+      "target": "bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_first_in_family",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_vote",
+      "target": "bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_pixels",
+      "target": "src_climb_beta_colour_rules_vote",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_vote",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_hold",
+      "target": "src_climb_beta_colour_rules_classify_pixels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_pixels",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_rationale_108",
+      "target": "src_climb_beta_colour_rules_classify_pixels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_classify_hold",
+      "target": "src_climb_beta_config_colourconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/colour/rules.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_colour_rules_rationale_139",
+      "target": "src_climb_beta_colour_rules_classify_hold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_chalked_blue_stays_blue",
+      "target": "src_climb_beta_colour_rules_classify_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_fully_chalked_or_empty_is_unknown_without_white_rule",
+      "target": "src_climb_beta_colour_rules_classify_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_plain_holds",
+      "target": "src_climb_beta_colour_rules_classify_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_scattered_chalk_on_green",
+      "target": "src_climb_beta_colour_rules_classify_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_votes_and_reason_reported",
+      "target": "src_climb_beta_colour_rules_classify_hold"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/climb_beta/colour/white_balance.py",
       "source_location": "L13",
       "weight": 1.0,
@@ -3268,7 +4208,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_colour_white_balance_grey_world_gains",
-      "target": "imagebgr",
+      "target": "src_climb_beta_colour_white_balance_py_imagebgr",
       "confidence_score": 1.0
     },
     {
@@ -3327,7 +4267,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_colour_white_balance_apply_gains",
-      "target": "imagebgr",
+      "target": "src_climb_beta_colour_white_balance_py_imagebgr",
       "confidence_score": 1.0
     },
     {
@@ -3339,7 +4279,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_colour_white_balance_grey_world",
-      "target": "imagebgr",
+      "target": "src_climb_beta_colour_white_balance_py_imagebgr",
       "confidence_score": 1.0
     },
     {
@@ -3498,6 +4438,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_rationale_1",
+      "target": "src_climb_beta_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting",
       "target": "src_climb_beta_config",
       "confidence_score": 1.0
     },
@@ -4638,6 +5590,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting",
+      "target": "tests_synth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_synth.py",
       "source_location": "L3",
       "weight": 1.0,
@@ -4680,6 +5644,66 @@
       "source": "tests_synth_wall",
       "target": "image",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_chalked_blue_stays_blue",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_fully_chalked_or_empty_is_unknown_without_white_rule",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_plain_holds",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_scattered_chalk_on_green",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_votes_and_reason_reported",
+      "target": "tests_synth_wall"
     },
     {
       "relation": "calls",
@@ -4829,6 +5853,66 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_chalked_blue_stays_blue",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_fully_chalked_or_empty_is_unknown_without_white_rule",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_plain_holds",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_scattered_chalk_on_green",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_votes_and_reason_reported",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "tests/test_synth.py",
       "source_location": "L35",
       "weight": 1.0,
@@ -4894,6 +5978,42 @@
       "source": "tests_synth_rationale_74",
       "target": "tests_synth_chalk",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_chalked_blue_stays_blue",
+      "target": "tests_synth_chalk"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_fully_chalked_or_empty_is_unknown_without_white_rule",
+      "target": "tests_synth_chalk"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting_test_scattered_chalk_on_green",
+      "target": "tests_synth_chalk"
     },
     {
       "relation": "calls",
@@ -4977,6 +6097,72 @@
       "_origin": "ast",
       "source": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
       "target": "tests_synth_tint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting",
+      "target": "tests_test_colour_voting_test_chalked_blue_stays_blue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting",
+      "target": "tests_test_colour_voting_test_fully_chalked_or_empty_is_unknown_without_white_rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting",
+      "target": "tests_test_colour_voting_test_pixel_labels_cover_hue_circle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting",
+      "target": "tests_test_colour_voting_test_plain_holds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting",
+      "target": "tests_test_colour_voting_test_scattered_chalk_on_green",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_colour_voting.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_colour_voting",
+      "target": "tests_test_colour_voting_test_votes_and_reason_reported",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6306,6 +7492,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/2026-11-08.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_add_chalk_aware_per_pixel_colour_family_voting_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
       "source_location": "L90",
       "weight": 1.0,
       "_origin": "ast",
@@ -6491,5 +7688,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5f0a1dc2c8ae1ad7fe36feaaa410cbf7c8e6da30"
+  "built_at_commit": "c301cdc3f4571dd31dd65e5c094566266daf2eb9"
 }
