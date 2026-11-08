@@ -729,8 +729,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "route_find_route",
-      "community": 44,
-      "community_name": "run",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "find_route.py"
     },
     {
@@ -740,8 +740,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "route_find_route_main",
-      "community": 44,
-      "community_name": "run",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "main()"
     },
     {
@@ -751,8 +751,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "route_find_route_rationale_1",
-      "community": 44,
-      "community_name": "run",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "find the route of a chosen colour in a wall photo (detector + colour + route)."
     },
     {
@@ -1268,8 +1268,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "rules.py"
     },
     {
@@ -1279,8 +1279,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_colourresult",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "colourresult"
     },
     {
@@ -1290,8 +1290,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_holdpixels",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "holdpixels"
     },
     {
@@ -1301,8 +1301,8 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_holdpixels_n",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": ".n()"
     },
     {
@@ -1312,8 +1312,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_hold_pixels",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "hold_pixels()"
     },
     {
@@ -1323,8 +1323,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_py_imagebgr",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "imagebgr"
     },
     {
@@ -1334,8 +1334,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_py_mask",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "mask"
     },
     {
@@ -1345,8 +1345,8 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_pixel_labels",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "pixel_labels()"
     },
     {
@@ -1356,8 +1356,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "u8",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "u8"
     },
     {
@@ -1367,8 +1367,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_py_ndarray",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "ndarray"
     },
     {
@@ -1378,8 +1378,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "str",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "str_"
     },
     {
@@ -1389,8 +1389,8 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_first_in_family",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "_first_in_family()"
     },
     {
@@ -1400,8 +1400,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "bool",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "bool_"
     },
     {
@@ -1411,8 +1411,8 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_split_pink_red",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "split_pink_red()"
     },
     {
@@ -1422,8 +1422,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_vote",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "_vote()"
     },
     {
@@ -1433,8 +1433,8 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_classify_pixels",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "classify_pixels()"
     },
     {
@@ -1444,8 +1444,8 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_classify_hold",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "classify_hold()"
     },
     {
@@ -1455,8 +1455,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_rationale_1",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "rule-based hold colour from the pixels inside a mask.  pipeline for one hold (al"
     },
     {
@@ -1466,8 +1466,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_rationale_44",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "hsv and lab values of the pixels inside one mask, plus the chalk flag."
     },
     {
@@ -1477,8 +1477,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_rationale_65",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "one label per pixel: a chromatic family name, or black / grey / white."
     },
     {
@@ -1488,8 +1488,8 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_rationale_101",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "red vs pink from pigment saturation and lightness, not hue.      chalk and glare"
     },
     {
@@ -1499,8 +1499,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_rationale_135",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "colour of one hold from its pixels."
     },
     {
@@ -1510,8 +1510,8 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_rationale_166",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "colour of the hold under `mask` in a (white-balanced) bgr image.      white rule"
     },
     {
@@ -1521,8 +1521,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "white_balance.py"
     },
     {
@@ -1532,8 +1532,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_grey_world_gains",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "grey_world_gains()"
     },
     {
@@ -1543,8 +1543,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_py_imagebgr",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "imagebgr"
     },
     {
@@ -1554,8 +1554,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_py_mask",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "mask"
     },
     {
@@ -1565,8 +1565,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_apply_gains",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "apply_gains()"
     },
     {
@@ -1576,8 +1576,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_grey_world",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "grey_world()"
     },
     {
@@ -1587,8 +1587,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_1",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "grey-world white balance.  the grey-world assumption says the average of a scene"
     },
     {
@@ -1598,8 +1598,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_24",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "per-channel (b, g, r) gains that make the reference pixels' mean neutral.      p"
     },
     {
@@ -1609,8 +1609,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_58",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "white-balance `img` so the reference (default: whole image) averages to grey."
     },
     {
@@ -1664,8 +1664,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "colourconfig"
     },
     {
@@ -1675,8 +1675,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig_names",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": ".names()"
     },
     {
@@ -1686,8 +1686,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig_by_family",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 0,
+      "community_name": "parse_colour_config",
       "norm_label": ".by_family()"
     },
     {
@@ -1697,8 +1697,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "src_climb_beta_config_colourconfig_has",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": ".has()"
     },
     {
@@ -2962,8 +2962,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_detect",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 44,
+      "community_name": "run",
       "norm_label": "detect.py"
     },
     {
@@ -2995,8 +2995,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_climb_beta_detect_detectorlike_predict",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": ".predict()"
     },
     {
@@ -3006,8 +3006,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_detect_py_imagebgr",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": "imagebgr"
     },
     {
@@ -3017,8 +3017,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "src_climb_beta_detect_results_to_detections",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 48,
+      "community_name": "results_to_detections",
       "norm_label": "results_to_detections()"
     },
     {
@@ -3028,8 +3028,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_detect_py_arraylike",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 48,
+      "community_name": "results_to_detections",
       "norm_label": "arraylike"
     },
     {
@@ -3094,8 +3094,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "src_climb_beta_detect_detector_predict",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 47,
+      "community_name": "Detection",
       "norm_label": ".predict()"
     },
     {
@@ -3105,8 +3105,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_detect_rationale_1",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 44,
+      "community_name": "run",
       "norm_label": "run the yolo11-seg detector and return full-resolution `detection` masks.  ultra"
     },
     {
@@ -3116,8 +3116,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "src_climb_beta_detect_rationale_35",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 48,
+      "community_name": "results_to_detections",
       "norm_label": "build detections from per-instance pixel polygons (original image coords)."
     },
     {
@@ -3880,7 +3880,7 @@
       "norm_label": "colourmethod"
     },
     {
-      "label": "Photo -> detections -> hold colours -> routes, in one call.  detector (colour-",
+      "label": "Photo -> detections -> hold colours -> routes, in one call.  detector (colour-bl",
       "file_type": "rationale",
       "source_file": "src/climb_beta/pipeline.py",
       "source_location": "L1",
@@ -3888,10 +3888,10 @@
       "id": "src_climb_beta_pipeline_rationale_1",
       "community": 44,
       "community_name": "run",
-      "norm_label": "photo -> detections -> hold colours -> routes, in one call.  detector (colour-"
+      "norm_label": "photo -> detections -> hold colours -> routes, in one call.  detector (colour-bl"
     },
     {
-      "label": "Run the whole Phase 1 pipeline on one photo.      `colours`: which colours to",
+      "label": "Run the whole Phase 1 pipeline on one photo.      `colours`: which colours to gr",
       "file_type": "rationale",
       "source_file": "src/climb_beta/pipeline.py",
       "source_location": "L79",
@@ -3899,7 +3899,7 @@
       "id": "src_climb_beta_pipeline_rationale_79",
       "community": 44,
       "community_name": "run",
-      "norm_label": "run the whole phase 1 pipeline on one photo.      `colours`: which colours to"
+      "norm_label": "run the whole phase 1 pipeline on one photo.      `colours`: which colours to gr"
     },
     {
       "label": "__init__.py",
@@ -4304,8 +4304,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_types",
-      "community": 47,
-      "community_name": "Detection",
+      "community": 44,
+      "community_name": "run",
       "norm_label": "types.py"
     },
     {
@@ -4359,8 +4359,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_types_rationale_1",
-      "community": 47,
-      "community_name": "Detection",
+      "community": 44,
+      "community_name": "run",
       "norm_label": "core data types shared by detector, colour, route, eval and app."
     },
     {
@@ -5129,8 +5129,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "tests_test_colour_voting_test_pixel_labels_cover_hue_circle",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "test_pixel_labels_cover_hue_circle()"
     },
     {
@@ -5151,8 +5151,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_colour_white",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "test_colour_white.py"
     },
     {
@@ -5162,8 +5162,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_test_colour_white_hold",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "_hold()"
     },
     {
@@ -5173,8 +5173,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_white_hold_is_white",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "test_white_hold_is_white()"
     },
     {
@@ -5184,8 +5184,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_chalked_white_hold_is_white",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "test_chalked_white_hold_is_white()"
     },
     {
@@ -5195,8 +5195,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_heavily_chalked_colour_hold_votes_on_ring",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "test_heavily_chalked_colour_hold_votes_on_ring()"
     },
     {
@@ -5206,8 +5206,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_grey_hold_stays_grey",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "test_grey_hold_stays_grey()"
     },
     {
@@ -5217,8 +5217,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_light_grey_chalk_like_body_but_dim_ring_is_grey",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "test_light_grey_chalk_like_body_but_dim_ring_is_grey()"
     },
     {
@@ -5228,8 +5228,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_colour_white_rationale_1",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 45,
+      "community_name": "colour_detections",
       "norm_label": "white holds vs chalk: the chalk filter must not delete white holds."
     },
     {
@@ -5503,8 +5503,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_detect",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 48,
+      "community_name": "results_to_detections",
       "norm_label": "test_detect.py"
     },
     {
@@ -5514,8 +5514,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "tests_test_detect_test_results_to_detections_full_resolution_masks",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 48,
+      "community_name": "results_to_detections",
       "norm_label": "test_results_to_detections_full_resolution_masks()"
     },
     {
@@ -5525,8 +5525,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "tests_test_detect_test_results_to_detections_empty",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 48,
+      "community_name": "results_to_detections",
       "norm_label": "test_results_to_detections_empty()"
     },
     {
@@ -5558,8 +5558,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "tests_test_detect_test_detector_smoke",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 48,
+      "community_name": "results_to_detections",
       "norm_label": "test_detector_smoke()"
     },
     {
@@ -6988,8 +6988,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_gains_are_clipped_and_black_image_is_identity",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_gains_are_clipped_and_black_image_is_identity()"
     },
     {
@@ -6999,8 +6999,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_apply_gains_saturates",
-      "community": 45,
-      "community_name": "colour_detections",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_apply_gains_saturates()"
     },
     {
@@ -8432,6 +8432,17 @@
       "community": 22,
       "community_name": "2026-11-08.md",
       "norm_label": "add end-to-end pipeline and route cli (#24)"
+    },
+    {
+      "label": "Draw the architecture diagram (#25)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L267",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_draw_the_architecture_diagram_25",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "draw the architecture diagram (#25)"
     },
     {
       "label": "plan.md",
@@ -25130,6 +25141,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/2026-11-08.md",
+      "source_location": "L267",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_draw_the_architecture_diagram_25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
@@ -25326,5 +25348,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b78fd2efe8830fbe0c4ed3883b8c21bb6c7fd73b"
+  "built_at_commit": "ace57c45a1afbb5461636ffbaab688721502dd16"
 }
