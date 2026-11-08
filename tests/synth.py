@@ -70,11 +70,20 @@ def draw_hold(
     return mask
 
 
-def chalk(img: Image, mask: Mask, frac: float, region: str = "centre", seed: int = 0) -> Mask:
+def chalk(
+    img: Image,
+    mask: Mask,
+    frac: float,
+    region: str = "centre",
+    seed: int = 0,
+    blend: tuple[float, float] = (1.0, 1.0),
+) -> Mask:
     """Cover `frac` of the mask with chalk, in place. Returns the chalked-pixel mask.
 
     region="centre" chalks the pixels nearest the mask centroid first (hands grip the
     top/centre, edges keep their colour). region="random" scatters chalk.
+    `blend` is the (min, max) chalk opacity per pixel: (1, 1) paints solid chalk,
+    lower values mix chalk with the pigment, as thin chalk does in real photos.
     """
     rng = np.random.default_rng(seed)
     ys, xs = np.nonzero(mask)
@@ -91,7 +100,10 @@ def chalk(img: Image, mask: Mask, frac: float, region: str = "centre", seed: int
     chalked = np.zeros_like(mask)
     chalked[ys[idx], xs[idx]] = True
     noise = rng.normal(0.0, 4.0, size=(n, 3))
-    img[chalked] = np.clip(np.asarray(CHALK, dtype=np.float32) + noise, 0, 255).astype(np.uint8)
+    alpha = rng.uniform(blend[0], blend[1], size=(n, 1))
+    under = img[chalked].astype(np.float64)
+    mixed = (1 - alpha) * under + alpha * (np.asarray(CHALK, dtype=np.float64) + noise)
+    img[chalked] = np.clip(mixed, 0, 255).astype(np.uint8)
     return chalked
 
 

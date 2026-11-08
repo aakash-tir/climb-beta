@@ -92,6 +92,30 @@ FAMILY_RESOLVERS: dict[
 ] = {}
 
 
+def split_pink_red(
+    fam: str, px: HoldPixels, fam_keep: npt.NDArray[np.bool_], cfg: ColourConfig
+) -> str:
+    """Red vs pink from pigment saturation and lightness, not hue.
+
+    Chalk and glare only ever lower a pixel's saturation and raise its lightness, so
+    the most saturated `quantile` of the hold's red-pink pixels shows the pigment.
+    Red: those pixels' median S >= red_s_min and median Lab L* <= red_l_max.
+    Pink otherwise: a red tint is less saturated and lighter.
+    """
+    pr = cfg.thresholds["pink_red"]
+    s = px.hsv[fam_keep, 1].astype(np.float64)
+    lightness = px.lab[fam_keep, 0].astype(np.float64)
+    if s.size == 0:
+        return "red"
+    top = s >= np.quantile(s, pr["quantile"])
+    s_top = float(np.median(s[top]))
+    l_top = float(np.median(lightness[top]))
+    return "red" if s_top >= pr["red_s_min"] and l_top <= pr["red_l_max"] else "pink"
+
+
+FAMILY_RESOLVERS["redpink"] = split_pink_red
+
+
 def _vote(
     px: HoldPixels, keep: npt.NDArray[np.bool_], cfg: ColourConfig
 ) -> tuple[str, int, dict[str, int]]:
