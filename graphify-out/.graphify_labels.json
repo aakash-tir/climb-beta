@@ -27,12 +27,12 @@
   "25": "__init__.py",
   "26": "roboflow.py",
   "27": "Detection",
+  "28": "load_script",
   "29": "__init__.py",
   "30": "convert_export",
   "31": "sam_masks.py",
   "32": "convert_ls_export",
   "33": "README.md",
-  "34": "sam_masks.py",
   "35": "Runbook: labelling Basecamp photos",
   "36": "test_train_detector.py",
   "37": "__init__.py",
@@ -42,6 +42,5 @@
   "42": "test_labelling_compose.py",
   "43": "__init__.py",
   "44": "run",
-  "45": "colour_detections",
-  "48": "results_to_detections"
+  "45": "colour_detections"
 }
