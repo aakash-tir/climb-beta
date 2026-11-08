@@ -264,8 +264,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "colour_classify_rules",
-      "community": 30,
-      "community_name": "convert_export",
+      "community": 0,
+      "community_name": "parse_colour_config",
       "norm_label": "classify_rules.py"
     },
     {
@@ -286,8 +286,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "colour_classify_rules_rationale_1",
-      "community": 30,
-      "community_name": "convert_export",
+      "community": 0,
+      "community_name": "parse_colour_config",
       "norm_label": "label each hold's colour in a photo with the rule-based colour step.  usage:"
     },
     {
@@ -432,6 +432,39 @@
       "community": 27,
       "community_name": "Detection",
       "norm_label": "assign basecamp walls to train/val/test and build the yolo-seg dataset.  usage:"
+    },
+    {
+      "label": "sync_hf.py",
+      "file_type": "code",
+      "source_file": "data/sync_hf.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_sync_hf",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "sync_hf.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "data/sync_hf.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "data_sync_hf_main",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "main()"
+    },
+    {
+      "label": "Push/pull data/basecamp/{raw,labels,exports} to/from a PRIVATE Hugging Face data",
+      "file_type": "rationale",
+      "source_file": "data/sync_hf.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_sync_hf_rationale_1",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "push/pull data/basecamp/{raw,labels,exports} to/from a private hugging face data"
     },
     {
       "label": "climb-beta",
@@ -630,8 +663,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_hold_pixels",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "hold_pixels()"
     },
     {
@@ -641,8 +674,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_py_imagebgr",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "imagebgr"
     },
     {
@@ -652,8 +685,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_py_mask",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "mask"
     },
     {
@@ -762,8 +795,8 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_classify_hold",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "classify_hold()"
     },
     {
@@ -828,8 +861,8 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_rationale_166",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "colour of the hold under `mask` in a (white-balanced) bgr image.      white rule"
     },
     {
@@ -839,8 +872,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "white_balance.py"
     },
     {
@@ -850,8 +883,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_grey_world_gains",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "grey_world_gains()"
     },
     {
@@ -861,8 +894,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_py_imagebgr",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "imagebgr"
     },
     {
@@ -872,8 +905,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_py_mask",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "mask"
     },
     {
@@ -883,8 +916,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_apply_gains",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "apply_gains()"
     },
     {
@@ -894,8 +927,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_grey_world",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "grey_world()"
     },
     {
@@ -905,8 +938,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_1",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "grey-world white balance.  the grey-world assumption says the average of a scene"
     },
     {
@@ -916,8 +949,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_24",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "per-channel (b, g, r) gains that make the reference pixels' mean neutral.      p"
     },
     {
@@ -927,8 +960,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_58",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "white-balance `img` so the reference (default: whole image) averages to grey."
     },
     {
@@ -1372,6 +1405,138 @@
       "norm_label": "convert every split folder under `src` that has a coco json.      with a `segmen"
     },
     {
+      "label": "hf_sync.py",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_hf_sync",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "hf_sync.py"
+    },
+    {
+      "label": "HFSyncError",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_hf_sync_hfsyncerror",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "hfsyncerror"
+    },
+    {
+      "label": "RuntimeError",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "runtimeerror",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "runtimeerror"
+    },
+    {
+      "label": "settings()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_hf_sync_settings",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "settings()"
+    },
+    {
+      "label": "_api()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_hf_sync_api",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "_api()"
+    },
+    {
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_hf_sync_py_any",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "any"
+    },
+    {
+      "label": "ensure_private()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_hf_sync_ensure_private",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "ensure_private()"
+    },
+    {
+      "label": "push()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_hf_sync_push",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "push()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_hf_sync_py_path",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "path"
+    },
+    {
+      "label": "pull()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_hf_sync_pull",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "pull()"
+    },
+    {
+      "label": "Sync the private Basecamp photos/labels with a **private** Hugging Face dataset",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_hf_sync_rationale_1",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "sync the private basecamp photos/labels with a **private** hugging face dataset"
+    },
+    {
+      "label": "Create the dataset repo as private if missing; refuse if it exists and is public",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_hf_sync_rationale_41",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "create the dataset repo as private if missing; refuse if it exists and is public"
+    },
+    {
       "label": "roboflow.py",
       "file_type": "code",
       "source_file": "src/climb_beta/data/roboflow.py",
@@ -1521,8 +1686,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "sam_masks.py"
     },
     {
@@ -1532,8 +1697,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_xywh_to_xyxy",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "xywh_to_xyxy()"
     },
     {
@@ -1543,8 +1708,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_box_fill_segmenter",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "box_fill_segmenter()"
     },
     {
@@ -1554,8 +1719,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_py_imagebgr",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "imagebgr"
     },
     {
@@ -1565,8 +1730,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "boxesxyxy",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "boxesxyxy"
     },
     {
@@ -1576,8 +1741,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_py_mask",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "mask"
     },
     {
@@ -1587,8 +1752,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_sam_segmenter",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "sam_segmenter()"
     },
     {
@@ -1598,8 +1763,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_py_boxsegmenter",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "boxsegmenter"
     },
     {
@@ -1609,8 +1774,8 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_write_pseudo_masks",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "write_pseudo_masks()"
     },
     {
@@ -1620,8 +1785,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_py_path",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "path"
     },
     {
@@ -1631,8 +1796,8 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_load_pseudo_masks",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "load_pseudo_masks()"
     },
     {
@@ -1642,8 +1807,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_rationale_1",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "turn box-only annotations into masks by prompting sam with each box.  masks made"
     },
     {
@@ -1653,8 +1818,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_rationale_34",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "fallback 'segmenter' that fills each box. only for tests and dry runs."
     },
     {
@@ -1664,8 +1829,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_rationale_45",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "ultralytics sam (needs the `ml` extra). weights download on first use."
     },
     {
@@ -1675,8 +1840,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "src_climb_beta_data_sam_masks_rationale_68",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "`split/file_name` entries of pseudo-masked images (empty if none)."
     },
     {
@@ -3028,8 +3193,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_colour_white",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_colour_white.py"
     },
     {
@@ -3039,8 +3204,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_test_colour_white_hold",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "_hold()"
     },
     {
@@ -3050,8 +3215,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_white_hold_is_white",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_white_hold_is_white()"
     },
     {
@@ -3061,8 +3226,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_chalked_white_hold_is_white",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_chalked_white_hold_is_white()"
     },
     {
@@ -3072,8 +3237,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_heavily_chalked_colour_hold_votes_on_ring",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_heavily_chalked_colour_hold_votes_on_ring()"
     },
     {
@@ -3083,8 +3248,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_grey_hold_stays_grey",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_grey_hold_stays_grey()"
     },
     {
@@ -3094,8 +3259,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_light_grey_chalk_like_body_but_dim_ring_is_grey",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_light_grey_chalk_like_body_but_dim_ring_is_grey()"
     },
     {
@@ -3105,8 +3270,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_colour_white_rationale_1",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "white holds vs chalk: the chalk filter must not delete white holds."
     },
     {
@@ -3196,6 +3361,171 @@
       "community": 0,
       "community_name": "parse_colour_config",
       "norm_label": "test_bad_hue_range_rejected()"
+    },
+    {
+      "label": "test_hf_sync.py",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "test_hf_sync.py"
+    },
+    {
+      "label": "Info",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_info",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "info"
+    },
+    {
+      "label": "FakeApi",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_fakeapi",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "fakeapi"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_fakeapi_init",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".create_repo()",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_fakeapi_create_repo",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": ".create_repo()"
+    },
+    {
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_py_any",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "any"
+    },
+    {
+      "label": ".repo_info()",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_fakeapi_repo_info",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": ".repo_info()"
+    },
+    {
+      "label": ".upload_folder()",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_fakeapi_upload_folder",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": ".upload_folder()"
+    },
+    {
+      "label": ".snapshot_download()",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_fakeapi_snapshot_download",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": ".snapshot_download()"
+    },
+    {
+      "label": "test_push_always_creates_private_and_uploads_only_data()",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_test_push_always_creates_private_and_uploads_only_data",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "test_push_always_creates_private_and_uploads_only_data()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_py_path",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "path"
+    },
+    {
+      "label": "test_push_refuses_public_repo()",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_test_push_refuses_public_repo",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "test_push_refuses_public_repo()"
+    },
+    {
+      "label": "test_pull_refuses_public_and_downloads_private()",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_test_pull_refuses_public_and_downloads_private",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "test_pull_refuses_public_and_downloads_private()"
+    },
+    {
+      "label": "test_settings_validation()",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_test_settings_validation",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "test_settings_validation()"
+    },
+    {
+      "label": "test_settings_ok()",
+      "file_type": "code",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "tests_test_hf_sync_test_settings_ok",
+      "community": 31,
+      "community_name": "sam_masks.py",
+      "norm_label": "test_settings_ok()"
     },
     {
       "label": "test_masks.py",
@@ -3446,8 +3776,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_sam_fallback",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "test_sam_fallback.py"
     },
     {
@@ -3457,8 +3787,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "tests_test_sam_fallback_split",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "_split()"
     },
     {
@@ -3468,8 +3798,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_sam_fallback_py_path",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "path"
     },
     {
@@ -3479,8 +3809,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "tests_test_sam_fallback_export",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "export()"
     },
     {
@@ -3490,8 +3820,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "tests_test_sam_fallback_test_without_segmenter_box_images_held_back",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "test_without_segmenter_box_images_held_back()"
     },
     {
@@ -3501,8 +3831,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "tests_test_sam_fallback_test_segmenter_fills_boxes_keeps_polygons_and_never_tests_on_pseudo",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "test_segmenter_fills_boxes_keeps_polygons_and_never_tests_on_pseudo()"
     },
     {
@@ -3512,8 +3842,8 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "tests_test_sam_fallback_test_xywh_to_xyxy",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "test_xywh_to_xyxy()"
     },
     {
@@ -3523,8 +3853,8 @@
       "source_location": "L76",
       "_origin": "ast",
       "id": "tests_test_sam_fallback_test_sam_segmenter_smoke",
-      "community": 31,
-      "community_name": "sam_masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "test_sam_segmenter_smoke()"
     },
     {
@@ -3776,8 +4106,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_white_balance",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_white_balance.py"
     },
     {
@@ -3787,8 +4117,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "tests_test_white_balance_neutral_err",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "_neutral_err()"
     },
     {
@@ -3798,8 +4128,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_white_balance_py_ndarray",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "ndarray"
     },
     {
@@ -3809,8 +4139,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "slice",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "slice"
     },
     {
@@ -3820,8 +4150,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_restores_warm_tint_on_neutral_wall",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_restores_warm_tint_on_neutral_wall()"
     },
     {
@@ -3831,8 +4161,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_wall_reference_beats_whole_image_when_holds_dominate()"
     },
     {
@@ -3853,8 +4183,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_gains_are_clipped_and_black_image_is_identity",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_gains_are_clipped_and_black_image_is_identity()"
     },
     {
@@ -3864,8 +4194,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_apply_gains_saturates",
-      "community": 32,
-      "community_name": "grey_world",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_apply_gains_saturates()"
     },
     {
@@ -5035,6 +5365,17 @@
       "norm_label": "add basecamp photo layout and split-by-wall (#13)"
     },
     {
+      "label": "Add private Hugging Face dataset sync (#14)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L170",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_add_private_hugging_face_dataset_sync_14",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "add private hugging face dataset sync (#14)"
+    },
+    {
       "label": "plan.md",
       "file_type": "document",
       "source_file": "plan.md",
@@ -6000,6 +6341,64 @@
       "source": "data_split_by_wall_main",
       "target": "data_split_by_wall_cmd_build",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/sync_hf.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_sync_hf",
+      "target": "data_sync_hf_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "data/sync_hf.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_sync_hf_rationale_1",
+      "target": "data_sync_hf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/sync_hf.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_sync_hf_main",
+      "target": "src_climb_beta_data_hf_sync_pull"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/sync_hf.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_sync_hf_main",
+      "target": "src_climb_beta_data_hf_sync_push"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/sync_hf.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_sync_hf_main",
+      "target": "src_climb_beta_data_hf_sync_settings"
     },
     {
       "relation": "rationale_for",
@@ -8411,6 +8810,367 @@
       "_origin": "ast",
       "source": "tests_test_sam_fallback_test_without_segmenter_box_images_held_back",
       "target": "src_climb_beta_data_coco_to_yolo_convert_export"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync",
+      "target": "src_climb_beta_data_hf_sync_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync",
+      "target": "src_climb_beta_data_hf_sync_ensure_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync",
+      "target": "src_climb_beta_data_hf_sync_hfsyncerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync",
+      "target": "src_climb_beta_data_hf_sync_pull",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync",
+      "target": "src_climb_beta_data_hf_sync_push",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync",
+      "target": "src_climb_beta_data_hf_sync_settings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_rationale_1",
+      "target": "src_climb_beta_data_hf_sync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_ensure_private",
+      "target": "src_climb_beta_data_hf_sync_hfsyncerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_hfsyncerror",
+      "target": "runtimeerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_pull",
+      "target": "src_climb_beta_data_hf_sync_hfsyncerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_settings",
+      "target": "src_climb_beta_data_hf_sync_hfsyncerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L7",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_fakeapi",
+      "target": "src_climb_beta_data_hf_sync_hfsyncerror",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L7",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_info",
+      "target": "src_climb_beta_data_hf_sync_hfsyncerror",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_pull_refuses_public_and_downloads_private",
+      "target": "src_climb_beta_data_hf_sync_hfsyncerror"
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_push_refuses_public_repo",
+      "target": "src_climb_beta_data_hf_sync_hfsyncerror"
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_settings_validation",
+      "target": "src_climb_beta_data_hf_sync_hfsyncerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_settings_ok",
+      "target": "src_climb_beta_data_hf_sync_settings"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_settings_validation",
+      "target": "src_climb_beta_data_hf_sync_settings"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_api",
+      "target": "src_climb_beta_data_hf_sync_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_pull",
+      "target": "src_climb_beta_data_hf_sync_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_push",
+      "target": "src_climb_beta_data_hf_sync_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_ensure_private",
+      "target": "src_climb_beta_data_hf_sync_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_pull",
+      "target": "src_climb_beta_data_hf_sync_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_push",
+      "target": "src_climb_beta_data_hf_sync_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_push",
+      "target": "src_climb_beta_data_hf_sync_ensure_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_rationale_41",
+      "target": "src_climb_beta_data_hf_sync_ensure_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_push",
+      "target": "src_climb_beta_data_hf_sync_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_push_always_creates_private_and_uploads_only_data",
+      "target": "src_climb_beta_data_hf_sync_push"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_push_refuses_public_repo",
+      "target": "src_climb_beta_data_hf_sync_push"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/hf_sync.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_hf_sync_pull",
+      "target": "src_climb_beta_data_hf_sync_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_pull_refuses_public_and_downloads_private",
+      "target": "src_climb_beta_data_hf_sync_pull"
     },
     {
       "relation": "contains",
@@ -12332,6 +13092,270 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync",
+      "target": "tests_test_hf_sync_fakeapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync",
+      "target": "tests_test_hf_sync_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync",
+      "target": "tests_test_hf_sync_test_pull_refuses_public_and_downloads_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync",
+      "target": "tests_test_hf_sync_test_push_always_creates_private_and_uploads_only_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync",
+      "target": "tests_test_hf_sync_test_push_refuses_public_repo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync",
+      "target": "tests_test_hf_sync_test_settings_ok",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync",
+      "target": "tests_test_hf_sync_test_settings_validation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_fakeapi_repo_info",
+      "target": "tests_test_hf_sync_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_fakeapi",
+      "target": "tests_test_hf_sync_fakeapi_create_repo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_fakeapi",
+      "target": "tests_test_hf_sync_fakeapi_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_fakeapi",
+      "target": "tests_test_hf_sync_fakeapi_repo_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_fakeapi",
+      "target": "tests_test_hf_sync_fakeapi_snapshot_download",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_fakeapi",
+      "target": "tests_test_hf_sync_fakeapi_upload_folder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_pull_refuses_public_and_downloads_private",
+      "target": "tests_test_hf_sync_fakeapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_push_always_creates_private_and_uploads_only_data",
+      "target": "tests_test_hf_sync_fakeapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_push_refuses_public_repo",
+      "target": "tests_test_hf_sync_fakeapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_fakeapi_create_repo",
+      "target": "tests_test_hf_sync_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_fakeapi_repo_info",
+      "target": "tests_test_hf_sync_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_fakeapi_snapshot_download",
+      "target": "tests_test_hf_sync_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_fakeapi_upload_folder",
+      "target": "tests_test_hf_sync_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_push_always_creates_private_and_uploads_only_data",
+      "target": "tests_test_hf_sync_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_pull_refuses_public_and_downloads_private",
+      "target": "tests_test_hf_sync_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_hf_sync.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_hf_sync_test_push_refuses_public_repo",
+      "target": "tests_test_hf_sync_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_masks.py",
       "source_location": "L9",
       "weight": 1.0,
@@ -14090,6 +15114,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/2026-11-08.md",
+      "source_location": "L170",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_add_private_hugging_face_dataset_sync_14",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
       "source_location": "L154",
       "weight": 1.0,
       "_origin": "ast",
@@ -14308,5 +15343,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1daab29a3dd44627c43ffa49a17a3ace5461ddd6"
+  "built_at_commit": "737a9f4cfb349d62540175153516b07647e79a7d"
 }
