@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "configs/colours.yaml": {
-    "mtime": 1794121222.94749,
-    "ast_hash": "8996554da36fa22c6aa08fd5cf7386cc",
+    "mtime": 1794121288.4135725,
+    "ast_hash": "d6501755a1c41174d22914fc9409b4c3",
     "semantic_hash": ""
   },
   "docs/future.md": {
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794121235.4078567,
-    "ast_hash": "d6da68878080412397ab644259c41bd8",
+    "mtime": 1794121345.6553404,
+    "ast_hash": "7987f89ecf04317fe2a2eceea26b1aee",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -195,13 +195,13 @@
     "semantic_hash": ""
   },
   "src/climb_beta/colour/rules.py": {
-    "mtime": 1794121222.9484901,
-    "ast_hash": "48613e4f429b92f5f1dcafebcd5d68c4",
+    "mtime": 1794121288.4230232,
+    "ast_hash": "68522c0deefec57aa9baac100f2ddb58",
     "semantic_hash": ""
   },
   "tests/test_colour_voting.py": {
-    "mtime": 1794121198.6359444,
-    "ast_hash": "82465adb01f984bd03d929a1e928857c",
+    "mtime": 1794121288.424031,
+    "ast_hash": "3bb2495a06c33d9899c0e7cb6753573d",
     "semantic_hash": ""
   },
   "tests/test_colour_pink_red.py": {
@@ -210,8 +210,38 @@
     "semantic_hash": ""
   },
   "tests/test_colour_white.py": {
-    "mtime": 1794121205.9843514,
+    "mtime": 1794121288.42503,
     "ast_hash": "cfdfe5c49adfd23ab11e6bad173642b4",
+    "semantic_hash": ""
+  },
+  "colour/classify_rules.py": {
+    "mtime": 1794121333.9532602,
+    "ast_hash": "aa21ec6cb96ab7844e29b746d1c7eacb",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/colour/batch.py": {
+    "mtime": 1794121312.4793737,
+    "ast_hash": "dee6290790974a2616dbb506517897c3",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/data/__init__.py": {
+    "mtime": 1794121300.3226473,
+    "ast_hash": "9fd844a524210e702a6b787a01613bc7",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/data/yolo.py": {
+    "mtime": 1794121308.1206148,
+    "ast_hash": "4e5febabfb10502c46cb7773dd15b48d",
+    "semantic_hash": ""
+  },
+  "tests/scripts.py": {
+    "mtime": 1794121323.8687823,
+    "ast_hash": "1b2f801a2f1be87d8697482355f85561",
+    "semantic_hash": ""
+  },
+  "tests/test_classify_rules_cli.py": {
+    "mtime": 1794121332.5718756,
+    "ast_hash": "0a0be5aab96ed94ff66f140f1b893f79",
     "semantic_hash": ""
   }
 }

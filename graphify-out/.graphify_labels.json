@@ -26,5 +26,7 @@
   "24": "test_masks.py",
   "25": "__init__.py",
   "26": "grey_world",
-  "27": "Detection"
+  "27": "Detection",
+  "28": "_scene",
+  "29": "__init__.py"
 }
