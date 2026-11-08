@@ -1,13 +1,18 @@
 # Graph Report - climb  (2026-11-08)
 
 ## Corpus Check
-- 25 files · ~13,155 words
+- 28 files · ~14,081 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 161 nodes · 179 edges · 21 communities (16 shown, 5 thin omitted)
-- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.8)
+- 182 nodes · 213 edges · 23 communities (17 shown, 6 thin omitted)
+- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 21 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `8df6a9b4`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - parse_colour_config
@@ -30,6 +35,8 @@
 - progress.md
 - __init__.py
 - climb-beta
+- chalk
+- 2026-11-08.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `parse_colour_config()` - 11 edges
@@ -38,10 +45,10 @@
 4. `Design System` - 10 edges
 5. `ConfigError` - 9 edges
 6. `Detection` - 7 edges
-7. `Node` - 6 edges
-8. `layout()` - 6 edges
-9. `ColourConfig` - 6 edges
-10. `climb-beta — project context` - 6 edges
+7. `wall()` - 7 edges
+8. `draw_hold()` - 7 edges
+9. `chalk()` - 7 edges
+10. `Node` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `test_repo_colour_config_has_the_ten_brief_colours()` --calls--> `load_colour_config()`  [INFERRED]
@@ -58,11 +65,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (21 total, 5 thin omitted)
+## Communities (23 total, 6 thin omitted)
 
 ### Community 0 - "parse_colour_config"
-Cohesion: 0.16
-Nodes (20): Path, Colour, ColourConfig, ConfigError, load_classes(), load_colour_config(), parse_colour_config(), Any (+12 more)
+Cohesion: 0.17
+Nodes (19): Path, Colour, ColourConfig, ConfigError, load_classes(), load_colour_config(), parse_colour_config(), Any (+11 more)
 
 ### Community 1 - "generate_diagram.py"
 Cohesion: 0.18
@@ -120,19 +127,25 @@ Nodes (4): Backlog (unscheduled), Data, Phase 2 and beyond, Reach
 Cohesion: 0.40
 Nodes (4): Colour step: why rules first, and how they handle chalk (2026-11-08), Decisions, Rejected, The hard part
 
+### Community 21 - "chalk"
+Cohesion: 0.19
+Nodes (17): Image, Mask, chalk(), draw_hold(), Synthetic wall photos for tests: grey wall, coloured holds, chalk, tinted light., A near-neutral textured wall., Draw an elliptical hold in place and return its mask.      `shade` darkens towar, Cover `frac` of the mask with chalk, in place. Returns the chalked-pixel mask. (+9 more)
+
 ## Knowledge Gaps
-- **73 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+68 more)
+- **75 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+70 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `ConfigError` connect `parse_colour_config` to `chalk`?**
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
 - **Are the 3 inferred relationships involving `parse_colour_config()` (e.g. with `test_bad_hue_range_rejected()` and `test_duplicate_colour_rejected()`) actually correct?**
   _`parse_colour_config()` has 3 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `ConfigError` (e.g. with `test_bad_hue_range_rejected()` and `test_duplicate_colour_rejected()`) actually correct?**
   _`ConfigError` has 3 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `climb-beta`, `Tech stack`, `Conventions` to the rest of the system?**
-  _73 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _75 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Design System` be split into smaller, more focused modules?**
   _Cohesion score 0.125 - nodes in this community are weakly interconnected._

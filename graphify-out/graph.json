@@ -322,8 +322,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "valueerror",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "valueerror"
     },
     {
@@ -580,6 +580,138 @@
       "norm_label": "(x0, y0, x1, y1), inclusive-exclusive."
     },
     {
+      "label": "synth.py",
+      "file_type": "code",
+      "source_file": "tests/synth.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_synth",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "synth.py"
+    },
+    {
+      "label": "wall()",
+      "file_type": "code",
+      "source_file": "tests/synth.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "tests_synth_wall",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "wall()"
+    },
+    {
+      "label": "Image",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "image",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "image"
+    },
+    {
+      "label": "draw_hold()",
+      "file_type": "code",
+      "source_file": "tests/synth.py",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "tests_synth_draw_hold",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "draw_hold()"
+    },
+    {
+      "label": "Mask",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "mask",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "mask"
+    },
+    {
+      "label": "chalk()",
+      "file_type": "code",
+      "source_file": "tests/synth.py",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "tests_synth_chalk",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "chalk()"
+    },
+    {
+      "label": "tint()",
+      "file_type": "code",
+      "source_file": "tests/synth.py",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "tests_synth_tint",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "tint()"
+    },
+    {
+      "label": "Synthetic wall photos for tests: grey wall, coloured holds, chalk, tinted light.",
+      "file_type": "rationale",
+      "source_file": "tests/synth.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_synth_rationale_1",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "synthetic wall photos for tests: grey wall, coloured holds, chalk, tinted light."
+    },
+    {
+      "label": "A near-neutral textured wall.",
+      "file_type": "rationale",
+      "source_file": "tests/synth.py",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "tests_synth_rationale_37",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "a near-neutral textured wall."
+    },
+    {
+      "label": "Draw an elliptical hold in place and return its mask.      `shade` darkens towar",
+      "file_type": "rationale",
+      "source_file": "tests/synth.py",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "tests_synth_rationale_53",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "draw an elliptical hold in place and return its mask.      `shade` darkens towar"
+    },
+    {
+      "label": "Cover `frac` of the mask with chalk, in place. Returns the chalked-pixel mask.",
+      "file_type": "rationale",
+      "source_file": "tests/synth.py",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "tests_synth_rationale_74",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "cover `frac` of the mask with chalk, in place. returns the chalked-pixel mask."
+    },
+    {
+      "label": "Return a copy lit by a coloured light: per-channel (B, G, R) gains.",
+      "file_type": "rationale",
+      "source_file": "tests/synth.py",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "tests_synth_rationale_99",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "return a copy lit by a coloured light: per-channel (b, g, r) gains."
+    },
+    {
       "label": "test_config.py",
       "file_type": "code",
       "source_file": "tests/test_config.py",
@@ -666,6 +798,72 @@
       "community": 0,
       "community_name": "parse_colour_config",
       "norm_label": "test_bad_hue_range_rejected()"
+    },
+    {
+      "label": "test_synth.py",
+      "file_type": "code",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_synth",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_synth.py"
+    },
+    {
+      "label": "test_wall_is_deterministic_bgr_uint8()",
+      "file_type": "code",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "tests_test_synth_test_wall_is_deterministic_bgr_uint8",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_wall_is_deterministic_bgr_uint8()"
+    },
+    {
+      "label": "test_draw_hold_mask_area_and_colour()",
+      "file_type": "code",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "tests_test_synth_test_draw_hold_mask_area_and_colour",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_draw_hold_mask_area_and_colour()"
+    },
+    {
+      "label": "test_chalk_fraction()",
+      "file_type": "code",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "tests_test_synth_test_chalk_fraction",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_chalk_fraction()"
+    },
+    {
+      "label": "test_centre_chalk_leaves_edges()",
+      "file_type": "code",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "tests_test_synth_test_centre_chalk_leaves_edges",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_centre_chalk_leaves_edges()"
+    },
+    {
+      "label": "test_tint_scales_channels()",
+      "file_type": "code",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "tests_test_synth_test_tint_scales_channels",
+      "community": 21,
+      "community_name": "chalk",
+      "norm_label": "test_tint_scales_channels()"
     },
     {
       "label": "test_types.py",
@@ -1658,6 +1856,39 @@
       "norm_label": "sources"
     },
     {
+      "label": "2026-11-08.md",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "logs_2026_11_08",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "2026-11-08.md"
+    },
+    {
+      "label": "Initial commit and repo creation",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_initial_commit_and_repo_creation",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "initial commit and repo creation"
+    },
+    {
+      "label": "Synthetic hold images for tests (#1)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_synthetic_hold_images_for_tests_1",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "synthetic hold images for tests (#1)"
+    },
+    {
       "label": "plan.md",
       "file_type": "document",
       "source_file": "plan.md",
@@ -2385,6 +2616,18 @@
       "target": "src_climb_beta_config_configerror"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/synth.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_chalk",
+      "target": "valueerror"
+    },
+    {
       "relation": "references",
       "context": "generic_arg",
       "confidence": "EXTRACTED",
@@ -2747,6 +2990,309 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth",
+      "target": "tests_synth_chalk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth",
+      "target": "tests_synth_draw_hold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth",
+      "target": "tests_synth_tint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth",
+      "target": "tests_synth_wall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_rationale_1",
+      "target": "tests_synth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth",
+      "target": "tests_synth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_rationale_37",
+      "target": "tests_synth_wall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_wall",
+      "target": "image",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_synth.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth_test_centre_chalk_leaves_edges",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_synth.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth_test_chalk_fraction",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_synth.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth_test_draw_hold_mask_area_and_colour",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_synth.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth_test_wall_is_deterministic_bgr_uint8",
+      "target": "tests_synth_wall"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_chalk",
+      "target": "image",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_draw_hold",
+      "target": "image",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_tint",
+      "target": "image",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_draw_hold",
+      "target": "mask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_rationale_53",
+      "target": "tests_synth_draw_hold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_synth.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth_test_centre_chalk_leaves_edges",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_synth.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth_test_chalk_fraction",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_synth.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth_test_draw_hold_mask_area_and_colour",
+      "target": "tests_synth_draw_hold"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_chalk",
+      "target": "mask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_rationale_74",
+      "target": "tests_synth_chalk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_synth.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth_test_centre_chalk_leaves_edges",
+      "target": "tests_synth_chalk"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_synth.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth_test_chalk_fraction",
+      "target": "tests_synth_chalk"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/synth.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_synth_rationale_99",
+      "target": "tests_synth_tint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_synth.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth_test_tint_scales_channels",
+      "target": "tests_synth_tint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_config.py",
       "source_location": "L29",
       "weight": 1.0,
@@ -2856,6 +3402,61 @@
       "_origin": "ast",
       "source": "tests_test_config_test_unknown_family_rejected",
       "target": "tests_test_config_minimal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth",
+      "target": "tests_test_synth_test_centre_chalk_leaves_edges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth",
+      "target": "tests_test_synth_test_chalk_fraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth",
+      "target": "tests_test_synth_test_draw_hold_mask_area_and_colour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth",
+      "target": "tests_test_synth_test_tint_scales_channels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_synth.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_synth",
+      "target": "tests_test_synth_test_wall_is_deterministic_bgr_uint8",
       "confidence_score": 1.0
     },
     {
@@ -3686,6 +4287,28 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08",
+      "target": "logs_2026_11_08_initial_commit_and_repo_creation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08",
+      "target": "logs_2026_11_08_synthetic_hold_images_for_tests_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "plan.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -3805,5 +4428,6 @@
       "confidence_score": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "8df6a9b44ab755ed4bfd7edeb632db7f2917a8c2"
 }
