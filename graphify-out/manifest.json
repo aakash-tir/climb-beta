@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794123660.1002142,
-    "ast_hash": "11f83caf063bc6ba3c7993d2ffba7754",
+    "mtime": 1794123741.4705286,
+    "ast_hash": "18ec145b05d0d38cc81126f74a168746",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -515,8 +515,18 @@
     "semantic_hash": ""
   },
   "docs/architecture/architecture-diagram.html": {
-    "mtime": 1794123647.658702,
+    "mtime": 1794123695.6252742,
     "ast_hash": "8b89d1c257ffc802707aaf8a7ce61d38",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/metrics/detection.py": {
+    "mtime": 1794123718.148962,
+    "ast_hash": "65df594f051f272c0b88849631afba0b",
+    "semantic_hash": ""
+  },
+  "tests/test_detection_metrics.py": {
+    "mtime": 1794123727.1813574,
+    "ast_hash": "d6c848b557db9bb6b4a4f2748423badb",
     "semantic_hash": ""
   }
 }
