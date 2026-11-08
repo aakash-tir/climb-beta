@@ -1,0 +1,19 @@
+# Public pretraining data from Roboflow Universe.
+#
+# NOT PINNED YET (issue #12): several Universe projects are called
+# "Climbing Holds and Volumes"; one of them is box-only. Open the project in a
+# browser, confirm "Instance Segmentation" and the CC BY 4.0 licence, then set
+# `version` below. data/download_roboflow.py refuses to run until it is set.
+workspace: blackcreed-xpgxh
+project: climbing-holds-and-volumes
+version: null
+format: coco-segmentation   # holds polygons and/or boxes; the converter handles both
+
+licence: CC BY 4.0
+attribution: >-
+  "Climbing Holds and Volumes" dataset by its authors on Roboflow Universe
+  (https://universe.roboflow.com/blackcreed-xpgxh/climbing-holds-and-volumes), CC BY 4.0.
+
+# Source category name -> our class (configs/classes.yaml). Unlisted names fall back
+# to keyword matching ("hold", "volume", "tape"); names that match nothing are dropped.
+class_map: {}

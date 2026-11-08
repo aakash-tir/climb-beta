@@ -324,6 +324,50 @@
       "norm_label": "convert a roboflow `coco-segmentation` export to a yolo-seg dataset.  usage:"
     },
     {
+      "label": "download_roboflow.py",
+      "file_type": "code",
+      "source_file": "data/download_roboflow.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_download_roboflow",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "download_roboflow.py"
+    },
+    {
+      "label": "_load_dotenv()",
+      "file_type": "code",
+      "source_file": "data/download_roboflow.py",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "data_download_roboflow_load_dotenv",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "_load_dotenv()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "data/download_roboflow.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "data_download_roboflow_main",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "main()"
+    },
+    {
+      "label": "Download the pinned Roboflow Universe dataset (CC BY 4.0) as coco-segmentation.",
+      "file_type": "rationale",
+      "source_file": "data/download_roboflow.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_download_roboflow_rationale_1",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "download the pinned roboflow universe dataset (cc by 4.0) as coco-segmentation."
+    },
+    {
       "label": "climb-beta",
       "file_type": "code",
       "type": "package",
@@ -388,8 +432,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "batch.py"
     },
     {
@@ -399,8 +443,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_wall_mask",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "wall_mask()"
     },
     {
@@ -410,8 +454,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_py_imagebgr",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "imagebgr"
     },
     {
@@ -421,8 +465,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_py_ndarray",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "ndarray"
     },
     {
@@ -432,8 +476,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_colour_detections",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "colour_detections()"
     },
     {
@@ -443,8 +487,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_rationale_1",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "colour every hold in a photo: wall-referenced white balance, then the rules."
     },
     {
@@ -454,8 +498,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_rationale_18",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "pixels outside every detection: the wall, used as the white-balance reference."
     },
     {
@@ -465,8 +509,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "src_climb_beta_colour_batch_rationale_31",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "set `.colour`/`.colour_conf` on every hold detection (in place).      returns th"
     },
     {
@@ -849,9 +893,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "valueerror",
-      "community": 28,
-      "community_name": "_scene",
+      "id": "src_climb_beta_config_py_valueerror",
+      "community": 0,
+      "community_name": "parse_colour_config",
       "norm_label": "valueerror"
     },
     {
@@ -1262,6 +1306,149 @@
       "norm_label": "convert every split folder under `src` that has a coco json.      with a `segmen"
     },
     {
+      "label": "roboflow.py",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "roboflow.py"
+    },
+    {
+      "label": "RoboflowConfigError",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_roboflowconfigerror",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "roboflowconfigerror"
+    },
+    {
+      "label": "ValueError",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_py_valueerror",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "valueerror"
+    },
+    {
+      "label": "RoboflowSource",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_roboflowsource",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "roboflowsource"
+    },
+    {
+      "label": ".slug()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_roboflowsource_slug",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": ".slug()"
+    },
+    {
+      "label": "parse_source()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_parse_source",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "parse_source()"
+    },
+    {
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_py_any",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "any"
+    },
+    {
+      "label": "load_source()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_load_source",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "load_source()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_py_path",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "path"
+    },
+    {
+      "label": "api_key()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_api_key",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "api_key()"
+    },
+    {
+      "label": "download()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_download",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "download()"
+    },
+    {
+      "label": "Roboflow Universe download config and helpers (the SDK itself is imported lazily",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_rationale_1",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "roboflow universe download config and helpers (the sdk itself is imported lazily"
+    },
+    {
+      "label": "Download the export with the Roboflow SDK (the `data` extra). Returns its folder",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_roboflow_rationale_79",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "download the export with the roboflow sdk (the `data` extra). returns its folder"
+    },
+    {
       "label": "sam_masks.py",
       "file_type": "code",
       "source_file": "src/climb_beta/data/sam_masks.py",
@@ -1433,8 +1620,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "yolo.py"
     },
     {
@@ -1444,8 +1631,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_yoloinstance",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "yoloinstance"
     },
     {
@@ -1455,8 +1642,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_parse_label_line",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "parse_label_line()"
     },
     {
@@ -1466,8 +1653,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_read_labels",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "read_labels()"
     },
     {
@@ -1477,8 +1664,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_py_path",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "path"
     },
     {
@@ -1488,8 +1675,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_format_label_line",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "format_label_line()"
     },
     {
@@ -1499,8 +1686,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_py_floatarray",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "floatarray"
     },
     {
@@ -1510,8 +1697,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_write_labels",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "write_labels()"
     },
     {
@@ -1521,8 +1708,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_instances_to_detections",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "instances_to_detections()"
     },
     {
@@ -1532,8 +1719,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_rationale_1",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "read and write ultralytics yolo-seg label files.  one instance per line: `<class"
     },
     {
@@ -1543,8 +1730,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_climb_beta_data_yolo_rationale_58",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "rasterise label polygons into full-resolution detection masks."
     },
     {
@@ -1554,8 +1741,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_imageio",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "imageio.py"
     },
     {
@@ -1565,8 +1752,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_read_bgr",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "read_bgr()"
     },
     {
@@ -1576,8 +1763,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_py_path",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "path"
     },
     {
@@ -1587,8 +1774,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_py_imagebgr",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "imagebgr"
     },
     {
@@ -1598,8 +1785,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_write_bgr",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "write_bgr()"
     },
     {
@@ -1609,8 +1796,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_rationale_1",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "image read/write with the package's types (bgr uint8)."
     },
     {
@@ -1620,8 +1807,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_climb_beta_imageio_rationale_14",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "read an image as bgr uint8, or none if it can't be read. handles non-ascii paths"
     },
     {
@@ -1829,8 +2016,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "src_climb_beta_masks_normalise",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "normalise()"
     },
     {
@@ -1950,8 +2137,8 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "src_climb_beta_masks_rationale_123",
-      "community": 23,
-      "community_name": "masks.py",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "pixel polygon -> yolo normalised [0, 1] coords."
     },
     {
@@ -2071,8 +2258,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_scripts",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 27,
+      "community_name": "Detection",
       "norm_label": "scripts.py"
     },
     {
@@ -2082,8 +2269,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_scripts_load_script",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 27,
+      "community_name": "Detection",
       "norm_label": "load_script()"
     },
     {
@@ -2093,8 +2280,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "moduletype",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 27,
+      "community_name": "Detection",
       "norm_label": "moduletype"
     },
     {
@@ -2104,8 +2291,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_scripts_rationale_1",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 27,
+      "community_name": "Detection",
       "norm_label": "load a top-level cli script (e.g. colour/classify_rules.py) as a module for test"
     },
     {
@@ -2247,8 +2434,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 27,
+      "community_name": "Detection",
       "norm_label": "test_classify_rules_cli.py"
     },
     {
@@ -2258,8 +2445,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_scene",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "_scene()"
     },
     {
@@ -2269,8 +2456,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_py_path",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 27,
+      "community_name": "Detection",
       "norm_label": "path"
     },
     {
@@ -2280,8 +2467,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_cli_labels_holds_and_skips_tape",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 27,
+      "community_name": "Detection",
       "norm_label": "test_cli_labels_holds_and_skips_tape()"
     },
     {
@@ -2291,8 +2478,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_cli_missing_image",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 27,
+      "community_name": "Detection",
       "norm_label": "test_cli_missing_image()"
     },
     {
@@ -2302,8 +2489,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_label_line_roundtrip_and_validation",
-      "community": 28,
-      "community_name": "_scene",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "test_label_line_roundtrip_and_validation()"
     },
     {
@@ -2577,8 +2764,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "tests_test_colour_voting_test_pixel_labels_cover_hue_circle",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 5,
+      "community_name": "Detection",
       "norm_label": "test_pixel_labels_cover_hue_circle()"
     },
     {
@@ -2912,6 +3099,105 @@
       "norm_label": "test_normalise_roundtrip()"
     },
     {
+      "label": "test_roboflow.py",
+      "file_type": "code",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_roboflow",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "test_roboflow.py"
+    },
+    {
+      "label": "test_parse_good()",
+      "file_type": "code",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "tests_test_roboflow_test_parse_good",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "test_parse_good()"
+    },
+    {
+      "label": "test_parse_rejects()",
+      "file_type": "code",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "tests_test_roboflow_test_parse_rejects",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "test_parse_rejects()"
+    },
+    {
+      "label": "test_committed_config_is_unpinned_until_issue_12()",
+      "file_type": "code",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "tests_test_roboflow_test_committed_config_is_unpinned_until_issue_12",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "test_committed_config_is_unpinned_until_issue_12()"
+    },
+    {
+      "label": "test_api_key()",
+      "file_type": "code",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "tests_test_roboflow_test_api_key",
+      "community": 26,
+      "community_name": "roboflow.py",
+      "norm_label": "test_api_key()"
+    },
+    {
+      "label": "test_cli_fails_cleanly_without_pin_or_key()",
+      "file_type": "code",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "tests_test_roboflow_test_cli_fails_cleanly_without_pin_or_key",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "test_cli_fails_cleanly_without_pin_or_key()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_roboflow_py_path",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "path"
+    },
+    {
+      "label": "MonkeyPatch",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "monkeypatch",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "monkeypatch"
+    },
+    {
+      "label": "CaptureFixture",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "capturefixture",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "capturefixture"
+    },
+    {
       "label": "test_sam_fallback.py",
       "file_type": "code",
       "source_file": "tests/test_sam_fallback.py",
@@ -3105,8 +3391,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "tests_test_types_test_imageio_roundtrip_and_missing",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 28,
+      "community_name": "_scene",
       "norm_label": "test_imageio_roundtrip_and_missing()"
     },
     {
@@ -4331,6 +4617,17 @@
       "norm_label": "make mypy pass with the ml extra installed (#42)"
     },
     {
+      "label": "Add Roboflow download script and data/roboflow.yaml (#11)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_add_roboflow_download_script_and_data_roboflow_yaml_11",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "add roboflow download script and data/roboflow.yaml (#11)"
+    },
+    {
       "label": "plan.md",
       "file_type": "document",
       "source_file": "plan.md",
@@ -5015,6 +5312,87 @@
       "_origin": "ast",
       "source": "data_convert_roboflow_main",
       "target": "src_climb_beta_data_sam_masks_sam_segmenter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/download_roboflow.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_download_roboflow",
+      "target": "data_download_roboflow_load_dotenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/download_roboflow.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_download_roboflow",
+      "target": "data_download_roboflow_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "data/download_roboflow.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_download_roboflow_rationale_1",
+      "target": "data_download_roboflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "data/download_roboflow.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_download_roboflow_main",
+      "target": "data_download_roboflow_load_dotenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/download_roboflow.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_download_roboflow_main",
+      "target": "src_climb_beta_data_roboflow_api_key"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/download_roboflow.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_download_roboflow_main",
+      "target": "src_climb_beta_data_roboflow_download"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/download_roboflow.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_download_roboflow_main",
+      "target": "src_climb_beta_data_roboflow_load_source"
     },
     {
       "relation": "rationale_for",
@@ -6415,7 +6793,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_climb_beta_config_configerror",
-      "target": "valueerror",
+      "target": "src_climb_beta_config_py_valueerror",
       "confidence_score": 1.0
     },
     {
@@ -6500,42 +6878,6 @@
       "_origin": "ast",
       "source": "tests_test_config_test_unknown_family_rejected",
       "target": "src_climb_beta_config_configerror"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/climb_beta/data/yolo.py",
-      "source_location": "L62",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_climb_beta_data_yolo_instances_to_detections",
-      "target": "valueerror"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "src/climb_beta/data/yolo.py",
-      "source_location": "L30",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_climb_beta_data_yolo_parse_label_line",
-      "target": "valueerror"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "tests/synth.py",
-      "source_location": "L99",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "tests_synth_chalk",
-      "target": "valueerror"
     },
     {
       "relation": "references",
@@ -7450,6 +7792,308 @@
       "_origin": "ast",
       "source": "tests_test_sam_fallback_test_without_segmenter_box_images_held_back",
       "target": "src_climb_beta_data_coco_to_yolo_convert_export"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow",
+      "target": "src_climb_beta_data_roboflow_api_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow",
+      "target": "src_climb_beta_data_roboflow_download",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow",
+      "target": "src_climb_beta_data_roboflow_load_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow",
+      "target": "src_climb_beta_data_roboflow_parse_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow",
+      "target": "src_climb_beta_data_roboflow_roboflowconfigerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow",
+      "target": "src_climb_beta_data_roboflow_roboflowsource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_rationale_1",
+      "target": "src_climb_beta_data_roboflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_api_key",
+      "target": "src_climb_beta_data_roboflow_roboflowconfigerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_parse_source",
+      "target": "src_climb_beta_data_roboflow_roboflowconfigerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_roboflowconfigerror",
+      "target": "src_climb_beta_data_roboflow_py_valueerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow_test_api_key",
+      "target": "src_climb_beta_data_roboflow_roboflowconfigerror"
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow_test_committed_config_is_unpinned_until_issue_12",
+      "target": "src_climb_beta_data_roboflow_roboflowconfigerror"
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow_test_parse_rejects",
+      "target": "src_climb_beta_data_roboflow_roboflowconfigerror"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_download",
+      "target": "src_climb_beta_data_roboflow_roboflowsource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_load_source",
+      "target": "src_climb_beta_data_roboflow_roboflowsource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_parse_source",
+      "target": "src_climb_beta_data_roboflow_roboflowsource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_roboflowsource",
+      "target": "src_climb_beta_data_roboflow_roboflowsource_slug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_load_source",
+      "target": "src_climb_beta_data_roboflow_parse_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_parse_source",
+      "target": "src_climb_beta_data_roboflow_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow_test_parse_good",
+      "target": "src_climb_beta_data_roboflow_parse_source"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow_test_parse_rejects",
+      "target": "src_climb_beta_data_roboflow_parse_source"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_load_source",
+      "target": "src_climb_beta_data_roboflow_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow_test_committed_config_is_unpinned_until_issue_12",
+      "target": "src_climb_beta_data_roboflow_load_source"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_download",
+      "target": "src_climb_beta_data_roboflow_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow_test_api_key",
+      "target": "src_climb_beta_data_roboflow_api_key"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/roboflow.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_roboflow_rationale_79",
+      "target": "src_climb_beta_data_roboflow_download",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -9016,6 +9660,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow",
+      "target": "tests_scripts",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "context": "return_type",
       "confidence": "EXTRACTED",
@@ -9061,6 +9717,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_coco_to_yolo_test_cli",
+      "target": "tests_scripts_load_script"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow_test_cli_fails_cleanly_without_pin_or_key",
       "target": "tests_scripts_load_script"
     },
     {
@@ -10748,6 +11416,97 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow",
+      "target": "tests_test_roboflow_test_api_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow",
+      "target": "tests_test_roboflow_test_cli_fails_cleanly_without_pin_or_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow",
+      "target": "tests_test_roboflow_test_committed_config_is_unpinned_until_issue_12",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow",
+      "target": "tests_test_roboflow_test_parse_good",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow",
+      "target": "tests_test_roboflow_test_parse_rejects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow_test_cli_fails_cleanly_without_pin_or_key",
+      "target": "capturefixture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow_test_cli_fails_cleanly_without_pin_or_key",
+      "target": "monkeypatch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_roboflow.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_roboflow_test_cli_fails_cleanly_without_pin_or_key",
+      "target": "tests_test_roboflow_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_sam_fallback.py",
       "source_location": "L33",
       "weight": 1.0,
@@ -11970,6 +12729,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "logs/2026-11-08.md",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_add_roboflow_download_script_and_data_roboflow_yaml_11",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
       "source_location": "L138",
       "weight": 1.0,
       "_origin": "ast",
@@ -12177,5 +12947,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7b23aa709f098e670b50aaa5e6abdf8f3e888c29"
+  "built_at_commit": "5228fa7af26a16438b4000520af22882ea1dddb4"
 }
