@@ -1,16 +1,16 @@
 # Graph Report - climb  (2026-11-08)
 
 ## Corpus Check
-- 49 files · ~22,564 words
+- 49 files · ~22,787 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 403 nodes · 668 edges · 32 communities (25 shown, 7 thin omitted)
+- 404 nodes · 669 edges · 31 communities (24 shown, 7 thin omitted)
 - Extraction: 80% EXTRACTED · 20% INFERRED · 0% AMBIGUOUS · INFERRED: 131 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7ee68c94`
+- Built from commit: `7b23aa70`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -40,7 +40,6 @@
 - masks.py
 - test_masks.py
 - __init__.py
-- grey_world
 - Detection
 - _scene
 - __init__.py
@@ -53,13 +52,15 @@
 3. `convert_export()` - 17 edges
 4. `ColourConfig` - 16 edges
 5. `draw_hold()` - 16 edges
-6. `chalk()` - 13 edges
-7. `2026-11-08` - 13 edges
+6. `2026-11-08` - 14 edges
+7. `chalk()` - 13 edges
 8. `_pseudo_mask_split()` - 12 edges
 9. `parse_colour_config()` - 11 edges
 10. `YoloInstance` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `test_pixel_labels_cover_hue_circle()` --calls--> `pixel_labels()`  [INFERRED]
+  tests/test_colour_voting.py → src/climb_beta/colour/rules.py
 - `main()` --calls--> `colour_detections()`  [INFERRED]
   colour/classify_rules.py → src/climb_beta/colour/batch.py
 - `main()` --calls--> `instances_to_detections()`  [INFERRED]
@@ -68,13 +69,11 @@
   colour/classify_rules.py → src/climb_beta/data/yolo.py
 - `main()` --calls--> `convert_export()`  [INFERRED]
   data/convert_roboflow.py → src/climb_beta/data/coco_to_yolo.py
-- `main()` --calls--> `sam_segmenter()`  [INFERRED]
-  data/convert_roboflow.py → src/climb_beta/data/sam_masks.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (32 total, 7 thin omitted)
+## Communities (31 total, 7 thin omitted)
 
 ### Community 0 - "parse_colour_config"
 Cohesion: 0.14
@@ -97,8 +96,8 @@ Cohesion: 0.17
 Nodes (11): Architecture, climb-beta — Plan, External dependencies, Milestones, Open questions, Phase 1 exit criteria (gate for Phase 2), Scope, Tech stack (+3 more)
 
 ### Community 5 - "Detection"
-Cohesion: 0.18
-Nodes (18): bool_, classify_pixels(), ColourResult, _first_in_family(), HoldPixels, pixel_labels(), NDArray, Rule-based hold colour from the pixels inside a mask.  Pipeline for one hold (al (+10 more)
+Cohesion: 0.10
+Nodes (36): bool_, colour_detections(), ImageBGR, ndarray, Colour every hold in a photo: wall-referenced white balance, then the rules., Pixels outside every detection: the wall, used as the white-balance reference., Set `.colour`/`.colour_conf` on every hold detection (in place).      Returns th, wall_mask() (+28 more)
 
 ### Community 6 - "climb-beta — project context"
 Cohesion: 0.29
@@ -137,12 +136,12 @@ Cohesion: 0.40
 Nodes (4): Colour step: why rules first, and how they handle chalk (2026-11-08), Decisions, Rejected, The hard part
 
 ### Community 21 - "chalk"
-Cohesion: 0.10
-Nodes (43): Image, classify_hold(), hold_pixels(), ImageBGR, Mask, Colour of the hold under `mask` in a (white-balanced) BGR image.      White rule, chalk(), draw_hold() (+35 more)
+Cohesion: 0.08
+Nodes (46): Image, slice, apply_gains(), grey_world(), grey_world_gains(), ImageBGR, Mask, Grey-world white balance.  The grey-world assumption says the average of a scene (+38 more)
 
 ### Community 22 - "2026-11-08.md"
-Cohesion: 0.14
-Nodes (13): 2026-11-08, Add chalk-aware per-pixel colour family voting (#4), Add COCO-segmentation to YOLO-seg converter (#9), Add colour/classify_rules.py CLI (#7), Add grey-world white balance with wall reference (#3), Add mask utilities (#2), Add SAM box-to-mask fallback with pseudo_masks.txt (#10), Add white-hold rule using the mask's edge ring (#6) (+5 more)
+Cohesion: 0.13
+Nodes (14): 2026-11-08, Add chalk-aware per-pixel colour family voting (#4), Add COCO-segmentation to YOLO-seg converter (#9), Add colour/classify_rules.py CLI (#7), Add grey-world white balance with wall reference (#3), Add mask utilities (#2), Add SAM box-to-mask fallback with pseudo_masks.txt (#10), Add white-hold rule using the mask's edge ring (#6) (+6 more)
 
 ### Community 23 - "masks.py"
 Cohesion: 0.11
@@ -152,37 +151,33 @@ Nodes (30): ArrayLike, float32, _bbox(), denormalise(), dilate(), distance_to(),
 Cohesion: 0.21
 Nodes (6): disk(), ndarray, test_dilate_grows_and_zero_is_copy(), test_edge_ring_is_inside_and_thin(), test_iou_matrix_matches_pairwise_and_skips_far_pairs(), test_polygon_roundtrip()
 
-### Community 26 - "grey_world"
-Cohesion: 0.21
-Nodes (15): slice, apply_gains(), grey_world(), grey_world_gains(), ImageBGR, Mask, Grey-world white balance.  The grey-world assumption says the average of a scene, Per-channel (B, G, R) gains that make the reference pixels' mean neutral.      P (+7 more)
-
 ### Community 27 - "Detection"
-Cohesion: 0.10
-Nodes (21): colour_detections(), ImageBGR, ndarray, Colour every hold in a photo: wall-referenced white balance, then the rules., Pixels outside every detection: the wall, used as the white-balance reference., Set `.colour`/`.colour_conf` on every hold detection (in place).      Returns th, wall_mask(), ImageBGR (+13 more)
+Cohesion: 0.36
+Nodes (7): ImageBGR, Path, Image read/write with the package's types (BGR uint8)., Read an image as BGR uint8, or None if it can't be read. Handles non-ASCII paths, read_bgr(), write_bgr(), test_imageio_roundtrip_and_missing()
 
 ### Community 28 - "_scene"
-Cohesion: 0.13
-Nodes (25): ModuleType, format_label_line(), instances_to_detections(), parse_label_line(), FloatArray, Path, Read and write Ultralytics YOLO-seg label files.  One instance per line: `<class, Rasterise label polygons into full-resolution Detection masks. (+17 more)
+Cohesion: 0.10
+Nodes (26): ModuleType, format_label_line(), instances_to_detections(), parse_label_line(), FloatArray, Path, Read and write Ultralytics YOLO-seg label files.  One instance per line: `<class, Rasterise label polygons into full-resolution Detection masks. (+18 more)
 
 ### Community 30 - "convert_export"
-Cohesion: 0.15
-Nodes (21): Counter, best_polygon(), BoxOnly, ConversionReport, convert_export(), convert_split(), default_class_for(), polygon_area() (+13 more)
+Cohesion: 0.12
+Nodes (28): Counter, best_polygon(), BoxOnly, ConversionReport, convert_export(), convert_split(), default_class_for(), polygon_area() (+20 more)
 
 ### Community 31 - "sam_masks.py"
 Cohesion: 0.12
 Nodes (21): BoxesXYXY, box_fill_segmenter(), load_pseudo_masks(), BoxSegmenter, ImageBGR, Mask, Path, Turn box-only annotations into masks by prompting SAM with each box.  Masks made (+13 more)
 
 ## Knowledge Gaps
-- **85 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+80 more)
+- **86 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+81 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `_scene()` connect `chalk` to `_scene`, `masks.py`?**
+- **Why does `_scene()` connect `_scene` to `chalk`, `masks.py`?**
   _High betweenness centrality (0.041) - this node is a cross-community bridge._
-- **Why does `classify_hold()` connect `chalk` to `Detection`, `Detection`, `masks.py`?**
+- **Why does `classify_hold()` connect `Detection` to `chalk`, `masks.py`?**
   _High betweenness centrality (0.040) - this node is a cross-community bridge._
 - **Why does `convert_export()` connect `convert_export` to `parse_colour_config`, `_scene`, `sam_masks.py`?**
   _High betweenness centrality (0.035) - this node is a cross-community bridge._

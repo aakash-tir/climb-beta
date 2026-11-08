@@ -68,6 +68,17 @@ strict = true
 ignore_missing_imports = true
 warn_unused_ignores = false
 
+# Heavy optional deps are typed as Any, so mypy gives the same result with or
+# without the extras installed (CI never installs them).
+[[tool.mypy.overrides]]
+module = [
+    "ultralytics", "ultralytics.*", "timm", "timm.*", "torch", "torch.*",
+    "torchvision", "torchvision.*", "gradio", "gradio.*", "roboflow", "roboflow.*",
+    "huggingface_hub", "huggingface_hub.*", "label_studio_sdk", "label_studio_sdk.*",
+    "dotenv",
+]
+follow_imports = "skip"
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-ra -m 'not ml'"

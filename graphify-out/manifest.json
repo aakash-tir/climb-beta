@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "pyproject.toml": {
-    "mtime": 1794120166.8874793,
-    "ast_hash": "cc00b66d9bbb4a1ff2a51b8fdfb39f8a",
+    "mtime": 1794121848.4039135,
+    "ast_hash": "1d5bc7e126766e33217018af63ce439a",
     "semantic_hash": ""
   },
   "src/climb_beta/__init__.py": {
@@ -45,7 +45,7 @@
     "semantic_hash": ""
   },
   "tests/test_types.py": {
-    "mtime": 1794121569.0667326,
+    "mtime": 1794121793.9677148,
     "ast_hash": "c49e8370c1eda07f17ad2cd5ad02c6d5",
     "semantic_hash": ""
   },
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794121594.8273885,
-    "ast_hash": "c36c7fde19dce213c04cda8cb4652f80",
+    "mtime": 1794121894.1670556,
+    "ast_hash": "1e8eb0b0e83206b8df1728c6e1c39b09",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -245,13 +245,13 @@
     "semantic_hash": ""
   },
   "data/convert_roboflow.py": {
-    "mtime": 1794121543.0566764,
-    "ast_hash": "e4c15548bbbbee5f9e06b04d86ab39b8",
+    "mtime": 1794121793.9519608,
+    "ast_hash": "a4b0e7b553e9b29c74f0e1bb0b935cc0",
     "semantic_hash": ""
   },
   "src/climb_beta/data/coco_to_yolo.py": {
-    "mtime": 1794121569.0243456,
-    "ast_hash": "bebeba2a48bee2c7ef0f850a4427b2e7",
+    "mtime": 1794121793.9647045,
+    "ast_hash": "e662c9d11c9d75ada481195335eaae84",
     "semantic_hash": ""
   },
   "tests/test_coco_to_yolo.py": {
@@ -260,17 +260,17 @@
     "semantic_hash": ""
   },
   "src/climb_beta/data/sam_masks.py": {
-    "mtime": 1794121528.0215356,
+    "mtime": 1794121793.9647045,
     "ast_hash": "da8e314da0c8e4e754a9495e8fb8fc8d",
     "semantic_hash": ""
   },
   "src/climb_beta/imageio.py": {
-    "mtime": 1794121564.211923,
+    "mtime": 1794121793.9657254,
     "ast_hash": "2303604e43cf8984bc4db5420b37c68f",
     "semantic_hash": ""
   },
   "tests/test_sam_fallback.py": {
-    "mtime": 1794121557.3946,
+    "mtime": 1794121793.9667199,
     "ast_hash": "200f2784d72de0ff7ae2c0a6075783cb",
     "semantic_hash": ""
   }
