@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "src/climb_beta/config.py": {
-    "mtime": 1794124151.9855893,
-    "ast_hash": "03d14944ea53cc8be7ed6bfa367535f4",
+    "mtime": 1794124330.1422591,
+    "ast_hash": "2927ceeb4d53792bb3cca25ef5754131",
     "semantic_hash": ""
   },
   "src/climb_beta/types.py": {
@@ -55,8 +55,8 @@
     "semantic_hash": ""
   },
   ".claude/progress.md": {
-    "mtime": 1794120317.9288218,
-    "ast_hash": "ce49ac91c316291f91a88db0c330abb6",
+    "mtime": 1794124385.2548633,
+    "ast_hash": "0485d32a847be93be6e624e2faf79245",
     "semantic_hash": ""
   },
   ".claude/project-context.md": {
@@ -110,8 +110,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1794120272.0680604,
-    "ast_hash": "985bf32c3efd2292914a971b4cab8ac8",
+    "mtime": 1794124380.1614137,
+    "ast_hash": "75bdcf3fef6cb1c3c073b68e33a8b9e2",
     "semantic_hash": ""
   },
   "configs/classes.yaml": {
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794124272.388965,
-    "ast_hash": "3468d97df7a7bd89b2d9bf3f2ac7feed",
+    "mtime": 1794124401.4324741,
+    "ast_hash": "855a1fb575a8783366c21b84702f01ee",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -560,27 +560,27 @@
     "semantic_hash": ""
   },
   "app/app.py": {
-    "mtime": 1794124229.258378,
-    "ast_hash": "944c83f80762459b2685281ed9e4ffe9",
+    "mtime": 1794124330.117471,
+    "ast_hash": "e594e19850879ef7209f05d59a3febf8",
     "semantic_hash": ""
   },
   "app/build_space.py": {
-    "mtime": 1794124233.9205954,
-    "ast_hash": "0b6421e573a834533ac6570b1aec9f28",
+    "mtime": 1794124330.119011,
+    "ast_hash": "3ac1cf39b110677e007d454e110f8810",
     "semantic_hash": ""
   },
   "src/climb_beta/demo.py": {
-    "mtime": 1794124197.692094,
+    "mtime": 1794124330.1422591,
     "ast_hash": "3ca79391e899b283fbb86a1345e478f3",
     "semantic_hash": ""
   },
   "tests/test_demo.py": {
-    "mtime": 1794124197.692094,
+    "mtime": 1794124330.1432588,
     "ast_hash": "fa3cce91af404c03540aa2a23eff64a7",
     "semantic_hash": ""
   },
   "docs/runbooks/deploy-space.md": {
-    "mtime": 1794124187.2672296,
+    "mtime": 1794124330.1200173,
     "ast_hash": "d8c70ee067bd3c17b4da9fe2e4624015",
     "semantic_hash": ""
   }
