@@ -18,6 +18,7 @@ on:
       - "data/**/*.py"
       - "data/**/*.yaml"
       - "labelling/**/*.py"
+      - "labelling/**/*.xml"
       - "train/**"
       - "colour/**/*.py"
       - "route/**/*.py"

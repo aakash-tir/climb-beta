@@ -100,8 +100,8 @@
     "semantic_hash": ""
   },
   ".github/workflows/python.yml": {
-    "mtime": 1794122017.6316442,
-    "ast_hash": "e3bc60841d4db7071614302e208dd42d",
+    "mtime": 1794122390.2122967,
+    "ast_hash": "8d3d5b976e6b5a25137226cef522b41a",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794122308.5264268,
-    "ast_hash": "e78b22305bb34fd58dc8db25d0f40e84",
+    "mtime": 1794122403.8091033,
+    "ast_hash": "849253bef7f2625bf6d8c6c81d067243",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -335,28 +335,43 @@
     "semantic_hash": ""
   },
   "labelling/export_to_yolo.py": {
-    "mtime": 1794122277.8733752,
+    "mtime": 1794122352.8037627,
     "ast_hash": "cca0d98608648508494d58f02bb3a879",
     "semantic_hash": ""
   },
   "src/climb_beta/data/ls_export.py": {
-    "mtime": 1794122272.820487,
+    "mtime": 1794122352.8062098,
     "ast_hash": "5f9610ca06860c9eb60098a5a5b14aaf",
     "semantic_hash": ""
   },
   "src/climb_beta/labelling/__init__.py": {
-    "mtime": 1794122253.1052725,
+    "mtime": 1794122352.8067155,
     "ast_hash": "0573f04f9ee6485833e5c0ec5d646022",
     "semantic_hash": ""
   },
   "src/climb_beta/labelling/schema.py": {
-    "mtime": 1794122255.9123993,
+    "mtime": 1794122352.8067155,
     "ast_hash": "f1c878fecaf2a134c3997975a975c7cb",
     "semantic_hash": ""
   },
   "tests/test_ls_export.py": {
-    "mtime": 1794122291.9269805,
+    "mtime": 1794122352.8077223,
     "ast_hash": "15d637e812ce34717b4d8e05594cb50b",
+    "semantic_hash": ""
+  },
+  "labelling/make_config.py": {
+    "mtime": 1794122390.3341606,
+    "ast_hash": "0d4fdfc37f0445014e220a0cd8aa34e3",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/labelling/make_config.py": {
+    "mtime": 1794122375.9604535,
+    "ast_hash": "49eed61cb9915daaa9ec51c448f50c66",
+    "semantic_hash": ""
+  },
+  "tests/test_ls_config.py": {
+    "mtime": 1794122387.7562132,
+    "ast_hash": "d9559454c8632a89d9cba195f90844d7",
     "semantic_hash": ""
   }
 }
