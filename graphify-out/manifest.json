@@ -165,8 +165,18 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794120709.107427,
-    "ast_hash": "bd3ae28187c680987a2435077e1f0c0e",
+    "mtime": 1794120820.8549802,
+    "ast_hash": "f3b7a8f5ffdbe84e1a34aed9cc6d8c9a",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/masks.py": {
+    "mtime": 1794120800.70258,
+    "ast_hash": "a0401b4d379fb9ccf1eb42adc190054a",
+    "semantic_hash": ""
+  },
+  "tests/test_masks.py": {
+    "mtime": 1794120793.790799,
+    "ast_hash": "c7f1520480b45bb0fdd88c6d8be25f46",
     "semantic_hash": ""
   }
 }

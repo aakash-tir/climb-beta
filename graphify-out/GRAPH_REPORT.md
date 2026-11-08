@@ -1,16 +1,16 @@
 # Graph Report - climb  (2026-11-08)
 
 ## Corpus Check
-- 28 files · ~14,512 words
+- 30 files · ~15,555 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 185 nodes · 216 edges · 23 communities (18 shown, 5 thin omitted)
-- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 21 edges (avg confidence: 0.8)
+- 230 nodes · 285 edges · 25 communities (20 shown, 5 thin omitted)
+- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 21 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2d66609a`
+- Built from commit: `53177135`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -37,6 +37,8 @@
 - climb-beta
 - chalk
 - 2026-11-08.md
+- masks.py
+- test_masks.py
 
 ## God Nodes (most connected - your core abstractions)
 1. `parse_colour_config()` - 11 edges
@@ -65,7 +67,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (23 total, 5 thin omitted)
+## Communities (25 total, 5 thin omitted)
 
 ### Community 0 - "parse_colour_config"
 Cohesion: 0.17
@@ -129,14 +131,22 @@ Nodes (4): Colour step: why rules first, and how they handle chalk (2026-11-08),
 
 ### Community 21 - "chalk"
 Cohesion: 0.19
-Nodes (17): Image, Mask, chalk(), draw_hold(), Synthetic wall photos for tests: grey wall, coloured holds, chalk, tinted light., A near-neutral textured wall., Draw an elliptical hold in place and return its mask.      `shade` darkens tow, Cover `frac` of the mask with chalk, in place. Returns the chalked-pixel mask. (+9 more)
+Nodes (17): Image, chalk(), draw_hold(), Mask, Synthetic wall photos for tests: grey wall, coloured holds, chalk, tinted light., A near-neutral textured wall., Draw an elliptical hold in place and return its mask.      `shade` darkens tow, Cover `frac` of the mask with chalk, in place. Returns the chalked-pixel mask. (+9 more)
 
 ### Community 22 - "2026-11-08.md"
-Cohesion: 0.33
-Nodes (5): 2026-11-08, Expanded the plan and scaffolded climb-beta, .gitattributes and this log's first entry (#31), Initial commit and repo creation, Synthetic hold images for tests (#1)
+Cohesion: 0.29
+Nodes (6): 2026-11-08, Add mask utilities (#2), Expanded the plan and scaffolded climb-beta, .gitattributes and this log's first entry (#31), Initial commit and repo creation, Synthetic hold images for tests (#1)
+
+### Community 23 - "masks.py"
+Cohesion: 0.11
+Nodes (30): ArrayLike, float32, FloatArray, _bbox(), denormalise(), dilate(), distance_to(), edge_ring() (+22 more)
+
+### Community 24 - "test_masks.py"
+Cohesion: 0.21
+Nodes (6): disk(), ndarray, test_dilate_grows_and_zero_is_copy(), test_edge_ring_is_inside_and_thin(), test_iou_matrix_matches_pairwise_and_skips_far_pairs(), test_polygon_roundtrip()
 
 ## Knowledge Gaps
-- **77 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+72 more)
+- **78 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+73 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -144,12 +154,12 @@ Nodes (5): 2026-11-08, Expanded the plan and scaffolded climb-beta, .gitattribut
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ConfigError` connect `parse_colour_config` to `chalk`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Are the 3 inferred relationships involving `parse_colour_config()` (e.g. with `test_bad_hue_range_rejected()` and `test_duplicate_colour_rejected()`) actually correct?**
   _`parse_colour_config()` has 3 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 3 inferred relationships involving `ConfigError` (e.g. with `test_bad_hue_range_rejected()` and `test_duplicate_colour_rejected()`) actually correct?**
-  _`ConfigError` has 3 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `climb-beta`, `Tech stack`, `Conventions` to the rest of the system?**
-  _77 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _78 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Design System` be split into smaller, more focused modules?**
   _Cohesion score 0.125 - nodes in this community are weakly interconnected._
+- **Should `masks.py` be split into smaller, more focused modules?**
+  _Cohesion score 0.10967741935483871 - nodes in this community are weakly interconnected._
