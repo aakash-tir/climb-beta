@@ -22,7 +22,7 @@ ml = [
     "timm>=1.0",
 ]
 # Roboflow dataset download.
-data = ["roboflow>=1.1", "python-dotenv>=1.0"]
+data = ["roboflow>=1.1", "python-dotenv>=1.0", "huggingface_hub>=0.26"]
 # Label Studio export decoding (brush RLE).
 label = ["label-studio-sdk>=1.0"]
 # Gradio demo.

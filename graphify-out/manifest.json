@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "pyproject.toml": {
-    "mtime": 1794121925.6556084,
-    "ast_hash": "81b2bfde1b21ad77b0c4033077e360a4",
+    "mtime": 1794122159.243896,
+    "ast_hash": "67cd69641f6254f3111172bc5031e88c",
     "semantic_hash": ""
   },
   "src/climb_beta/__init__.py": {
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794122109.247573,
-    "ast_hash": "767e2143ea9079ac0937ff66bbbb83be",
+    "mtime": 1794122195.8010216,
+    "ast_hash": "50a7f0e0c07fe766d76ece04074fb3dd",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -295,28 +295,43 @@
     "semantic_hash": ""
   },
   "data/split_by_wall.py": {
-    "mtime": 1794122065.151377,
+    "mtime": 1794122150.741427,
     "ast_hash": "887ed15aaf6ee941791a9c5ab1c391b9",
     "semantic_hash": ""
   },
   "src/climb_beta/data/split.py": {
-    "mtime": 1794122099.6387374,
+    "mtime": 1794122150.7506094,
     "ast_hash": "87538f48b43d710331df3fed1ec7c938",
     "semantic_hash": ""
   },
   "tests/test_split.py": {
-    "mtime": 1794122087.3535516,
+    "mtime": 1794122150.75161,
     "ast_hash": "a611b589c68f30cbc8a7d68698f905c6",
     "semantic_hash": ""
   },
   "data/basecamp/README.md": {
-    "mtime": 1794122071.0939002,
+    "mtime": 1794122150.738281,
     "ast_hash": "8a6bd80f60f7a5c5ee5636e8601ed6fe",
     "semantic_hash": ""
   },
   "data/basecamp/walls.yaml": {
-    "mtime": 1794122067.396389,
+    "mtime": 1794122150.7402904,
     "ast_hash": "4c5b6419bab48de0d4def69928cba20a",
+    "semantic_hash": ""
+  },
+  "data/sync_hf.py": {
+    "mtime": 1794122175.4200473,
+    "ast_hash": "c84ccfcca49c7fd64337502bc013b8f4",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/data/hf_sync.py": {
+    "mtime": 1794122170.7228208,
+    "ast_hash": "57d92878ac429f27ff937aeb296b205b",
+    "semantic_hash": ""
+  },
+  "tests/test_hf_sync.py": {
+    "mtime": 1794122182.3846154,
+    "ast_hash": "ba954d5c11e3a4a2c684c7b5582e6cb9",
     "semantic_hash": ""
   }
 }
