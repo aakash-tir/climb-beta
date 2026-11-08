@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794122766.349405,
-    "ast_hash": "0372b7e44e3e83ea182e9ace3767bdc8",
+    "mtime": 1794122878.2683916,
+    "ast_hash": "6bf7526cd41050f63723c8ec350ca24c",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -390,28 +390,38 @@
     "semantic_hash": ""
   },
   "src/climb_beta/train_config.py": {
-    "mtime": 1794122643.6756542,
+    "mtime": 1794122812.7758396,
     "ast_hash": "0251d66345cae28a89323801792b5c69",
     "semantic_hash": ""
   },
   "tests/test_train_detector.py": {
-    "mtime": 1794122681.3124177,
+    "mtime": 1794122812.7763941,
     "ast_hash": "407cddac9948ba45a075290d98593490",
     "semantic_hash": ""
   },
   "train/train_detector.py": {
-    "mtime": 1794122658.8689404,
+    "mtime": 1794122812.7779586,
     "ast_hash": "2670ac1b9f7e2830eac9bc1d2072b5ed",
     "semantic_hash": ""
   },
   "train/configs/yolo11n-seg.yaml": {
-    "mtime": 1794122646.8711746,
+    "mtime": 1794122812.7769156,
     "ast_hash": "9930192c0d22ed9519e7119f6607af79",
     "semantic_hash": ""
   },
   "train/configs/yolo11s-seg.yaml": {
-    "mtime": 1794122649.0262365,
+    "mtime": 1794122812.7774365,
     "ast_hash": "e3358c78f9b0edc9d461b9d18f9d917b",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/detect.py": {
+    "mtime": 1794122840.0187488,
+    "ast_hash": "621e2254d716766b8a5360ffc8271ea3",
+    "semantic_hash": ""
+  },
+  "tests/test_detect.py": {
+    "mtime": 1794122840.0187488,
+    "ast_hash": "da4eea7560b527acc905e42c6f3fcee9",
     "semantic_hash": ""
   }
 }
