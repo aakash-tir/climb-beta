@@ -72,6 +72,43 @@ uv run pytest                    # the test suite
 uv sync --extra ml --extra data  # + torch (CUDA 12.8), ultralytics, timm, roboflow
 ```
 
+## Workflow: photo to exit criteria
+
+```bash
+uv sync --extra ml --extra data --extra label --extra app
+
+# 1. Public data (needs ROBOFLOW_API_KEY in .env, and the version pinned in data/roboflow.yaml)
+python data/download_roboflow.py
+python data/convert_roboflow.py data/roboflow/<slug> data/yolo/roboflow --sam-fallback
+
+# 2. Our photos: data/basecamp/raw/<wall_id>/*.jpg, then label (docs/runbooks/labelling.md)
+docker compose -f labelling/docker-compose.yml up -d --build
+python labelling/export_to_yolo.py data/basecamp/exports/<export>.json
+python data/split_by_wall.py assign     # whole walls -> train/val/test (never moves old walls)
+python data/split_by_wall.py build      # -> data/yolo/basecamp
+python data/sync_hf.py push             # private HF dataset
+
+# 3. Detector (colour-blind)
+python train/train_detector.py --config train/configs/yolo11n-seg.yaml
+
+# 4. Colour: rules vs classifier on val walls
+python colour/make_crops.py data/yolo/basecamp data/crops/basecamp
+python colour/train_classifier.py data/crops/basecamp
+python colour/eval_colour.py data/yolo/basecamp --split val \
+    --classifier weights/colour-mobilenetv3_large_100.pt
+
+# 5. Exit criteria on the held-out test walls (exit code 0 = Phase 2 may start)
+python eval/check_exit_criteria.py --weights weights/detector-yolo11n-seg.pt
+
+# 6. Try it
+python route/find_route.py wall.jpg --colour red
+CLIMB_DETECTOR_WEIGHTS=weights/detector-yolo11n-seg.pt python app/app.py
+python app/build_space.py dist/space    # HF Space folder (docs/runbooks/deploy-space.md)
+```
+
+Debug the colour rules on one photo and its labels with
+`python colour/classify_rules.py photo.jpg labels.txt --debug out.png`.
+
 The full local gate (CI runs the same on every code PR):
 
 ```bash
