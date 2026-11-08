@@ -100,7 +100,7 @@
     "semantic_hash": ""
   },
   ".github/workflows/python.yml": {
-    "mtime": 1794121974.794784,
+    "mtime": 1794122017.6316442,
     "ast_hash": "e3bc60841d4db7071614302e208dd42d",
     "semantic_hash": ""
   },
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794121974.9872825,
-    "ast_hash": "65e6e914173f27136592fc3a2c71ad4c",
+    "mtime": 1794122109.247573,
+    "ast_hash": "767e2143ea9079ac0937ff66bbbb83be",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -275,23 +275,48 @@
     "semantic_hash": ""
   },
   "data/download_roboflow.py": {
-    "mtime": 1794121952.3953075,
+    "mtime": 1794122017.6316442,
     "ast_hash": "540b6dd0cb610acf09d0423b84054072",
     "semantic_hash": ""
   },
   "src/climb_beta/data/roboflow.py": {
-    "mtime": 1794121961.3959427,
+    "mtime": 1794122017.639652,
     "ast_hash": "943ead6cbb2871e76506dc89dc4fb413",
     "semantic_hash": ""
   },
   "tests/test_roboflow.py": {
-    "mtime": 1794121959.0531366,
+    "mtime": 1794122017.639652,
     "ast_hash": "b27feeddb9473a1a8d2d42e958199dd7",
     "semantic_hash": ""
   },
   "data/roboflow.yaml": {
-    "mtime": 1794121938.7660198,
+    "mtime": 1794122017.6326547,
     "ast_hash": "762e3af8a93852d7b3926f99f0b8a77f",
+    "semantic_hash": ""
+  },
+  "data/split_by_wall.py": {
+    "mtime": 1794122065.151377,
+    "ast_hash": "887ed15aaf6ee941791a9c5ab1c391b9",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/data/split.py": {
+    "mtime": 1794122099.6387374,
+    "ast_hash": "87538f48b43d710331df3fed1ec7c938",
+    "semantic_hash": ""
+  },
+  "tests/test_split.py": {
+    "mtime": 1794122087.3535516,
+    "ast_hash": "a611b589c68f30cbc8a7d68698f905c6",
+    "semantic_hash": ""
+  },
+  "data/basecamp/README.md": {
+    "mtime": 1794122071.0939002,
+    "ast_hash": "8a6bd80f60f7a5c5ee5636e8601ed6fe",
+    "semantic_hash": ""
+  },
+  "data/basecamp/walls.yaml": {
+    "mtime": 1794122067.396389,
+    "ast_hash": "4c5b6419bab48de0d4def69928cba20a",
     "semantic_hash": ""
   }
 }

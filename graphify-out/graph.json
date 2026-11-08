@@ -264,8 +264,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "colour_classify_rules",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "classify_rules.py"
     },
     {
@@ -275,8 +275,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "colour_classify_rules_main",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "main()"
     },
     {
@@ -286,8 +286,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "colour_classify_rules_rationale_1",
-      "community": 0,
-      "community_name": "parse_colour_config",
+      "community": 30,
+      "community_name": "convert_export",
       "norm_label": "label each hold's colour in a photo with the rule-based colour step.  usage:"
     },
     {
@@ -366,6 +366,72 @@
       "community": 26,
       "community_name": "roboflow.py",
       "norm_label": "download the pinned roboflow universe dataset (cc by 4.0) as coco-segmentation."
+    },
+    {
+      "label": "split_by_wall.py",
+      "file_type": "code",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_split_by_wall",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "split_by_wall.py"
+    },
+    {
+      "label": "cmd_assign()",
+      "file_type": "code",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "data_split_by_wall_cmd_assign",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "cmd_assign()"
+    },
+    {
+      "label": "Namespace",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "namespace",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "namespace"
+    },
+    {
+      "label": "cmd_build()",
+      "file_type": "code",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "data_split_by_wall_cmd_build",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "cmd_build()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "data_split_by_wall_main",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "main()"
+    },
+    {
+      "label": "Assign Basecamp walls to train/val/test and build the YOLO-seg dataset.  Usage:",
+      "file_type": "rationale",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_split_by_wall_rationale_1",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "assign basecamp walls to train/val/test and build the yolo-seg dataset.  usage:"
     },
     {
       "label": "climb-beta",
@@ -564,8 +630,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_hold_pixels",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "hold_pixels()"
     },
     {
@@ -575,8 +641,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_py_imagebgr",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "imagebgr"
     },
     {
@@ -586,8 +652,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_py_mask",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "mask"
     },
     {
@@ -696,8 +762,8 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_classify_hold",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "classify_hold()"
     },
     {
@@ -762,8 +828,8 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "src_climb_beta_colour_rules_rationale_166",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "colour of the hold under `mask` in a (white-balanced) bgr image.      white rule"
     },
     {
@@ -773,8 +839,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "white_balance.py"
     },
     {
@@ -784,8 +850,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_grey_world_gains",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "grey_world_gains()"
     },
     {
@@ -795,8 +861,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_py_imagebgr",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "imagebgr"
     },
     {
@@ -806,8 +872,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_py_mask",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "mask"
     },
     {
@@ -817,8 +883,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_apply_gains",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "apply_gains()"
     },
     {
@@ -828,8 +894,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_grey_world",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "grey_world()"
     },
     {
@@ -839,8 +905,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_1",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "grey-world white balance.  the grey-world assumption says the average of a scene"
     },
     {
@@ -850,8 +916,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_24",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "per-channel (b, g, r) gains that make the reference pixels' mean neutral.      p"
     },
     {
@@ -861,8 +927,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_climb_beta_colour_white_balance_rationale_58",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "white-balance `img` so the reference (default: whole image) averages to grey."
     },
     {
@@ -1614,6 +1680,182 @@
       "norm_label": "`split/file_name` entries of pseudo-masked images (empty if none)."
     },
     {
+      "label": "split.py",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "split.py"
+    },
+    {
+      "label": "SplitError",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_spliterror",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "spliterror"
+    },
+    {
+      "label": "ValueError",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_py_valueerror",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "valueerror"
+    },
+    {
+      "label": "assign_walls()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_assign_walls",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "assign_walls()"
+    },
+    {
+      "label": "validate_splits()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_validate_splits",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "validate_splits()"
+    },
+    {
+      "label": "load_splits()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_load_splits",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "load_splits()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_py_path",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "path"
+    },
+    {
+      "label": "save_splits()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_save_splits",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "save_splits()"
+    },
+    {
+      "label": "scan_walls()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_scan_walls",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "scan_walls()"
+    },
+    {
+      "label": "BuildReport",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_buildreport",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "buildreport"
+    },
+    {
+      "label": "build_dataset()",
+      "file_type": "code",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_build_dataset",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "build_dataset()"
+    },
+    {
+      "label": "Split Basecamp photos into train/val/test **by wall**.  Photos of the same wall",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_rationale_1",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "split basecamp photos into train/val/test **by wall**.  photos of the same wall"
+    },
+    {
+      "label": "Deterministically assign whole walls to splits, aiming at `ratios` of photos.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_rationale_43",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "deterministically assign whole walls to splits, aiming at `ratios` of photos."
+    },
+    {
+      "label": "Check a {split: [walls]} mapping and return wall -> split. Raises on overlap.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_rationale_70",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "check a {split: [walls]} mapping and return wall -> split. raises on overlap."
+    },
+    {
+      "label": "wall_id -> sorted photo paths under raw_root/<wall_id>/.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_rationale_98",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "wall_id -> sorted photo paths under raw_root/<wall_id>/."
+    },
+    {
+      "label": "Write a YOLO-seg dataset (images/labels/colours per split) from the wall split.",
+      "file_type": "rationale",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L124",
+      "_origin": "ast",
+      "id": "src_climb_beta_data_split_rationale_124",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "write a yolo-seg dataset (images/labels/colours per split) from the wall split."
+    },
+    {
       "label": "yolo.py",
       "file_type": "code",
       "source_file": "src/climb_beta/data/yolo.py",
@@ -2016,8 +2258,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "src_climb_beta_masks_normalise",
-      "community": 30,
-      "community_name": "convert_export",
+      "community": 23,
+      "community_name": "masks.py",
       "norm_label": "normalise()"
     },
     {
@@ -2137,8 +2379,8 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "src_climb_beta_masks_rationale_123",
-      "community": 30,
-      "community_name": "convert_export",
+      "community": 23,
+      "community_name": "masks.py",
       "norm_label": "pixel polygon -> yolo normalised [0, 1] coords."
     },
     {
@@ -2434,8 +2676,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_classify_rules_cli.py"
     },
     {
@@ -2456,8 +2698,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_py_path",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "path"
     },
     {
@@ -2467,8 +2709,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_cli_labels_holds_and_skips_tape",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_cli_labels_holds_and_skips_tape()"
     },
     {
@@ -2478,8 +2720,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_classify_rules_cli_test_cli_missing_image",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_cli_missing_image()"
     },
     {
@@ -2786,8 +3028,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_colour_white",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_colour_white.py"
     },
     {
@@ -2797,8 +3039,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_test_colour_white_hold",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "_hold()"
     },
     {
@@ -2808,8 +3050,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_white_hold_is_white",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_white_hold_is_white()"
     },
     {
@@ -2819,8 +3061,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_chalked_white_hold_is_white",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_chalked_white_hold_is_white()"
     },
     {
@@ -2830,8 +3072,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_heavily_chalked_colour_hold_votes_on_ring",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_heavily_chalked_colour_hold_votes_on_ring()"
     },
     {
@@ -2841,8 +3083,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_grey_hold_stays_grey",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_grey_hold_stays_grey()"
     },
     {
@@ -2852,8 +3094,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "tests_test_colour_white_test_light_grey_chalk_like_body_but_dim_ring_is_grey",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "test_light_grey_chalk_like_body_but_dim_ring_is_grey()"
     },
     {
@@ -2863,8 +3105,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_colour_white_rationale_1",
-      "community": 5,
-      "community_name": "Detection",
+      "community": 21,
+      "community_name": "chalk",
       "norm_label": "white holds vs chalk: the chalk filter must not delete white holds."
     },
     {
@@ -3160,8 +3402,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "tests_test_roboflow_test_cli_fails_cleanly_without_pin_or_key",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 26,
+      "community_name": "roboflow.py",
       "norm_label": "test_cli_fails_cleanly_without_pin_or_key()"
     },
     {
@@ -3171,8 +3413,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_roboflow_py_path",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 26,
+      "community_name": "roboflow.py",
       "norm_label": "path"
     },
     {
@@ -3182,8 +3424,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "monkeypatch",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 26,
+      "community_name": "roboflow.py",
       "norm_label": "monkeypatch"
     },
     {
@@ -3193,8 +3435,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "capturefixture",
-      "community": 27,
-      "community_name": "Detection",
+      "community": 26,
+      "community_name": "roboflow.py",
       "norm_label": "capturefixture"
     },
     {
@@ -3284,6 +3526,138 @@
       "community": 31,
       "community_name": "sam_masks.py",
       "norm_label": "test_sam_segmenter_smoke()"
+    },
+    {
+      "label": "test_split.py",
+      "file_type": "code",
+      "source_file": "tests/test_split.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_split",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "test_split.py"
+    },
+    {
+      "label": "test_assignment_never_puts_a_wall_in_two_splits()",
+      "file_type": "code",
+      "source_file": "tests/test_split.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "tests_test_split_test_assignment_never_puts_a_wall_in_two_splits",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "test_assignment_never_puts_a_wall_in_two_splits()"
+    },
+    {
+      "label": "test_assignment_deterministic_and_roughly_on_ratio()",
+      "file_type": "code",
+      "source_file": "tests/test_split.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "tests_test_split_test_assignment_deterministic_and_roughly_on_ratio",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "test_assignment_deterministic_and_roughly_on_ratio()"
+    },
+    {
+      "label": "test_bad_ratios()",
+      "file_type": "code",
+      "source_file": "tests/test_split.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "tests_test_split_test_bad_ratios",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "test_bad_ratios()"
+    },
+    {
+      "label": "test_hand_written_overlap_rejected()",
+      "file_type": "code",
+      "source_file": "tests/test_split.py",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "tests_test_split_test_hand_written_overlap_rejected",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "test_hand_written_overlap_rejected()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "tests_test_split_py_path",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "path"
+    },
+    {
+      "label": "_photos()",
+      "file_type": "code",
+      "source_file": "tests/test_split.py",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "tests_test_split_photos",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "_photos()"
+    },
+    {
+      "label": "test_build_dataset_by_wall()",
+      "file_type": "code",
+      "source_file": "tests/test_split.py",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "tests_test_split_test_build_dataset_by_wall",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "test_build_dataset_by_wall()"
+    },
+    {
+      "label": "test_unassigned_wall_reported()",
+      "file_type": "code",
+      "source_file": "tests/test_split.py",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "tests_test_split_test_unassigned_wall_reported",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "test_unassigned_wall_reported()"
+    },
+    {
+      "label": "test_cli_assign_is_stable_when_walls_are_added()",
+      "file_type": "code",
+      "source_file": "tests/test_split.py",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "tests_test_split_test_cli_assign_is_stable_when_walls_are_added",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "test_cli_assign_is_stable_when_walls_are_added()"
+    },
+    {
+      "label": "test_cli_rejects_overlapping_splits_file()",
+      "file_type": "code",
+      "source_file": "tests/test_split.py",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "tests_test_split_test_cli_rejects_overlapping_splits_file",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "test_cli_rejects_overlapping_splits_file()"
+    },
+    {
+      "label": "test_save_splits_roundtrip()",
+      "file_type": "code",
+      "source_file": "tests/test_split.py",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "tests_test_split_test_save_splits_roundtrip",
+      "community": 27,
+      "community_name": "Detection",
+      "norm_label": "test_save_splits_roundtrip()"
     },
     {
       "label": "test_synth.py",
@@ -3402,8 +3776,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_white_balance",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "test_white_balance.py"
     },
     {
@@ -3413,8 +3787,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "tests_test_white_balance_neutral_err",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "_neutral_err()"
     },
     {
@@ -3424,8 +3798,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_white_balance_py_ndarray",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "ndarray"
     },
     {
@@ -3435,8 +3809,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "slice",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "slice"
     },
     {
@@ -3446,8 +3820,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_restores_warm_tint_on_neutral_wall",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "test_restores_warm_tint_on_neutral_wall()"
     },
     {
@@ -3457,8 +3831,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_wall_reference_beats_whole_image_when_holds_dominate",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "test_wall_reference_beats_whole_image_when_holds_dominate()"
     },
     {
@@ -3479,8 +3853,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_gains_are_clipped_and_black_image_is_identity",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "test_gains_are_clipped_and_black_image_is_identity()"
     },
     {
@@ -3490,8 +3864,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_white_balance_test_apply_gains_saturates",
-      "community": 21,
-      "community_name": "chalk",
+      "community": 32,
+      "community_name": "grey_world",
       "norm_label": "test_apply_gains_saturates()"
     },
     {
@@ -4133,6 +4507,28 @@
       "norm_label": "data and licences"
     },
     {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "data/basecamp/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_basecamp_readme",
+      "community": 33,
+      "community_name": "README.md",
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Basecamp photos (private)",
+      "file_type": "document",
+      "source_file": "data/basecamp/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data_basecamp_readme_basecamp_photos_private",
+      "community": 33,
+      "community_name": "README.md",
+      "norm_label": "basecamp photos (private)"
+    },
+    {
       "label": "future.md",
       "file_type": "document",
       "source_file": "docs/future.md",
@@ -4626,6 +5022,17 @@
       "community": 22,
       "community_name": "2026-11-08.md",
       "norm_label": "add roboflow download script and data/roboflow.yaml (#11)"
+    },
+    {
+      "label": "Add Basecamp photo layout and split-by-wall (#13)",
+      "file_type": "document",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "logs_2026_11_08_add_basecamp_photo_layout_and_split_by_wall_13",
+      "community": 22,
+      "community_name": "2026-11-08.md",
+      "norm_label": "add basecamp photo layout and split-by-wall (#13)"
     },
     {
       "label": "plan.md",
@@ -5393,6 +5800,206 @@
       "_origin": "ast",
       "source": "data_download_roboflow_main",
       "target": "src_climb_beta_data_roboflow_load_source"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall",
+      "target": "src_climb_beta_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall",
+      "target": "data_split_by_wall_cmd_assign",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall",
+      "target": "data_split_by_wall_cmd_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall",
+      "target": "data_split_by_wall_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_rationale_1",
+      "target": "data_split_by_wall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_cmd_assign",
+      "target": "namespace",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_cmd_assign",
+      "target": "src_climb_beta_data_split_assign_walls"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_cmd_assign",
+      "target": "src_climb_beta_data_split_load_splits"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_cmd_assign",
+      "target": "src_climb_beta_data_split_save_splits"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_cmd_assign",
+      "target": "src_climb_beta_data_split_scan_walls"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_main",
+      "target": "data_split_by_wall_cmd_assign",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_cmd_build",
+      "target": "namespace",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_cmd_build",
+      "target": "src_climb_beta_config_load_classes"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_cmd_build",
+      "target": "src_climb_beta_data_sam_masks_load_pseudo_masks"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_cmd_build",
+      "target": "src_climb_beta_data_split_build_dataset"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_cmd_build",
+      "target": "src_climb_beta_data_split_load_splits"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "data/split_by_wall.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_split_by_wall_main",
+      "target": "data_split_by_wall_cmd_build",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -7715,6 +8322,18 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_build_dataset",
+      "target": "src_climb_beta_data_coco_to_yolo_write_dataset_yaml"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "src/climb_beta/data/coco_to_yolo.py",
       "source_location": "L227",
       "weight": 1.0,
@@ -8337,6 +8956,448 @@
       "_origin": "ast",
       "source": "tests_test_sam_fallback_test_without_segmenter_box_images_held_back",
       "target": "src_climb_beta_data_sam_masks_load_pseudo_masks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split",
+      "target": "src_climb_beta_data_split_assign_walls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split",
+      "target": "src_climb_beta_data_split_build_dataset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split",
+      "target": "src_climb_beta_data_split_buildreport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split",
+      "target": "src_climb_beta_data_split_load_splits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split",
+      "target": "src_climb_beta_data_split_save_splits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split",
+      "target": "src_climb_beta_data_split_scan_walls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split",
+      "target": "src_climb_beta_data_split_spliterror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split",
+      "target": "src_climb_beta_data_split_validate_splits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_rationale_1",
+      "target": "src_climb_beta_data_split",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_assign_walls",
+      "target": "src_climb_beta_data_split_spliterror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L163",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_build_dataset",
+      "target": "src_climb_beta_data_split_spliterror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_spliterror",
+      "target": "src_climb_beta_data_split_py_valueerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_validate_splits",
+      "target": "src_climb_beta_data_split_spliterror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_bad_ratios",
+      "target": "src_climb_beta_data_split_spliterror"
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_hand_written_overlap_rejected",
+      "target": "src_climb_beta_data_split_spliterror"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_rationale_43",
+      "target": "src_climb_beta_data_split_assign_walls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_assignment_deterministic_and_roughly_on_ratio",
+      "target": "src_climb_beta_data_split_assign_walls"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_assignment_never_puts_a_wall_in_two_splits",
+      "target": "src_climb_beta_data_split_assign_walls"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_bad_ratios",
+      "target": "src_climb_beta_data_split_assign_walls"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_build_dataset",
+      "target": "src_climb_beta_data_split_validate_splits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_load_splits",
+      "target": "src_climb_beta_data_split_validate_splits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_rationale_70",
+      "target": "src_climb_beta_data_split_validate_splits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_save_splits",
+      "target": "src_climb_beta_data_split_validate_splits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_hand_written_overlap_rejected",
+      "target": "src_climb_beta_data_split_validate_splits"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_load_splits",
+      "target": "src_climb_beta_data_split_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_cli_assign_is_stable_when_walls_are_added",
+      "target": "src_climb_beta_data_split_load_splits"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_hand_written_overlap_rejected",
+      "target": "src_climb_beta_data_split_load_splits"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_save_splits_roundtrip",
+      "target": "src_climb_beta_data_split_load_splits"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_build_dataset",
+      "target": "src_climb_beta_data_split_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_save_splits",
+      "target": "src_climb_beta_data_split_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_scan_walls",
+      "target": "src_climb_beta_data_split_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_save_splits_roundtrip",
+      "target": "src_climb_beta_data_split_save_splits"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_build_dataset",
+      "target": "src_climb_beta_data_split_scan_walls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_rationale_98",
+      "target": "src_climb_beta_data_split_scan_walls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_build_dataset",
+      "target": "src_climb_beta_data_split_buildreport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/climb_beta/data/split.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_climb_beta_data_split_rationale_124",
+      "target": "src_climb_beta_data_split_build_dataset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_build_dataset_by_wall",
+      "target": "src_climb_beta_data_split_build_dataset"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_unassigned_wall_reported",
+      "target": "src_climb_beta_data_split_build_dataset"
     },
     {
       "relation": "imports_from",
@@ -9672,6 +10733,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split",
+      "target": "tests_scripts",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "context": "return_type",
       "confidence": "EXTRACTED",
@@ -9729,6 +10802,30 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_roboflow_test_cli_fails_cleanly_without_pin_or_key",
+      "target": "tests_scripts_load_script"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_cli_assign_is_stable_when_walls_are_added",
+      "target": "tests_scripts_load_script"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_split.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_cli_rejects_overlapping_splits_file",
       "target": "tests_scripts_load_script"
     },
     {
@@ -11633,6 +12730,248 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split",
+      "target": "tests_test_split_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split",
+      "target": "tests_test_split_test_assignment_deterministic_and_roughly_on_ratio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split",
+      "target": "tests_test_split_test_assignment_never_puts_a_wall_in_two_splits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split",
+      "target": "tests_test_split_test_bad_ratios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split",
+      "target": "tests_test_split_test_build_dataset_by_wall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split",
+      "target": "tests_test_split_test_cli_assign_is_stable_when_walls_are_added",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split",
+      "target": "tests_test_split_test_cli_rejects_overlapping_splits_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split",
+      "target": "tests_test_split_test_hand_written_overlap_rejected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split",
+      "target": "tests_test_split_test_save_splits_roundtrip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split",
+      "target": "tests_test_split_test_unassigned_wall_reported",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_hand_written_overlap_rejected",
+      "target": "tests_test_split_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_photos",
+      "target": "tests_test_split_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_build_dataset_by_wall",
+      "target": "tests_test_split_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_cli_assign_is_stable_when_walls_are_added",
+      "target": "tests_test_split_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_cli_rejects_overlapping_splits_file",
+      "target": "tests_test_split_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_save_splits_roundtrip",
+      "target": "tests_test_split_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_unassigned_wall_reported",
+      "target": "tests_test_split_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_build_dataset_by_wall",
+      "target": "tests_test_split_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_cli_assign_is_stable_when_walls_are_added",
+      "target": "tests_test_split_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_cli_rejects_overlapping_splits_file",
+      "target": "tests_test_split_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_split.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_split_test_unassigned_wall_reported",
+      "target": "tests_test_split_photos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_synth.py",
       "source_location": "L33",
       "weight": 1.0,
@@ -12398,6 +13737,17 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "data/basecamp/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "data_basecamp_readme",
+      "target": "data_basecamp_readme_basecamp_photos_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/future.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -12668,6 +14018,17 @@
       "_origin": "ast",
       "source": "logs_2026_11_08",
       "target": "logs_2026_11_08_2026_11_08",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "logs/2026-11-08.md",
+      "source_location": "L162",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "logs_2026_11_08_2026_11_08",
+      "target": "logs_2026_11_08_add_basecamp_photo_layout_and_split_by_wall_13",
       "confidence_score": 1.0
     },
     {
@@ -12947,5 +14308,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5228fa7af26a16438b4000520af22882ea1dddb4"
+  "built_at_commit": "1daab29a3dd44627c43ffa49a17a3ace5461ddd6"
 }
