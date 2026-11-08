@@ -1,16 +1,16 @@
 # Graph Report - climb  (2026-11-08)
 
 ## Corpus Check
-- 93 files · ~42,109 words
+- 97 files · ~44,313 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 805 nodes · 1498 edges · 50 communities (38 shown, 12 thin omitted)
-- Extraction: 76% EXTRACTED · 24% INFERRED · 0% AMBIGUOUS · INFERRED: 355 edges (avg confidence: 0.77)
+- 848 nodes · 1624 edges · 45 communities (33 shown, 12 thin omitted)
+- Extraction: 75% EXTRACTED · 25% INFERRED · 0% AMBIGUOUS · INFERRED: 399 edges (avg confidence: 0.76)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f2ac997e`
+- Built from commit: `a2fcd0a9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,7 +42,6 @@
 - __init__.py
 - roboflow.py
 - Detection
-- _scene
 - __init__.py
 - convert_export
 - sam_masks.py
@@ -55,27 +54,23 @@
 - schema.py
 - _dataset
 - preprocess
-- main
 - test_labelling_compose.py
 - __init__.py
 - run
 - colour_detections
-- group_routes
-- Detection
 - results_to_detections
-- sam_masks.py
 
 ## God Nodes (most connected - your core abstractions)
 1. `Detection` - 36 edges
-2. `2026-11-08` - 29 edges
+2. `2026-11-08` - 30 edges
 3. `wall()` - 27 edges
-4. `draw_hold()` - 24 edges
-5. `classify_hold()` - 23 edges
-6. `ColourConfig` - 23 edges
-7. `group_routes()` - 19 edges
-8. `load_script()` - 19 edges
-9. `run()` - 18 edges
-10. `convert_export()` - 17 edges
+4. `ColourConfig` - 26 edges
+5. `classify_hold()` - 24 edges
+6. `evaluate()` - 24 edges
+7. `draw_hold()` - 24 edges
+8. `load_script()` - 23 edges
+9. `run()` - 19 edges
+10. `group_routes()` - 19 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `test_preprocess_rgb_order_and_shape()` --calls--> `preprocess()`  [INFERRED]
@@ -92,11 +87,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (50 total, 12 thin omitted)
+## Communities (45 total, 12 thin omitted)
 
 ### Community 0 - "parse_colour_config"
 Cohesion: 0.07
-Nodes (39): Label each hold's colour in a photo with the rule-based colour step.  Usage:, main(), Cut a white-balanced, background-masked crop of every labelled hold.  Usage:, main(), Convert a Roboflow `coco-segmentation` export to a YOLO-seg dataset.  Usage:, main(), Convert a Label Studio JSON export into data/basecamp/labels/<wall>/<photo>.{txt, main() (+31 more)
+Nodes (42): main(), Cut a white-balanced, background-masked crop of every labelled hold.  Usage:, main(), Convert a Roboflow `coco-segmentation` export to a YOLO-seg dataset.  Usage:, main(), Check every Phase 1 exit criterion on the held-out test walls. Exit 0 only if al, main(), Convert a Label Studio JSON export into data/basecamp/labels/<wall>/<photo>.{txt (+34 more)
 
 ### Community 1 - "generate_diagram.py"
 Cohesion: 0.18
@@ -155,16 +150,16 @@ Cohesion: 0.40
 Nodes (4): Colour step: why rules first, and how they handle chalk (2026-11-08), Decisions, Rejected, The hard part
 
 ### Community 21 - "chalk"
-Cohesion: 0.05
-Nodes (66): Image, slice, apply_gains(), grey_world(), grey_world_gains(), ImageBGR, Mask, Grey-world white balance.  The grey-world assumption says the average of a scene (+58 more)
+Cohesion: 0.08
+Nodes (50): Image, slice, apply_gains(), grey_world(), grey_world_gains(), ImageBGR, Mask, Grey-world white balance.  The grey-world assumption says the average of a scene (+42 more)
 
 ### Community 22 - "2026-11-08.md"
-Cohesion: 0.07
-Nodes (29): 2026-11-08, Add Basecamp photo layout and split-by-wall (#13), Add chalk-aware per-pixel colour family voting (#4), Add COCO-segmentation to YOLO-seg converter (#9), Add colour/classify_rules.py CLI (#7), Add colour eval with per-colour confusion matrix (#22), Add detection metrics: mask matching, hold recall, mask mAP50 (#26), Add detector inference wrapper returning Detection masks (#19) (+21 more)
+Cohesion: 0.06
+Nodes (30): 2026-11-08, Add Basecamp photo layout and split-by-wall (#13), Add chalk-aware per-pixel colour family voting (#4), Add COCO-segmentation to YOLO-seg converter (#9), Add colour/classify_rules.py CLI (#7), Add colour eval with per-colour confusion matrix (#22), Add detection metrics: mask matching, hold recall, mask mAP50 (#26), Add detector inference wrapper returning Detection masks (#19) (+22 more)
 
 ### Community 23 - "masks.py"
-Cohesion: 0.11
-Nodes (30): _bbox(), denormalise(), dilate(), distance_to(), edge_ring(), erode(), iou_matrix(), _kernel() (+22 more)
+Cohesion: 0.09
+Nodes (34): _bbox(), denormalise(), dilate(), distance_to(), edge_ring(), erode(), iou_matrix(), _kernel() (+26 more)
 
 ### Community 24 - "test_masks.py"
 Cohesion: 0.21
@@ -178,89 +173,69 @@ Nodes (22): CaptureFixture, _load_dotenv(), main(), Download the pinned Roboflow
 Cohesion: 0.13
 Nodes (31): cmd_assign(), cmd_build(), main(), Assign Basecamp walls to train/val/test and build the YOLO-seg dataset.  Usage:, Namespace, assign_walls(), build_dataset(), BuildReport (+23 more)
 
-### Community 28 - "_scene"
-Cohesion: 0.18
-Nodes (9): main(), Find the route of a chosen colour in a wall photo (detector + colour + route)., Detector, Path, A local path, or `hf://<user>/<repo>/<file>` downloaded from the HF Hub., Ultralytics YOLO11-seg wrapper (needs the `ml` extra)., resolve_weights(), Path (+1 more)
-
 ### Community 30 - "convert_export"
-Cohesion: 0.09
-Nodes (40): main(), Counter, best_polygon(), BoxOnly, ConversionReport, convert_export(), convert_split(), default_class_for() (+32 more)
+Cohesion: 0.05
+Nodes (62): BoxesXYXY, main(), Label each hold's colour in a photo with the rule-based colour step.  Usage:, Counter, best_polygon(), BoxOnly, ConversionReport, convert_export() (+54 more)
 
 ### Community 31 - "sam_masks.py"
 Cohesion: 0.14
-Nodes (22): main(), Push/pull data/basecamp/{raw,labels,exports} to/from a PRIVATE Hugging Face data, RuntimeError, _api(), ensure_private(), HFSyncError, pull(), push() (+14 more)
+Nodes (22): main(), Push/pull data/basecamp/{raw,labels,exports} to/from a PRIVATE Hugging Face data, _api(), ensure_private(), HFSyncError, pull(), push(), Any (+14 more)
 
 ### Community 32 - "convert_ls_export"
-Cohesion: 0.11
-Nodes (16): average_precision(), ClassStats, DetectionAccumulator, DetectionReport, ImageMatch, match_masks(), Detection metrics on masks: greedy IoU matching, recall, VOC all-point AP50.  Ex, Feed (predictions, ground truth) image by image; read the report at the end. (+8 more)
+Cohesion: 0.06
+Nodes (32): colour_detections(), ImageBGR, ndarray, Colour every hold in a photo: wall-referenced white balance, then the rules., Pixels outside every detection: the wall, used as the white-balance reference., Set `.colour`/`.colour_conf` on every hold detection (in place).      Returns th, wall_mask(), ImageBGR (+24 more)
 
 ### Community 34 - "sam_masks.py"
-Cohesion: 0.16
-Nodes (13): _bbox(), _box_gap(), _gap(), load_route_config(), Mask, Path, Group same-colour holds into routes; tape near a hold marks it as a start.  Hold, The route the user means by a colour: the one with start tape, else the largest. (+5 more)
+Cohesion: 0.13
+Nodes (23): _bbox(), _box_gap(), _gap(), group_routes(), load_route_config(), Mask, Path, Group same-colour holds into routes; tape near a hold marks it as a start.  Hold (+15 more)
 
 ### Community 35 - "Runbook: labelling Basecamp photos"
 Cohesion: 0.20
 Nodes (9): 0. Prerequisites, 1. Put photos in place, 2. Start, 3. Create the project, 4. Label (per photo), 5. Export → training data, Runbook: labelling Basecamp photos, Stop / reset (+1 more)
 
 ### Community 36 - "test_train_detector.py"
-Cohesion: 0.09
-Nodes (29): ModuleType, load_train_config(), merge_datasets(), parse_train_config(), Any, Path, ValueError, Detector training config: load/validate, and merge several YOLO-seg datasets.  T (+21 more)
+Cohesion: 0.07
+Nodes (37): ModuleType, load_train_config(), merge_datasets(), parse_train_config(), Any, Path, ValueError, Detector training config: load/validate, and merge several YOLO-seg datasets.  T (+29 more)
 
 ### Community 39 - "_dataset"
-Cohesion: 0.11
-Nodes (31): CropRecord, extract_crop(), iter_hold_crops(), iter_labelled_holds(), LabelledHold, ImageBGR, Mask, Path (+23 more)
+Cohesion: 0.09
+Nodes (37): _as_json(), main(), Any, Print a per-colour confusion matrix for the rules and (optionally) the classifie, CropRecord, extract_crop(), iter_hold_crops(), iter_labelled_holds() (+29 more)
 
 ### Community 40 - "preprocess"
 Cohesion: 0.11
 Nodes (20): augment(), load_split(), main(), Any, Path, Train the hold-colour crop classifier (timm MobileNetV3-Large or ResNet18).  Usa, Flips, 90-degree rotations and mild brightness. No hue/saturation changes., build_model() (+12 more)
 
-### Community 41 - "main"
-Cohesion: 0.22
-Nodes (12): _as_json(), main(), Any, Print a per-colour confusion matrix for the rules and (optionally) the classifie, _acc(), colour_report(), ColourReport, format_report() (+4 more)
-
 ### Community 44 - "run"
-Cohesion: 0.15
-Nodes (13): ColourMethod, DetectorLike, Protocol, Run the YOLO11-seg detector and return full-resolution `Detection` masks.  Ultra, ClassifierLike, PipelineResult, Any, ImageBGR (+5 more)
+Cohesion: 0.05
+Nodes (52): DetectorLike, Protocol, Run the YOLO11-seg detector and return full-resolution `Detection` masks.  Ultra, check_no_wall_leakage(), evaluate(), ExitReport, LeakageError, load_routes_gt() (+44 more)
 
 ### Community 45 - "colour_detections"
-Cohesion: 0.09
-Nodes (37): bool_, colour_detections(), ImageBGR, ndarray, Colour every hold in a photo: wall-referenced white balance, then the rules., Pixels outside every detection: the wall, used as the white-balance reference., Set `.colour`/`.colour_conf` on every hold detection (in place).      Returns th, wall_mask() (+29 more)
-
-### Community 46 - "group_routes"
-Cohesion: 0.32
-Nodes (11): group_routes(), _UnionFind, hold(), ladder(), tape(), test_named_route_prefers_the_taped_route_over_the_larger(), test_no_holds_of_colour(), test_scale_invariance() (+3 more)
-
-### Community 47 - "Detection"
-Cohesion: 0.16
-Nodes (8): ImageBGR, Detection, One detector instance: a mask and a class (hold, volume or tape)., (x, y) centroid of the mask in pixels., (x0, y0, x1, y1), inclusive-exclusive., test_detection_geometry(), test_empty_detection_is_safe(), test_imageio_roundtrip_and_missing()
+Cohesion: 0.10
+Nodes (33): bool_, classify_hold(), classify_pixels(), ColourResult, _first_in_family(), hold_pixels(), HoldPixels, pixel_labels() (+25 more)
 
 ### Community 48 - "results_to_detections"
-Cohesion: 0.33
-Nodes (6): ArrayLike, Build Detections from per-instance pixel polygons (original image coords)., results_to_detections(), test_detector_smoke(), test_results_to_detections_empty(), test_results_to_detections_full_resolution_masks()
-
-### Community 49 - "sam_masks.py"
-Cohesion: 0.12
-Nodes (21): BoxesXYXY, box_fill_segmenter(), load_pseudo_masks(), BoxSegmenter, ImageBGR, Mask, Path, Turn box-only annotations into masks by prompting SAM with each box.  Masks made (+13 more)
+Cohesion: 0.18
+Nodes (11): ArrayLike, Path, Build Detections from per-instance pixel polygons (original image coords)., A local path, or `hf://<user>/<repo>/<file>` downloaded from the HF Hub., resolve_weights(), results_to_detections(), Path, test_detector_smoke() (+3 more)
 
 ## Knowledge Gaps
-- **110 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+105 more)
+- **111 isolated node(s):** `climb-beta`, `Tech stack`, `Conventions`, `Git workflow (required)`, `Issues, PRs and CI (required)` (+106 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Detection` connect `Detection` to `convert_ls_export`, `sam_masks.py`, `run`, `colour_detections`, `group_routes`, `results_to_detections`, `chalk`, `_scene`, `convert_export`?**
-  _High betweenness centrality (0.075) - this node is a cross-community bridge._
-- **Why does `ColourConfig` connect `colour_detections` to `parse_colour_config`, `run`, `Detection`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
-- **Why does `YoloInstance` connect `convert_export` to `test_train_detector.py`, `Detection`, `_dataset`, `Detection`, `chalk`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
+- **Why does `Detection` connect `convert_ls_export` to `parse_colour_config`, `sam_masks.py`, `run`, `results_to_detections`, `convert_export`?**
+  _High betweenness centrality (0.066) - this node is a cross-community bridge._
+- **Why does `evaluate()` connect `run` to `parse_colour_config`, `convert_ls_export`, `_dataset`, `colour_detections`, `chalk`, `masks.py`, `convert_export`?**
+  _High betweenness centrality (0.048) - this node is a cross-community bridge._
+- **Why does `ColourConfig` connect `colour_detections` to `convert_ls_export`, `parse_colour_config`, `run`, `Detection`?**
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **Are the 17 inferred relationships involving `Detection` (e.g. with `YoloInstance` and `Detector`) actually correct?**
   _`Detection` has 17 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 24 inferred relationships involving `wall()` (e.g. with `wall_scene()` and `_scene()`) actually correct?**
   _`wall()` has 24 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 20 inferred relationships involving `draw_hold()` (e.g. with `wall_scene()` and `_scene()`) actually correct?**
-  _`draw_hold()` has 20 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 15 inferred relationships involving `classify_hold()` (e.g. with `main()` and `colour_detections()`) actually correct?**
-  _`classify_hold()` has 15 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 7 inferred relationships involving `ColourConfig` (e.g. with `ColourResult` and `HoldPixels`) actually correct?**
+  _`ColourConfig` has 7 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 16 inferred relationships involving `classify_hold()` (e.g. with `main()` and `colour_detections()`) actually correct?**
+  _`classify_hold()` has 16 INFERRED edges - model-reasoned connections that need verification._

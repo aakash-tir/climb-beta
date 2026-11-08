@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794123741.4705286,
-    "ast_hash": "18ec145b05d0d38cc81126f74a168746",
+    "mtime": 1794123885.0374174,
+    "ast_hash": "ed4f2bc318ade3b3f93d74f5127859ad",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -520,13 +520,33 @@
     "semantic_hash": ""
   },
   "src/climb_beta/metrics/detection.py": {
-    "mtime": 1794123718.148962,
+    "mtime": 1794123794.0306656,
     "ast_hash": "65df594f051f272c0b88849631afba0b",
     "semantic_hash": ""
   },
   "tests/test_detection_metrics.py": {
-    "mtime": 1794123727.1813574,
+    "mtime": 1794123794.0317056,
     "ast_hash": "d6c848b557db9bb6b4a4f2748423badb",
+    "semantic_hash": ""
+  },
+  "eval/check_exit_criteria.py": {
+    "mtime": 1794123851.0960078,
+    "ast_hash": "4eeb0f4df5cde59d8c262f758297940e",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/metrics/exit_criteria.py": {
+    "mtime": 1794123884.0735772,
+    "ast_hash": "59143ed21a910fcd612af0da688954d7",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/metrics/route.py": {
+    "mtime": 1794123815.1462872,
+    "ast_hash": "cb4902d3a9df7147d69d8c371616921a",
+    "semantic_hash": ""
+  },
+  "tests/test_exit_criteria.py": {
+    "mtime": 1794123867.817691,
+    "ast_hash": "beec7950091dd6878ebe601930bb714b",
     "semantic_hash": ""
   }
 }
