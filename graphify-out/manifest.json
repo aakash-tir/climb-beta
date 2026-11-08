@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-08.md": {
-    "mtime": 1794123344.340545,
-    "ast_hash": "42164e514e3a202715bfc382d67eb6b1",
+    "mtime": 1794123462.3422964,
+    "ast_hash": "71283c08566ed83bdbf2369b4adb8959",
     "semantic_hash": ""
   },
   "src/climb_beta/masks.py": {
@@ -475,23 +475,43 @@
     "semantic_hash": ""
   },
   "src/climb_beta/route/__init__.py": {
-    "mtime": 1794123297.5957963,
+    "mtime": 1794123395.512084,
     "ast_hash": "b1d2029cdc0551dd835bb88e80f3f967",
     "semantic_hash": ""
   },
   "src/climb_beta/route/group.py": {
-    "mtime": 1794123325.8031433,
+    "mtime": 1794123395.512084,
     "ast_hash": "66a3c7cde328b7fb7facd51c1c89a0f7",
     "semantic_hash": ""
   },
   "tests/test_route_group.py": {
-    "mtime": 1794123324.3644898,
+    "mtime": 1794123395.5130863,
     "ast_hash": "3725f72933ce74c9b4c3f9b8558a8436",
     "semantic_hash": ""
   },
   "configs/route.yaml": {
-    "mtime": 1794123296.7283547,
+    "mtime": 1794123395.5024023,
     "ast_hash": "305cfc0ea4ca9aed6baad733fcc221aa",
+    "semantic_hash": ""
+  },
+  "route/find_route.py": {
+    "mtime": 1794123422.124721,
+    "ast_hash": "b17960861911b26814077fbe42bb655f",
+    "semantic_hash": ""
+  },
+  "src/climb_beta/pipeline.py": {
+    "mtime": 1794123457.4902768,
+    "ast_hash": "301f7ebbb4288c94dd2642fa1c63ce76",
+    "semantic_hash": ""
+  },
+  "tests/fakes.py": {
+    "mtime": 1794123429.6496081,
+    "ast_hash": "9c61441b4c541cbc6cb15e83b774e7ee",
+    "semantic_hash": ""
+  },
+  "tests/test_pipeline.py": {
+    "mtime": 1794123435.665347,
+    "ast_hash": "bfcbcb11fb0d030c9f35dffe94812cae",
     "semantic_hash": ""
   }
 }
