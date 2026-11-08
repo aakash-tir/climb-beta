@@ -27,7 +27,6 @@
   "25": "__init__.py",
   "26": "roboflow.py",
   "27": "Detection",
-  "28": "_scene",
   "29": "__init__.py",
   "30": "convert_export",
   "31": "sam_masks.py",
@@ -40,13 +39,9 @@
   "38": "schema.py",
   "39": "_dataset",
   "40": "preprocess",
-  "41": "main",
   "42": "test_labelling_compose.py",
   "43": "__init__.py",
   "44": "run",
   "45": "colour_detections",
-  "46": "group_routes",
-  "47": "Detection",
-  "48": "results_to_detections",
-  "49": "sam_masks.py"
+  "48": "results_to_detections"
 }
