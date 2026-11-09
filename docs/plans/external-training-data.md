@@ -11,8 +11,8 @@ datasets, and how should the dataset hold images that carry only some of the lab
 
 ## Recommendation: public datasets now, YouTube frames only as a gated pilot
 1. **Use public outline datasets first** (M2): the Roboflow set being pinned in #12 and
-   [ClimbInst](https://huggingface.co/datasets/ClimbVision/ClimbInst) (#72, pending a
-   licence check). Together they hold about 3,000 labelled wall images from many gyms,
+   [ClimbInst](https://huggingface.co/datasets/ClimbVision/ClimbInst) (#72,
+   CC BY-NC-SA 4.0: fine for this non-commercial project, see Rights). Together they hold about 3,000 labelled wall images from many gyms,
    for a few hours of download and conversion work.
 2. **Put the labelling hours into Basecamp photos.** A Basecamp photo takes about the
    same time to label as a YouTube frame (every hold outlined), but it also trains colour
@@ -34,7 +34,7 @@ datasets, and how should the dataset hold images that carry only some of the lab
 | Labels | polygons; ClimbInst merges hold + volume into one class | whatever we draw: outlines only |
 | Image quality | phone and camera stills | video compression, wide-angle lenses, often motion blur or a climber in shot |
 | Variety | many gyms and walls | many gyms; pro-level setting; little gain over public sets |
-| Rights | Roboflow: CC BY 4.0 with attribution. ClimbInst: **not stated**, follows its sources (#72) | ToS breach and copyrighted: private forever, never published |
+| Rights | Roboflow: CC BY 4.0 with attribution. ClimbInst: **CC BY-NC-SA 4.0** (its `LICENSE` file; the card's text doesn't say) | ToS breach and copyrighted: private forever, never published |
 | Usable for val/test | no (not Basecamp) | no (not Basecamp) |
 
 Overlap warning: ClimbInst is partly built from a Roboflow "Climbing Holds and Volumes"
@@ -77,7 +77,7 @@ Typical records:
 |---|---|---|---|---|---|
 | Basecamp | false | hold, volume, tape | full | train, val, test | false (until the gym agrees) |
 | Roboflow (#12) | true | whatever it labels | full or holdlike | train | true (CC BY 4.0) |
-| ClimbInst (#72) | true | holdlike | holdlike | train | per licence |
+| ClimbInst (#72) | true | holdlike | holdlike | train | false (we never redistribute it; see Rights) |
 | YouTube (#75) | true | hold, volume | full | train | **false, always** |
 
 Why each field exists:
@@ -129,12 +129,29 @@ Why each field exists:
   never in git, never in a public or private HF dataset, never in the Hugging Face
   Space, and never in a published dataset. No video URLs, ids or creator names go in
   committed files. The guards in #70 enforce this.
-- **Weights trained on YouTube frames:** this is an owner decision, recorded in #74.
-  The proposed default is that the public Space ships only weights trained on public
-  and Basecamp data.
+- **Weights trained on YouTube frames:** the owner decided (2026-11-09) that they
+  **may** ship in the public Space. The frames themselves still never leave the
+  owner's machine.
 - **Public datasets:** keep their licence terms. CC BY 4.0 needs attribution in the
-  README's "Data and licences" section. ClimbInst is used only once its terms are
-  confirmed (#72).
+  README's "Data and licences" section.
+- **ClimbInst licence (checked 2026-11-09):** the repo's `LICENSE` file says
+  **CC BY-NC-SA 4.0**, and lists its sources as the Sláma Kaggle set (which it calls
+  CC BY-NC-SA 4.0, though Kaggle shows CC BY-SA 4.0) and a Roboflow "Climbing Holds and
+  Volumes" set (CC BY 4.0). What that means here:
+  - **NonCommercial:** training on it is fine while climb-beta stays non-commercial
+    (an open-source demo on a free Space). If the project ever goes commercial, it
+    must retrain without ClimbInst.
+  - **ShareAlike / attribution:** whether trained weights count as "adapted material"
+    is legally unsettled. The cautious reading is that weights trained with it are
+    released under CC BY-NC-SA 4.0 too, with attribution in the README and the
+    Space's model card. That doesn't clash with the AGPL, which covers the code, not
+    the weights.
+  - **Provenance:** some file-name prefixes (a YouTuber's name, `google_*`) suggest frames
+    from climbing YouTube videos and images found via web search. So its licence
+    can't cover every image, and the same rule applies as for our own YouTube frames:
+    we use it only for training and never re-host it (`publishable: false`).
+    Its video frames may also duplicate frames from our own pilot, which the dedupe
+    in #71 handles.
 - **Basecamp photos:** unchanged: gitignored, private HF dataset, never published
   without the gym's permission.
 
@@ -145,9 +162,9 @@ Why each field exists:
 | #69 | M2 | Outline-only out of colour data; blank ignore regions | after #68 |
 | #70 | M2 | Publishing guards (HF sync, Space, gitignore) | after #68 |
 | #71 | M2 | Near-duplicate detection across sources | ready |
-| #72 | M2 | ClimbInst download + conversion | needs-decision (licence) |
+| #72 | M2 | ClimbInst download + conversion (CC BY-NC-SA 4.0) | ready |
 | #73 | M4 | Two-stage training: holdlike pretrain → Basecamp fine-tune | after #68, #72 |
-| #74 | M4 | YouTube pilot go/no-go from Basecamp val errors; weights-in-Space decision | blocked on #63 |
+| #74 | M4 | YouTube pilot go/no-go from Basecamp val errors (weights may ship: decided) | blocked on #63 |
 | #75 | M2 | Empty-wall frame extractor for local videos | blocked on #74 |
 | #76 | M3 | Outline-only Label Studio config + export | blocked on #74 |
 
