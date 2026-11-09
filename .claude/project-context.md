@@ -41,6 +41,11 @@ table in `plan.md` on the held-out test walls.
 - **Pseudo-masks**: `pseudo_masks.txt` in a converted Roboflow dataset lists images whose
   masks came from SAM box prompts. These are never used for test metrics.
 
+- **External data (planned, #68–#76)**: `docs/plans/external-training-data.md`. Every
+  built dataset gets a `manifest.jsonl` with source and label scopes. Outline-only
+  images never feed colour/tape work. Val/test are Basecamp-only. YouTube frames are
+  local-only and never published.
+
 ## Auth / secrets
 There is no user auth (it's a public demo). Secrets live only in `.env`:
 `ROBOFLOW_API_KEY`, `HF_TOKEN`, `LABEL_STUDIO_*`.

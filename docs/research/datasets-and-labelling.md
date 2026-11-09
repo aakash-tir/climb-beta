@@ -54,3 +54,10 @@ From the [Label Studio SAM 2 tutorial](https://labelstud.io/tutorials/segment_an
 - https://universe.roboflow.com/rock-climbing-9qwqx/hold-segmentation
 - https://labelstud.io/tutorials/segment_anything_2_image
 - https://docs.humansignal.com/tutorials/segment_anything_2_image
+
+## Update 2026-11-09: more outline sources, and YouTube frames
+ClimbInst (HF, 1,509 images, holds and volumes in one class, licence not stated) and
+the owner's idea of empty-wall YouTube frames are compared in
+`docs/plans/external-training-data.md`. That doc also defines the per-image source
+manifest (outline-only flag, label scopes) and the rights rules: YouTube frames stay
+on the owner's machine and are never published.
