@@ -1,5 +1,22 @@
 # Progress
 
+## 2026-11-09: first Basecamp photos; external-data plan
+
+The owner took the first ~20 Basecamp wall photos (more each session), so #62 can start.
+Planned extra detector data in `docs/plans/external-training-data.md` (#67):
+**public outline datasets first, YouTube frames only as a gated, private pilot.**
+Val and test stay Basecamp-only, and external data is train-only and outline-only.
+
+### New issues
+- M2, ready: #68 source manifest + label scopes (do this first), #71 cross-source dedupe
+- M2, after #68: #69 outline-only out of colour data + ignore regions, #70 publishing guards
+- M2, ready: #72 ClimbInst. Licence checked: CC BY-NC-SA 4.0, so the project stays
+  non-commercial; weights trained with it carry an NC-SA note; the dataset is never re-hosted.
+- M4: #73 two-stage training (holdlike pretrain → Basecamp fine-tune)
+- Blocked on the first detector (#63): #74 YouTube pilot go/no-go (owner OK'd shipping
+  YouTube-trained weights in the Space; the frames stay local), then #75 frame
+  extractor (M2) and #76 outline-only labelling config (M3)
+
 ## 2026-11-08: Phase 1 code-complete; waiting on data
 
 All of M0–M8's code is merged through green PRs (#30–#61, plus this docs PR): colour rules, data
