@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import numpy as np
 import pytest
 
@@ -72,5 +74,68 @@ def test_config_loading_and_validation(tmp_path) -> None:  # type: ignore[no-unt
     assert load_route_config() == RouteConfig(6.0, 0.6, 3)
     p = tmp_path / "r.yaml"
     p.write_text("link_factor: -1\n")
+    with pytest.raises(ValueError):
+        load_route_config(p)
+
+
+def start_pair(x: int, y: int) -> list[Detection]:
+    """Two diamonds just below a hold centred at (x, y)."""
+    return [tape(x - 8, y + 12, x - 2, y + 18), tape(x + 2, y + 12, x + 8, y + 18)]
+
+
+def finish_diamond(x: int, y: int) -> Detection:
+    """One diamond just above a hold centred at (x, y)."""
+    return tape(x - 3, y - 18, x + 3, y - 12)
+
+
+def test_complete_route_has_start_and_finish() -> None:
+    dets = ladder(100, "red")  # holds 0 (bottom, y=550) .. 4 (top, y=230)
+    dets += start_pair(100, 550) + [finish_diamond(100, 230)]
+    (route,) = group_routes(dets, "red").routes
+    assert route.starts == [0]
+    assert route.finish == 4
+    assert route.complete
+
+
+def test_start_only_route_is_incomplete() -> None:
+    dets = ladder(100, "red") + start_pair(100, 550)
+    (route,) = group_routes(dets, "red").routes
+    assert route.starts == [0] and route.finish is None
+    assert not route.complete
+
+
+def test_finish_only_route_is_incomplete() -> None:
+    dets = ladder(100, "red") + [finish_diamond(100, 230)]
+    (route,) = group_routes(dets, "red").routes
+    assert route.starts == [] and route.finish == 4
+    assert not route.complete
+
+
+def test_two_starting_holds_each_with_a_diamond() -> None:
+    dets = ladder(100, "red") + [hold(140, 550, "red")]  # hold 5: second start hold
+    dets += [tape(97, 562, 103, 568), tape(137, 562, 143, 568), finish_diamond(100, 230)]
+    (route,) = group_routes(dets, "red").routes
+    assert route.starts == [0, 5]
+    assert route.finish == 4 and route.complete
+
+
+def test_two_diamonds_at_the_top_are_not_a_finish() -> None:
+    dets = ladder(100, "red") + start_pair(100, 230)  # a start pair, wherever it sits
+    (route,) = group_routes(dets, "red").routes
+    assert route.finish is None and route.starts == [4]
+
+
+def test_named_route_prefers_complete_over_larger_partial() -> None:
+    dets = ladder(100, "red", n=6) + start_pair(100, 550)  # 6 holds, start only
+    small = ladder(650, "red", n=4)  # 4 holds, y 550..310
+    dets += small + start_pair(650, 550) + [finish_diamond(650, 310)]
+    res = group_routes(dets, "red")
+    named = res.named_route()
+    assert named is not None and named.size == 4 and named.complete
+
+
+def test_finish_top_frac_validated(tmp_path: Path) -> None:
+    p = tmp_path / "route.yaml"
+    p.write_text("finish_top_frac: 0\n")
     with pytest.raises(ValueError):
         load_route_config(p)

@@ -27,7 +27,10 @@ table in `plan.md` on the held-out test walls.
      The pipeline uses it when it's configured and loaded.
 4. **Route**: `climb_beta.route.group` clusters holds of the chosen colour by
    single-linkage on mask-to-mask gap (relative to median hold size). A hold whose
-   dilated mask touches a tape mask is marked as a start.
+   dilated mask touches tape has a diamond. In each route the highest taped hold is the
+   `finish` if it has one diamond and sits in the top `finish_top_frac` of the route;
+   other taped holds are `starts` (Basecamp: two diamonds at the bottom). A route is
+   `complete` only with both. `named_route()` prefers the largest complete route.
 5. **Output**: `climb_beta.overlay` draws the highlight for the app, and
    `climb_beta.metrics` computes the exit criteria.
 

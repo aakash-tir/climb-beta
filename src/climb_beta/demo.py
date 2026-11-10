@@ -90,6 +90,9 @@ class DemoService:
                 if route.starts
                 else "no start tape found"
             )
+            starts += ", finish marked F" if route.finish is not None else ", no finish found"
+            if not route.complete:
+                starts += " (incomplete route)"
             others = len(rr.routes) - 1
             msg = (
                 f"**{colour.title()} route:** {route.size} holds, {starts}."
