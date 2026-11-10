@@ -184,3 +184,60 @@ def test_unknown_tape_colour_is_ignored_for_grade() -> None:
     dets += [graded_tape(97, 562, 103, 568, "unknown"), graded_tape(97, 212, 103, 218, "blue")]
     (route,) = group_routes(dets, "red").routes
     assert route.grade == "blue"
+
+
+def mostly_grey_route(start_grade: str, finish_grade: str) -> list[Detection]:
+    """Grey start (2 diamonds) at the bottom, three grey holds, an orange finish (1 diamond)
+    at the top, plus a far-away grey hold. Indices: 0 start, 1-3 middle, 4 finish, 5 far."""
+    dets = [hold(300, 550, "grey")]
+    dets += [hold(300, y, "grey") for y in (470, 390, 310)]
+    dets += [hold(300, 230, "orange"), hold(650, 400, "grey")]
+    dets += [
+        graded_tape(292, 562, 298, 568, start_grade),
+        graded_tape(302, 562, 308, 568, start_grade),
+        graded_tape(297, 212, 303, 218, finish_grade),
+    ]
+    return dets
+
+
+def test_route_of_shared_holds_with_own_colour_finish() -> None:
+    res = group_routes(mostly_grey_route("green", "green"), "orange")
+    (route,) = res.routes
+    assert route.holds == [0, 4]
+    assert route.starts == [0] and route.finish == 4
+    assert route.complete and route.grade == "green"
+    assert route.shared == [1, 2, 3]  # grey holds on the line; the far one isn't
+
+
+def test_shared_start_needs_matching_grade() -> None:
+    res = group_routes(mostly_grey_route("red", "green"), "orange")
+    assert res.routes == []  # one orange finish, no start: incomplete and too small
+    assert res.strays == [4]
+
+
+def test_shared_holds_alone_never_form_a_route() -> None:
+    dets = ladder(100, "grey") + ladder(300, "black")
+    dets += start_pair(100, 550) + [finish_diamond(100, 230)]
+    assert group_routes(dets, "red").routes == []
+
+
+def test_requested_colour_is_not_shared_with_itself() -> None:
+    (route,) = group_routes(ladder(100, "black"), "black").routes
+    assert route.holds == [0, 1, 2, 3, 4] and route.shared == []
+
+
+def test_grey_hold_between_route_holds_is_shared_by_both_neighbours() -> None:
+    dets = ladder(100, "red") + ladder(160, "blue") + [hold(130, 510, "grey")]  # grey = 10
+    red = group_routes(dets, "red").named_route()
+    blue = group_routes(dets, "blue").named_route()
+    assert red is not None and blue is not None
+    assert red.shared == [10] and blue.shared == [10]
+    assert 10 not in red.holds and 10 not in blue.holds
+
+
+def test_shared_config_validated(tmp_path: Path) -> None:
+    assert load_route_config().shared_colours == ("grey", "black")
+    p = tmp_path / "route.yaml"
+    p.write_text("shared_link_factor: -1\n")
+    with pytest.raises(ValueError):
+        load_route_config(p)

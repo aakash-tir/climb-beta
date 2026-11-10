@@ -104,6 +104,8 @@ class DemoService:
             starts += ", finish marked F" if route.finish is not None else ", no finish found"
             if not route.complete:
                 starts += " (incomplete route)"
+            if route.shared:
+                starts += f", plus {len(route.shared)} shared grey/black hold(s) nearby"
             others = len(rr.routes) - 1
             msg = (
                 f"**{colour.title()} route{graded}:** {route.size} holds, {starts}."

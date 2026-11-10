@@ -7,3 +7,7 @@ min_route_holds: 3      # smaller same-colour clusters are reported as stray hol
 # `finish_top_frac` of the route's height. Every other taped hold is a start (two
 # diamonds at the bottom).
 finish_top_frac: 0.5
+# Grey and black holds are shared: any route may use them. A grey/black hold with
+# diamonds can be a route's start; a route's finish must be a hold of its own colour.
+shared_colours: [grey, black]
+shared_link_factor: 2.0  # untaped shared holds this close to the route's line are usable
