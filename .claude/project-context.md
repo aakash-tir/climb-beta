@@ -33,6 +33,12 @@ table in `plan.md` on the held-out test walls.
    `complete` only with both. A route's `grade` is the majority colour of its diamonds;
    a same-colour cluster whose diamonds show 2+ grades is split around them (nearest
    taped hold). `named_route(grade=None)` prefers the largest complete route.
+   Grey/black (`shared_colours` in `configs/route.yaml`) are shared holds. A taped shared
+   hold becomes a start of the nearest route with a finish above it and the same grade.
+   The finish must be the route's own colour, so an all-grey route still needs one
+   own-colour finish. Untaped shared holds near the route's line go in `Route.shared`
+   (usable, not exclusive, not in `holds`). Routes below `min_route_holds` survive only
+   if complete.
 5. **Output**: `climb_beta.overlay` draws the highlight for the app, and
    `climb_beta.metrics` computes the exit criteria.
 

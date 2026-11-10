@@ -68,6 +68,7 @@ class PipelineResult:
                         "starts": r.starts,
                         "finish": r.finish,
                         "complete": r.complete,
+                        "shared": r.shared,
                     }
                     for r in rr.routes
                 ],

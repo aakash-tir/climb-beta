@@ -1,5 +1,6 @@
 """Draw a chosen route on the photo: everything else dimmed, route holds outlined,
-start holds marked "S" and the finish hold "F"."""
+start holds marked "S" and the finish hold "F". Shared grey/black holds the route may use
+are kept in colour with a thin outline."""
 
 from __future__ import annotations
 
@@ -34,7 +35,8 @@ def draw_route(
     h, w = img.shape[:2]
     keep = np.zeros((h, w), dtype=bool)
     holds = route.holds if route else []
-    for i in holds:
+    shared = route.shared if route else []
+    for i in [*holds, *shared]:
         keep |= detections[i].mask
     grey = cv2.cvtColor(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY), cv2.COLOR_GRAY2BGR)
     out = (grey.astype(np.float32) * DIM).astype(np.uint8)
@@ -45,6 +47,11 @@ def draw_route(
             detections[i].mask.astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
         )
         cv2.drawContours(out, contours, -1, outline_bgr, t, lineType=cv2.LINE_AA)
+    for i in shared:
+        contours, _ = cv2.findContours(
+            detections[i].mask.astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
+        )
+        cv2.drawContours(out, contours, -1, outline_bgr, max(1, t // 2), lineType=cv2.LINE_AA)
     marks = [(i, "S") for i in route.starts] if route else []
     if route and route.finish is not None:
         marks.append((route.finish, "F"))
