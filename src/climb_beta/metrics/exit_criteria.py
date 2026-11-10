@@ -7,12 +7,18 @@
 | colour accuracy, overall          | >= 0.95 | colour step on GT hold masks              |
 | colour accuracy, pink vs red      | >= 0.90 | GT pink/red holds                         |
 | colour accuracy, chalked          | >= 0.90 | GT holds flagged chalked                  |
-| named route within 1 hold         | >= 0.90 | routes.yaml (9/10 test routes)            |
+| named route within 1 hold         | >= 0.90 | routes.yaml, complete routes (9/10)       |
 
 Colour is measured on ground-truth masks, so a detector miss is counted once (recall),
 not twice. Pseudo-masked images are skipped. The test walls must not appear in train
 or val (checked against the dataset manifest when it exists). A criterion with nothing
 to measure FAILS: an empty test set never passes.
+
+Routes are Basecamp routes: hold colour + grade (tape diamond colour), with a start and
+a finish. Only `complete` ground-truth routes (start and finish both in the photo) are
+scored. The predicted route is the named route for that colour and grade. GT `holds`
+are the route's own holds plus any taped grey/black start holds; untaped shared holds
+the route may use are not scored.
 """
 
 from __future__ import annotations
@@ -118,7 +124,13 @@ def check_no_wall_leakage(dataset: Path, split: str) -> None:
 
 
 def load_routes_gt(path: Path | None) -> list[dict[str, Any]]:
-    """routes.yaml: [{image: <file name in the test split>, colour: red, holds: [line idx]}]."""
+    """Load and validate routes.yaml.
+
+    Entries: {image: <file name in the test split>, colour: red, holds: [line idx],
+    grade: green, start: [line idx], finish: <line idx>, complete: true}. `grade`,
+    `start` and `finish` are optional; `complete` defaults to true. `start`/`finish` must
+    be among `holds`.
+    """
     if path is None or not path.exists():
         return []
     raw = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
@@ -126,6 +138,15 @@ def load_routes_gt(path: Path | None) -> list[dict[str, Any]]:
     for r in routes:
         if not {"image", "colour", "holds"} <= set(r):
             raise ValueError(f"routes.yaml entry needs image, colour, holds: {r}")
+        holds = {int(i) for i in r["holds"]}
+        if not {int(i) for i in r.get("start", [])} <= holds:
+            raise ValueError(f"routes.yaml start holds must be in holds: {r}")
+        if r.get("finish") is not None and int(r["finish"]) not in holds:
+            raise ValueError(f"routes.yaml finish must be in holds: {r}")
+        if not isinstance(r.get("complete", True), bool):
+            raise ValueError(f"routes.yaml complete must be true/false: {r}")
+        if r.get("grade") is not None and not isinstance(r["grade"], str):
+            raise ValueError(f"routes.yaml grade must be a colour name: {r}")
     return list(routes)
 
 
@@ -149,8 +170,12 @@ def evaluate(
         else []
     )
     routes_by_image: dict[str, list[dict[str, Any]]] = {}
+    incomplete: list[dict[str, Any]] = []
     for r in routes_gt:
-        routes_by_image.setdefault(str(r["image"]), []).append(r)
+        if r.get("complete", True):
+            routes_by_image.setdefault(str(r["image"]), []).append(r)
+        else:
+            incomplete.append({k: r.get(k) for k in ("image", "colour", "grade")})
 
     acc = DetectionAccumulator(classes)
     truth: list[str] = []
@@ -194,7 +219,8 @@ def evaluate(
                 chalked.append(bool(s.get("chalked")))
 
         for r in routes_by_image.get(ip.name, []):
-            named = res.routes[str(r["colour"])].named_route()
+            grade = r.get("grade")
+            named = res.routes[str(r["colour"])].named_route(grade)
             pred_masks = [res.detections[i].mask for i in named.holds] if named else []
             gt_masks = [gts[int(i)].mask for i in r["holds"]]
             sc = score_route(pred_masks, gt_masks)
@@ -202,9 +228,11 @@ def evaluate(
                 {
                     "image": ip.name,
                     "colour": r["colour"],
+                    "grade": grade,
                     "missed": sc.missed,
                     "extra": sc.extra,
                     "correct": sc.correct(1),
+                    "pred_complete": bool(named and named.complete),
                 }
             )
 
@@ -233,6 +261,7 @@ def evaluate(
         "skipped_pseudo_masked": skipped,
         "ap50_per_class": {c: s.ap50 for c, s in det.per_class.items() if s.n_gt},
         "routes": route_rows,
+        "routes_skipped_incomplete": incomplete,
         "colour_method": method,
     }
     if cr:

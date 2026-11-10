@@ -47,7 +47,7 @@ pseudo-masked images, and no wall that appears in train or val.
 | Colour accuracy, all holds | **≥ 95%** |
 | Colour accuracy, holds whose GT is pink or red | **≥ 90%** |
 | Colour accuracy, holds flagged chalked | **≥ 90%** |
-| Named route correct within 1 hold (missed + extra ≤ 1) | **≥ 9/10 test routes** |
+| Named route (hold colour + grade) correct within 1 hold (missed + extra ≤ 1), complete routes only | **≥ 9/10 test routes** |
 
 ## Tech stack
 | Layer | Choice | Why | Rejected |

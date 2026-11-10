@@ -7,7 +7,8 @@ Usage:
         [--classifier weights/colour-mobilenetv3_large_100.pt] [--json report.json]
 
 Targets: hold recall >= 95%, mask mAP50 >= 0.85, colour >= 95% overall and >= 90% on
-pink-vs-red and chalked holds, named route within 1 hold on >= 9/10 test routes.
+pink-vs-red and chalked holds, named route (hold colour + grade) within 1 hold on
+>= 9/10 complete test routes (start and finish both visible).
 Phase 2 (animated beta) waits until this exits 0.
 """
 

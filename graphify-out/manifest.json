@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   ".claude/project-context.md": {
-    "mtime": 1794347002.2610497,
-    "ast_hash": "4ce3efe20fd0a44eb8a2b097f965c2b8",
+    "mtime": 1794347183.5190003,
+    "ast_hash": "99ad4b43e66fd1c6475c913a4ff3284a",
     "semantic_hash": ""
   },
   ".claude/rules/frontend/react.md": {
@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "plan.md": {
-    "mtime": 1794345739.3634207,
-    "ast_hash": "73d107f912682add90a1d2a45a6ce6c6",
+    "mtime": 1794347111.681559,
+    "ast_hash": "82f6052a43b3d6dd71dd073a18704a73",
     "semantic_hash": ""
   },
   "tests/synth.py": {
@@ -530,13 +530,13 @@
     "semantic_hash": ""
   },
   "eval/check_exit_criteria.py": {
-    "mtime": 1794345739.3797357,
-    "ast_hash": "4eeb0f4df5cde59d8c262f758297940e",
+    "mtime": 1794347111.683066,
+    "ast_hash": "8db801e868bb1167e9d52fcf6a2b34ef",
     "semantic_hash": ""
   },
   "src/climb_beta/metrics/exit_criteria.py": {
-    "mtime": 1794345739.3797357,
-    "ast_hash": "2f29421c57d8fd3a20bc63612445a2c4",
+    "mtime": 1794347111.681559,
+    "ast_hash": "fc6794d918388b60752382881d0dddb6",
     "semantic_hash": ""
   },
   "src/climb_beta/metrics/route.py": {
@@ -545,8 +545,8 @@
     "semantic_hash": ""
   },
   "tests/test_exit_criteria.py": {
-    "mtime": 1794345739.3889966,
-    "ast_hash": "beec7950091dd6878ebe601930bb714b",
+    "mtime": 1794347145.4378228,
+    "ast_hash": "d9b434f6736291571c93e96ce5e72898",
     "semantic_hash": ""
   },
   "src/climb_beta/overlay.py": {
@@ -585,8 +585,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-10.md": {
-    "mtime": 1794347003.081882,
-    "ast_hash": "03055ffc7562c5daa28e16f45e696169",
+    "mtime": 1794347184.4663856,
+    "ast_hash": "5bf9aa6e2ddd7f2708b3bfec73550a47",
     "semantic_hash": ""
   },
   "tests/test_colour_tape.py": {

@@ -120,3 +120,58 @@ def test_bad_routes_yaml(tmp_path: Path) -> None:
     with pytest.raises(ValueError):
         load_routes_gt(p)
     assert load_routes_gt(None) == []
+
+
+def _routes_report(tmp_path: Path, entries: str) -> dict:  # type: ignore[type-arg]
+    from climb_beta.config import load_classes, load_colour_config
+    from climb_beta.metrics.exit_criteria import evaluate, load_routes_gt
+
+    _, det = _test_set(tmp_path)
+    p = tmp_path / "graded.yaml"
+    p.write_text("routes:\n" + entries)
+    rep = evaluate(tmp_path, det, load_colour_config(), load_classes(), None, load_routes_gt(p))
+    return {"values": rep.values, "counts": rep.counts, "details": rep.details}
+
+
+def test_incomplete_gt_routes_are_not_scored(tmp_path: Path) -> None:
+    red = [0, 1, 2, 3, 4]  # wall_scene: the five red holds come first
+    rep = _routes_report(
+        tmp_path,
+        f"  - {{image: w__1.png, colour: red, holds: {red}}}\n"
+        "  - {image: w__1.png, colour: blue, holds: [5, 6], complete: false}\n",
+    )
+    assert rep["counts"]["route_within_1"] == 1
+    assert rep["details"]["routes_skipped_incomplete"] == [
+        {"image": "w__1.png", "colour": "blue", "grade": None}
+    ]
+
+
+def test_route_matched_by_colour_and_grade(tmp_path: Path) -> None:
+    red = [0, 1, 2, 3, 4]  # wall_scene: the five red holds come first; its tape is white
+    rep = _routes_report(
+        tmp_path,
+        f"  - {{image: w__1.png, colour: red, grade: white, holds: {red}, start: [0]}}\n"
+        f"  - {{image: w__1.png, colour: red, grade: pink, holds: {red}}}\n",
+    )
+    rows = {r["grade"]: r for r in rep["details"]["routes"]}
+    assert rows["white"]["correct"] and rows["white"]["missed"] == 0
+    assert not rows["pink"]["correct"] and rows["pink"]["missed"] == 5  # no pink-grade route
+    assert rows["white"]["pred_complete"] is False  # the scene has a start but no finish
+
+
+@pytest.mark.parametrize(
+    "entry",
+    [
+        "{image: a.png, colour: red, holds: [1, 2], start: [3]}",
+        "{image: a.png, colour: red, holds: [1, 2], finish: 3}",
+        "{image: a.png, colour: red, holds: [1, 2], complete: maybe}",
+        "{image: a.png, colour: red, holds: [1, 2], grade: 7}",
+    ],
+)
+def test_routes_yaml_new_fields_validated(tmp_path: Path, entry: str) -> None:
+    from climb_beta.metrics.exit_criteria import load_routes_gt
+
+    p = tmp_path / "r.yaml"
+    p.write_text(f"routes:\n  - {entry}\n")
+    with pytest.raises(ValueError):
+        load_routes_gt(p)
