@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "src/climb_beta/config.py": {
-    "mtime": 1794345739.3767393,
-    "ast_hash": "2927ceeb4d53792bb3cca25ef5754131",
+    "mtime": 1794346136.7434587,
+    "ast_hash": "027f03df01242b70eae0f1addb9d2140",
     "semantic_hash": ""
   },
   "src/climb_beta/types.py": {
@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   ".claude/project-context.md": {
-    "mtime": 1794345739.3797357,
-    "ast_hash": "2875de4769f92a088c542491d0ad8e9b",
+    "mtime": 1794346196.0799603,
+    "ast_hash": "60f1cc450ec203c6785321b729bee18f",
     "semantic_hash": ""
   },
   ".claude/rules/frontend/react.md": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "configs/colours.yaml": {
-    "mtime": 1794345739.3767393,
-    "ast_hash": "d6501755a1c41174d22914fc9409b4c3",
+    "mtime": 1794346136.7434587,
+    "ast_hash": "38c747e6340089060f998c30ce05d9ff",
     "semantic_hash": ""
   },
   "docs/future.md": {
@@ -220,8 +220,8 @@
     "semantic_hash": ""
   },
   "src/climb_beta/colour/batch.py": {
-    "mtime": 1794345739.3797357,
-    "ast_hash": "dee6290790974a2616dbb506517897c3",
+    "mtime": 1794346136.786347,
+    "ast_hash": "0786acce70f39b998a7c536538bdeb5c",
     "semantic_hash": ""
   },
   "src/climb_beta/data/__init__.py": {
@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "tests/test_classify_rules_cli.py": {
-    "mtime": 1794345739.3747363,
-    "ast_hash": "0a0be5aab96ed94ff66f140f1b893f79",
+    "mtime": 1794346136.8033142,
+    "ast_hash": "c7ed0cf83697fafe393ab1bd297cc24b",
     "semantic_hash": ""
   },
   "data/convert_roboflow.py": {
@@ -585,8 +585,13 @@
     "semantic_hash": ""
   },
   "logs/2026-11-10.md": {
-    "mtime": 1794345756.6860654,
-    "ast_hash": "82bc62dc9e0acb70455bbb358ffe7b37",
+    "mtime": 1794346197.3257873,
+    "ast_hash": "3c717dd4d69d72525aea0b2b6a863371",
+    "semantic_hash": ""
+  },
+  "tests/test_colour_tape.py": {
+    "mtime": 1794346159.0760527,
+    "ast_hash": "c949bcba11d90a17393a79604eb25359",
     "semantic_hash": ""
   }
 }

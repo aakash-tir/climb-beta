@@ -1,4 +1,8 @@
-"""Colour every hold in a photo: wall-referenced white balance, then the rules."""
+"""Colour holds and tape in a photo: wall-referenced white balance, then the rules.
+
+Which detector classes are coloured is `ColourConfig.coloured_classes`. A hold's colour
+is its plastic; a tape detection's colour is the route's grade diamond colour.
+"""
 
 from __future__ import annotations
 
@@ -10,8 +14,6 @@ from climb_beta.colour.rules import ColourResult, classify_hold
 from climb_beta.colour.white_balance import grey_world
 from climb_beta.config import ColourConfig
 from climb_beta.types import Detection, ImageBGR
-
-HOLD = "hold"
 
 
 def wall_mask(img: ImageBGR, detections: Sequence[Detection]) -> np.ndarray:
@@ -28,14 +30,15 @@ def colour_detections(
     cfg: ColourConfig,
     white_balance: bool = True,
 ) -> tuple[ImageBGR, list[ColourResult | None]]:
-    """Set `.colour`/`.colour_conf` on every hold detection (in place).
+    """Set `.colour`/`.colour_conf` on every detection of a coloured class (in place).
 
-    Returns the balanced image and one result per detection (None for non-holds).
+    Returns the balanced image and one result per detection (None for classes that
+    aren't coloured, e.g. volumes).
     """
     balanced = grey_world(img, ref_mask=wall_mask(img, detections)) if white_balance else img
     results: list[ColourResult | None] = []
     for d in detections:
-        if d.cls != HOLD:
+        if d.cls not in cfg.coloured_classes:
             results.append(None)
             continue
         r = classify_hold(balanced, d.mask, cfg)

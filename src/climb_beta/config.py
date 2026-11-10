@@ -32,6 +32,9 @@ class ColourConfig:
     colours: tuple[Colour, ...]
     family_hues: dict[str, tuple[tuple[int, int], ...]]
     thresholds: dict[str, Any] = field(default_factory=dict)
+    # Detector classes the colour step labels. Tape is coloured because a Basecamp
+    # route's tape diamonds carry its grade colour.
+    coloured_classes: tuple[str, ...] = ("hold",)
 
     @property
     def names(self) -> tuple[str, ...]:
@@ -81,7 +84,16 @@ def parse_colour_config(raw: dict[str, Any]) -> ColourConfig:
     if redpink and set(redpink) != {"red", "pink"}:
         raise ConfigError("the redpink family must contain exactly 'red' and 'pink'")
 
-    return ColourConfig(colours=tuple(colours), family_hues=family_hues, thresholds=thresholds)
+    coloured = tuple(str(c) for c in raw.get("coloured_classes", ["hold"]))
+    if not coloured or len(set(coloured)) != len(coloured):
+        raise ConfigError("colours.yaml: coloured_classes must be a non-empty, unique list")
+
+    return ColourConfig(
+        colours=tuple(colours),
+        family_hues=family_hues,
+        thresholds=thresholds,
+        coloured_classes=coloured,
+    )
 
 
 def load_colour_config(path: Path | None = None) -> ColourConfig:

@@ -14,7 +14,10 @@ table in `plan.md` on the held-out test walls.
    `list[Detection]` with full-resolution bool masks. The classes come from
    `configs/classes.yaml`. The detector is trained with `hsv_h=0.5, hsv_s=0.9` so it's
    colour-blind.
-3. **Colour** (per `hold` detection):
+3. **Colour** (per detection of a class in `coloured_classes` in `configs/colours.yaml`:
+   `hold` and `tape`). A tape detection's colour is the route's grade: at Basecamp a
+   route is hold colour + the colour of its small tape diamonds (the grade circuit).
+   The crop classifier only relabels holds; tape keeps the rule colour.
    - `climb_beta.colour.rules.classify_hold(img, mask, cfg)` returns a `ColourResult`
      (name, confidence, votes, debug). Steps: drop chalk pixels, give each remaining
      pixel a family vote, pick the majority family; if redpink, split pink vs red on the

@@ -38,13 +38,13 @@ def _scene(tmp_path: Path) -> tuple[Path, Path]:
     return ip, lp
 
 
-def test_cli_labels_holds_and_skips_tape(tmp_path: Path) -> None:
+def test_cli_labels_holds_and_tape(tmp_path: Path) -> None:
     ip, lp = _scene(tmp_path)
     out, dbg = tmp_path / "holds.json", tmp_path / "debug.png"
     mod = load_script("colour/classify_rules.py")
     assert mod.main([str(ip), str(lp), "--out", str(out), "--debug", str(dbg)]) == 0
     recs = json.loads(out.read_text())
-    assert [r.get("colour") for r in recs] == ["red", "pink", "white", "blue", None]
+    assert [r.get("colour") for r in recs] == ["red", "pink", "white", "blue", "white"]
     assert recs[4]["cls"] == "tape"
     assert dbg.exists()
 
