@@ -6,4 +6,16 @@
 #   - id: cave-left
 #     angle: overhang     # slab | vertical | overhang | roof
 #     notes: "left half of the cave, under the skylight"
-walls: []
+walls:
+  - id: wall-01
+    angle: vertical
+    notes: "2 photos; the second also shows the neighbouring wall"
+  - id: wall-02
+    angle: vertical
+    notes: "3 photos of adjacent sections whose routes cross between photos, so one id"
+  - id: wall-03
+    angle: vertical
+    notes: "2 photos; one route appears in both"
+  - id: wall-04
+    angle: vertical
+    notes: "1 photo"
