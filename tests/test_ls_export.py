@@ -85,6 +85,29 @@ def test_convert(tmp_path: Path) -> None:
     assert len(rep.skipped_tasks) == 2
 
 
+def test_tape_keeps_its_colour_and_missing_ones_are_reported(tmp_path: Path) -> None:
+    result = [
+        region("t1", "polygonlabels", "tape", {"points": [[10, 10], [12, 10], [11, 12]]}),
+        choice("t1", "colour", ["Green"]),
+        region("t2", "polygonlabels", "tape", {"points": [[20, 10], [22, 10], [21, 12]]}),
+    ]
+    p = tmp_path / "export.json"
+    p.write_text(
+        json.dumps(
+            [{"id": 1, "data": {"image": "raw/w/a.jpg"}, "annotations": [{"result": result}]}]
+        )
+    )
+    out = tmp_path / "labels"
+    rep = convert_ls_export(p, out, CLASSES, CFG, decode=fake_decode)
+    side = json.loads((out / "w" / "a.json").read_text())
+    assert side == [
+        {"cls": "tape", "colour": "green", "chalked": None},
+        {"cls": "tape", "colour": None, "chalked": None},
+    ]
+    assert rep.tape_without_colour == ["w/a.jpg#t2"]
+    assert rep.holds_without_colour == []
+
+
 def test_unknown_colour_rejected(tmp_path: Path) -> None:
     with pytest.raises(ValueError, match="teal"):
         convert_ls_export(_export(tmp_path, "teal"), tmp_path / "l", CLASSES, CFG, fake_decode)
