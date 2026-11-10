@@ -53,3 +53,18 @@ def test_bad_hue_range_rejected() -> None:
     raw["families"]["redpink"]["hue"] = [[170, 200]]
     with pytest.raises(ConfigError, match="bad hue range"):
         parse_colour_config(raw)
+
+
+def test_grades_are_known_colours() -> None:
+    cfg = load_colour_config()
+    assert cfg.grades[0] == "yellow" and cfg.grades[-1] == "white"
+    raw = {
+        "colours": [{"name": "red", "family": "redpink"}, {"name": "pink", "family": "redpink"}],
+        "families": {"redpink": {"hue": [[0, 9]]}},
+        "thresholds": {},
+    }
+    assert parse_colour_config({**raw, "grades": ["red"]}).grades == ("red",)
+    with pytest.raises(ConfigError):
+        parse_colour_config({**raw, "grades": ["teal"]})
+    with pytest.raises(ConfigError):
+        parse_colour_config({**raw, "grades": ["red", "red"]})

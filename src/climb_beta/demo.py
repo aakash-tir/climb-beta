@@ -21,6 +21,7 @@ from climb_beta.pipeline import run
 from climb_beta.route.group import RouteConfig, load_route_config
 
 WEIGHTS_ENV = "CLIMB_DETECTOR_WEIGHTS"
+ANY_GRADE = "any"
 MAX_SIDE = 2048  # downscale huge phone photos: faster on CPU, same holds
 RGB = npt.NDArray[np.uint8]
 
@@ -64,7 +65,14 @@ class DemoService:
             self._detector = self.detector_factory()
         return self._detector
 
-    def handle(self, image_rgb: RGB | None, colour: str) -> tuple[RGB | None, str]:
+    @property
+    def grades(self) -> list[str]:
+        """Grade picker options: "any", then the grade circuits easiest first."""
+        return [ANY_GRADE, *self.colour_cfg.grades]
+
+    def handle(
+        self, image_rgb: RGB | None, colour: str, grade: str = "any"
+    ) -> tuple[RGB | None, str]:
         if image_rgb is None:
             return None, "Upload a photo of a wall first."
         if not self.colour_cfg.has(colour):
@@ -77,14 +85,17 @@ class DemoService:
         bgr = np.ascontiguousarray(rgb[..., ::-1])
         res = run(bgr, det, self.colour_cfg, self.route_cfg, colours=[colour])
         rr = res.routes[colour]
-        route = rr.named_route()
+        want = None if grade == ANY_GRADE else grade
+        route = rr.named_route(want)
         swatch = next(c.swatch for c in self.colour_cfg.colours if c.name == colour)
         out = draw_route(bgr, res.detections, route, hex_to_bgr(swatch))
         n_holds = sum(d.cls == "hold" for d in res.detections)
         present = ", ".join(res.colours_present()) or "none"
+        label = colour if want is None else f"{colour} / {want}-grade"
         if route is None:
-            msg = f"No **{colour}** route found. Hold colours seen: {present}."
+            msg = f"No **{label}** route found. Hold colours seen: {present}."
         else:
+            graded = f" ({route.grade} grade)" if route.grade else ""
             starts = (
                 f"{len(route.starts)} start hold(s) marked S"
                 if route.starts
@@ -95,7 +106,7 @@ class DemoService:
                 starts += " (incomplete route)"
             others = len(rr.routes) - 1
             msg = (
-                f"**{colour.title()} route:** {route.size} holds, {starts}."
+                f"**{colour.title()} route{graded}:** {route.size} holds, {starts}."
                 + (f" ({others} other {colour} route(s) on this photo.)" if others else "")
                 + f"\n\nDetected {n_holds} holds in total. Colours seen: {present}."
             )

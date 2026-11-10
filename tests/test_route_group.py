@@ -139,3 +139,48 @@ def test_finish_top_frac_validated(tmp_path: Path) -> None:
     p.write_text("finish_top_frac: 0\n")
     with pytest.raises(ValueError):
         load_route_config(p)
+
+
+def graded_tape(x0: int, y0: int, x1: int, y1: int, grade: str) -> Detection:
+    t = tape(x0, y0, x1, y1)
+    t.colour = grade
+    return t
+
+
+def test_route_grade_is_its_diamond_colour() -> None:
+    dets = ladder(100, "red")
+    dets += [graded_tape(97, 562, 103, 568, "green"), graded_tape(97, 212, 103, 218, "green")]
+    (route,) = group_routes(dets, "red").routes
+    assert route.grade == "green" and route.complete
+
+
+def test_untaped_route_has_no_grade() -> None:
+    (route,) = group_routes(ladder(100, "red"), "red").routes
+    assert route.grade is None
+
+
+def test_same_colour_cluster_split_by_grade() -> None:
+    # Two pink routes side by side, close enough to cluster as one: the left one is
+    # red-grade, the right one orange-grade, each with a start pair and a finish.
+    dets = ladder(100, "pink") + ladder(180, "pink")  # holds 0..4 and 5..9
+    for x, g in ((100, "red"), (180, "orange")):
+        dets += [
+            graded_tape(x - 8, 562, x - 2, 568, g),
+            graded_tape(x + 2, 562, x + 8, 568, g),
+            graded_tape(x - 3, 212, x + 3, 218, g),
+        ]
+    res = group_routes(dets, "pink")
+    by_grade = {r.grade: r for r in res.routes}
+    assert set(by_grade) == {"red", "orange"}
+    assert by_grade["red"].holds == [0, 1, 2, 3, 4]
+    assert by_grade["orange"].holds == [5, 6, 7, 8, 9]
+    assert all(r.complete for r in res.routes)
+    assert res.named_route("orange") is by_grade["orange"]
+    assert res.named_route("yellow") is None
+
+
+def test_unknown_tape_colour_is_ignored_for_grade() -> None:
+    dets = ladder(100, "red")
+    dets += [graded_tape(97, 562, 103, 568, "unknown"), graded_tape(97, 212, 103, 218, "blue")]
+    (route,) = group_routes(dets, "red").routes
+    assert route.grade == "blue"

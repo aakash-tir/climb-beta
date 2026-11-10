@@ -24,7 +24,8 @@ TITLE = "climb-beta: find a route by colour"
 DESCRIPTION = (
     "Phase 1 demo for Basecamp Climbing (Toronto). A colour-blind segmentation model finds "
     "every hold; a separate colour step labels each hold (ignoring chalk); holds of the "
-    "colour you pick are grouped into a route, and holds next to start tape are marked **S**."
+    "colour you pick are grouped into a route. Its tape diamonds give the grade (pick one to "
+    "choose between same-colour routes); the start holds are marked **S** and the finish **F**."
 )
 
 
@@ -37,12 +38,15 @@ def build_ui(service: DemoService | None = None) -> Any:
         with gr.Row():
             with gr.Column():
                 photo = gr.Image(label="Wall photo", type="numpy", sources=["upload", "webcam"])
-                colour = gr.Dropdown(svc.colours, value=svc.colours[0], label="Route colour")
+                colour = gr.Dropdown(svc.colours, value=svc.colours[0], label="Hold colour")
+                grade = gr.Dropdown(
+                    svc.grades, value=svc.grades[0], label="Grade (tape diamond colour)"
+                )
                 go = gr.Button("Find route", variant="primary")
             with gr.Column():
                 out = gr.Image(label="Route", type="numpy")
                 summary = gr.Markdown()
-        go.click(svc.handle, inputs=[photo, colour], outputs=[out, summary])
+        go.click(svc.handle, inputs=[photo, colour, grade], outputs=[out, summary])
     return demo
 
 

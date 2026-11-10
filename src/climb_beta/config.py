@@ -35,6 +35,8 @@ class ColourConfig:
     # Detector classes the colour step labels. Tape is coloured because a Basecamp
     # route's tape diamonds carry its grade colour.
     coloured_classes: tuple[str, ...] = ("hold",)
+    # Grade circuits (tape diamond colours), easiest to hardest.
+    grades: tuple[str, ...] = ()
 
     @property
     def names(self) -> tuple[str, ...]:
@@ -88,11 +90,18 @@ def parse_colour_config(raw: dict[str, Any]) -> ColourConfig:
     if not coloured or len(set(coloured)) != len(coloured):
         raise ConfigError("colours.yaml: coloured_classes must be a non-empty, unique list")
 
+    grades = tuple(str(g).strip().lower() for g in raw.get("grades", []))
+    if len(set(grades)) != len(grades):
+        raise ConfigError("colours.yaml: duplicate grade")
+    if bad := [g for g in grades if g not in seen]:
+        raise ConfigError(f"colours.yaml: grades {bad} are not colours")
+
     return ColourConfig(
         colours=tuple(colours),
         family_hues=family_hues,
         thresholds=thresholds,
         coloured_classes=coloured,
+        grades=grades,
     )
 
 

@@ -30,7 +30,9 @@ table in `plan.md` on the held-out test walls.
    dilated mask touches tape has a diamond. In each route the highest taped hold is the
    `finish` if it has one diamond and sits in the top `finish_top_frac` of the route;
    other taped holds are `starts` (Basecamp: two diamonds at the bottom). A route is
-   `complete` only with both. `named_route()` prefers the largest complete route.
+   `complete` only with both. A route's `grade` is the majority colour of its diamonds;
+   a same-colour cluster whose diamonds show 2+ grades is split around them (nearest
+   taped hold). `named_route(grade=None)` prefers the largest complete route.
 5. **Output**: `climb_beta.overlay` draws the highlight for the app, and
    `climb_beta.metrics` computes the exit criteria.
 
