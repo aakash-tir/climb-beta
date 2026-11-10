@@ -1,5 +1,5 @@
 """Draw a chosen route on the photo: everything else dimmed, route holds outlined,
-start holds marked "S"."""
+start holds marked "S" and the finish hold "F"."""
 
 from __future__ import annotations
 
@@ -45,14 +45,14 @@ def draw_route(
             detections[i].mask.astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
         )
         cv2.drawContours(out, contours, -1, outline_bgr, t, lineType=cv2.LINE_AA)
-    for i in route.starts if route else []:
+    marks = [(i, "S") for i in route.starts] if route else []
+    if route and route.finish is not None:
+        marks.append((route.finish, "F"))
+    for i, label in marks:
         x0, y0, x1, y1 = detections[i].bbox()
         cx, cy = (x0 + x1) // 2, y1 + 4 * t
         scale = max(0.5, t / 2)
-        cv2.putText(
-            out, "S", (cx - 4 * t, cy + 6 * t), cv2.FONT_HERSHEY_SIMPLEX, scale, (0, 0, 0), t + 2
-        )
-        cv2.putText(
-            out, "S", (cx - 4 * t, cy + 6 * t), cv2.FONT_HERSHEY_SIMPLEX, scale, START_COLOUR, t
-        )
+        org = (cx - 4 * t, cy + 6 * t)
+        cv2.putText(out, label, org, cv2.FONT_HERSHEY_SIMPLEX, scale, (0, 0, 0), t + 2)
+        cv2.putText(out, label, org, cv2.FONT_HERSHEY_SIMPLEX, scale, START_COLOUR, t)
     return np.asarray(out, dtype=np.uint8)

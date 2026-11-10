@@ -60,7 +60,15 @@ class PipelineResult:
         for c, rr in self.routes.items():
             named = rr.named_route()
             routes[c] = {
-                "routes": [{"holds": r.holds, "starts": r.starts} for r in rr.routes],
+                "routes": [
+                    {
+                        "holds": r.holds,
+                        "starts": r.starts,
+                        "finish": r.finish,
+                        "complete": r.complete,
+                    }
+                    for r in rr.routes
+                ],
                 "named": None if named is None else rr.routes.index(named),
                 "strays": rr.strays,
             }

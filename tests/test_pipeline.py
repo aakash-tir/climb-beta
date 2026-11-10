@@ -23,6 +23,8 @@ def test_pipeline_finds_both_routes_and_red_start() -> None:
     assert blue is not None and blue.holds == idx["blue"] and blue.starts == []
     js = res.to_json()
     assert js["routes"]["red"]["named"] == 0
+    assert js["routes"]["red"]["routes"][0]["finish"] is None
+    assert js["routes"]["red"]["routes"][0]["complete"] is False
     assert len(js["detections"]) == 10
 
 
