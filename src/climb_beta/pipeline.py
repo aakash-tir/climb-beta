@@ -42,7 +42,8 @@ class PipelineResult:
                 seen[d.colour] = seen.get(d.colour, 0) + 1
         return sorted(seen, key=lambda c: -seen[c])
 
-    def to_json(self) -> dict[str, Any]:
+    def to_json(self, grade: str | None = None) -> dict[str, Any]:
+        """JSON summary. `grade` picks each colour's named route among that grade only."""
         holds = []
         for i, d in enumerate(self.detections):
             x0, y0, x1, y1 = d.bbox()
@@ -58,11 +59,12 @@ class PipelineResult:
             )
         routes: dict[str, Any] = {}
         for c, rr in self.routes.items():
-            named = rr.named_route()
+            named = rr.named_route(grade)
             routes[c] = {
                 "routes": [
                     {
                         "holds": r.holds,
+                        "grade": r.grade,
                         "starts": r.starts,
                         "finish": r.finish,
                         "complete": r.complete,

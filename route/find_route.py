@@ -29,6 +29,9 @@ def main(argv: list[str] | None = None, detector: object | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("image", type=Path)
     ap.add_argument("--colour", action="append", help="repeatable; default: all colours")
+    ap.add_argument(
+        "--grade", help="only report this grade (tape diamond colour) as each colour's named route"
+    )
     ap.add_argument("--weights", default=DEFAULT_WEIGHTS)
     ap.add_argument("--classifier", type=Path)
     ap.add_argument("--out", type=Path)
@@ -39,6 +42,9 @@ def main(argv: list[str] | None = None, detector: object | None = None) -> int:
         if not cfg.has(c):
             print(f"unknown colour {c!r}; choose from {', '.join(cfg.names)}", file=sys.stderr)
             return 2
+    if args.grade and args.grade not in cfg.grades:
+        print(f"unknown grade {args.grade!r}; choose from {', '.join(cfg.grades)}", file=sys.stderr)
+        return 2
     img = read_bgr(args.image)
     if img is None:
         print(f"cannot read image {args.image}", file=sys.stderr)
@@ -61,7 +67,8 @@ def main(argv: list[str] | None = None, detector: object | None = None) -> int:
         method="classifier" if clf else "rules",
         classifier=clf,
     )
-    text = json.dumps(res.to_json(), indent=1)
+    js = res.to_json(grade=args.grade)
+    text = json.dumps(js, indent=1)
     if args.out:
         args.out.write_text(text, encoding="utf-8")
     else:

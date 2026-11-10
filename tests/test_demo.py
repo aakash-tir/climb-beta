@@ -18,8 +18,13 @@ def test_handle_highlights_route_and_summarises() -> None:
     svc = DemoService(detector_factory=lambda: det)
     out, msg = svc.handle(np.ascontiguousarray(img_bgr[..., ::-1]), "red")
     assert out is not None and out.shape == img_bgr.shape
-    assert "**Red route:** 5 holds, 1 start hold(s)" in msg
+    assert "**Red route (white grade):** 5 holds, 1 start hold(s)" in msg
     assert "Colours seen: red, blue" in msg
+    assert svc.grades[0] == "any" and svc.grades[1:] == list(svc.colour_cfg.grades)
+    _, msg = svc.handle(np.ascontiguousarray(img_bgr[..., ::-1]), "red", "white")
+    assert "**Red route (white grade)" in msg
+    _, msg = svc.handle(np.ascontiguousarray(img_bgr[..., ::-1]), "red", "pink")
+    assert "No **red / pink-grade** route" in msg
 
 
 def test_handle_without_weights_explains() -> None:

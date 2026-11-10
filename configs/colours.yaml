@@ -23,10 +23,12 @@ colours:
   - {name: grey,   family: achromatic, swatch: "#8d99ae"}
 
 # Detector classes the colour step labels. Holds get their hold colour; tape gets the
-# colour of the route's small tape diamonds, which is the route's grade circuit
-# (Basecamp grades, easiest to hardest: yellow, orange, red, green, purple, pink,
-# black, white).
+# colour of the route's small tape diamonds, which is the route's grade circuit.
 coloured_classes: [hold, tape]
+
+# Basecamp's grade circuits (diamond colours), easiest to hardest. Each must be a colour
+# above. A route is identified by its hold colour plus its grade.
+grades: [yellow, orange, red, green, purple, pink, black, white]
 
 families:
   # Hue ranges in OpenCV units. redpink wraps around 0.

@@ -12,10 +12,16 @@ by `tape_reach_factor` x hold size, touches the tape. Within a route the highest
 hold is the finish when it has exactly one diamond and sits in the top
 `finish_top_frac` of the route's height; every other taped hold is a start. A route is
 `complete` only when it has both a start and a finish.
+
+A route's `grade` is the majority colour of its diamonds (the grade circuit). Two
+routes can share a hold colour and differ only in grade, so a same-colour cluster whose
+diamonds show two or more grades is split: each taped hold anchors its grade, and every
+other hold joins the grade of the nearest anchor.
 """
 
 from __future__ import annotations
 
+from collections import Counter
 from collections.abc import Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -28,6 +34,7 @@ from climb_beta.masks import dilate, min_gap
 from climb_beta.types import Detection, Mask
 
 HOLD, TAPE = "hold", "tape"
+UNKNOWN = "unknown"
 
 
 @dataclass(frozen=True)
@@ -62,6 +69,7 @@ class Route:
     holds: list[int]  # indices into the detection list
     starts: list[int] = field(default_factory=list)  # holds by the start diamonds
     finish: int | None = None  # the hold by the single finish diamond
+    grade: str | None = None  # colour of the route's diamonds (its grade circuit)
 
     @property
     def complete(self) -> bool:
@@ -80,13 +88,14 @@ class RouteResult:
     strays: list[int]  # same-colour holds not in any route
     hold_size_px: float
 
-    def named_route(self) -> Route | None:
-        """The route the user means by a colour: the largest complete route, else the
-        largest with any diamond tape, else the largest."""
+    def named_route(self, grade: str | None = None) -> Route | None:
+        """The route the user means by a colour (and optionally a grade): the largest
+        complete route, else the largest with any diamond tape, else the largest."""
+        cands = [r for r in self.routes if grade is None or r.grade == grade]
         for pool in (
-            [r for r in self.routes if r.complete],
-            [r for r in self.routes if r.starts or r.finish is not None],
-            self.routes,
+            [r for r in cands if r.complete],
+            [r for r in cands if r.starts or r.finish is not None],
+            cands,
         ):
             if pool:
                 return max(pool, key=lambda r: r.size)
@@ -109,6 +118,32 @@ def _gap(a: Mask, b: Mask, ba: tuple[int, int, int, int], bb: tuple[int, int, in
     x0, y0 = min(ba[0], bb[0]), min(ba[1], bb[1])
     x1, y1 = max(ba[2], bb[2]), max(ba[3], bb[3])
     return min_gap(a[y0:y1, x0:x1], b[y0:y1, x0:x1])
+
+
+def _tape_grade(tapes: Sequence[int], detections: Sequence[Detection]) -> str | None:
+    """Majority colour of some tape pieces (None if none is coloured)."""
+    votes = Counter(c for t in tapes if (c := detections[t].colour) and c != UNKNOWN)
+    return votes.most_common(1)[0][0] if votes else None
+
+
+def _split_by_grade(
+    members: list[int], touched: dict[int, list[int]], detections: Sequence[Detection]
+) -> list[tuple[str | None, list[int]]]:
+    """Split one same-colour cluster into one part per diamond grade."""
+    anchors = {i: g for i in members if (g := _tape_grade(touched.get(i, []), detections))}
+    grades = sorted(set(anchors.values()))
+    if len(grades) <= 1:
+        return [(grades[0] if grades else None, members)]
+    centres = {i: detections[i].centroid() for i in members}
+    parts: dict[str, list[int]] = {g: [] for g in grades}
+    for i in members:
+        if i in anchors:
+            parts[anchors[i]].append(i)
+            continue
+        x, y = centres[i]
+        nearest = min(anchors, key=lambda a: (centres[a][0] - x) ** 2 + (centres[a][1] - y) ** 2)
+        parts[anchors[nearest]].append(i)
+    return [(g, parts[g]) for g in grades]
 
 
 def _start_and_finish(
@@ -174,7 +209,7 @@ def group_routes(
         clusters.setdefault(uf.find(a), []).append(i)
 
     reach = max(1, int(round(cfg.tape_reach_factor * size)))
-    diamonds: dict[int, int] = {}  # hold -> number of tape pieces it touches
+    touched: dict[int, list[int]] = {}  # hold -> tape pieces it touches
     for i in cand:
         grown_box = (
             boxes[i][0] - reach,
@@ -189,15 +224,17 @@ def group_routes(
             if grown is None:
                 grown = dilate(detections[i].mask, reach)
             if (grown & detections[t].mask).any():
-                diamonds[i] = diamonds.get(i, 0) + 1
+                touched.setdefault(i, []).append(t)
 
     routes, strays = [], []
     for members in clusters.values():
         members = sorted(members)
-        if len(members) >= cfg.min_route_holds:
-            starts, finish = _start_and_finish(members, diamonds, boxes, cfg.finish_top_frac)
-            routes.append(Route(colour, members, starts, finish))
-        else:
+        if len(members) < cfg.min_route_holds:
             strays.extend(members)
+            continue
+        for grade, part in _split_by_grade(members, touched, detections):
+            diamonds = {i: len(touched.get(i, [])) for i in part}
+            starts, finish = _start_and_finish(part, diamonds, boxes, cfg.finish_top_frac)
+            routes.append(Route(colour, part, starts, finish, grade))
     routes.sort(key=lambda r: (-r.size, r.holds[0]))
     return RouteResult(colour, routes, sorted(strays), size)

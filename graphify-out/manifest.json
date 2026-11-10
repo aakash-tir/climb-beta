@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "src/climb_beta/config.py": {
-    "mtime": 1794346136.7434587,
-    "ast_hash": "027f03df01242b70eae0f1addb9d2140",
+    "mtime": 1794346535.0211134,
+    "ast_hash": "38d50bae37ee5691905639f5310cb7f7",
     "semantic_hash": ""
   },
   "src/climb_beta/types.py": {
@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "tests/test_config.py": {
-    "mtime": 1794345739.3889966,
-    "ast_hash": "494dbe94186f6479516f502e642404ba",
+    "mtime": 1794346605.1710844,
+    "ast_hash": "7a524ac72597f78b104610b20c3c7178",
     "semantic_hash": ""
   },
   "tests/test_types.py": {
@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   ".claude/project-context.md": {
-    "mtime": 1794346415.222904,
-    "ast_hash": "7855e8dc23581050fb4667e5090f4515",
+    "mtime": 1794346669.4006357,
+    "ast_hash": "479b0b02f0a3d192c9f0c9889df54480",
     "semantic_hash": ""
   },
   ".claude/rules/frontend/react.md": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "configs/colours.yaml": {
-    "mtime": 1794346136.7434587,
-    "ast_hash": "38c747e6340089060f998c30ce05d9ff",
+    "mtime": 1794346535.0040073,
+    "ast_hash": "fb29389e1ebdc8599af00536f52dc024",
     "semantic_hash": ""
   },
   "docs/future.md": {
@@ -480,13 +480,13 @@
     "semantic_hash": ""
   },
   "src/climb_beta/route/group.py": {
-    "mtime": 1794346317.6271412,
-    "ast_hash": "aa91ab1a30847372cd2e24fba73681c6",
+    "mtime": 1794346562.2887294,
+    "ast_hash": "7703f4358c2ea45def425e4acd532697",
     "semantic_hash": ""
   },
   "tests/test_route_group.py": {
-    "mtime": 1794346358.5160415,
-    "ast_hash": "80ff5afe386c51b385a58d503e28e399",
+    "mtime": 1794346605.1695638,
+    "ast_hash": "7c55701803c677ed60537b49c7db5e83",
     "semantic_hash": ""
   },
   "configs/route.yaml": {
@@ -495,13 +495,13 @@
     "semantic_hash": ""
   },
   "route/find_route.py": {
-    "mtime": 1794345739.3757381,
-    "ast_hash": "b17960861911b26814077fbe42bb655f",
+    "mtime": 1794346562.131681,
+    "ast_hash": "a968387279cbf86a2980a28141296b00",
     "semantic_hash": ""
   },
   "src/climb_beta/pipeline.py": {
-    "mtime": 1794346329.6805873,
-    "ast_hash": "3ab07ee1556013c88e75c45c519da25e",
+    "mtime": 1794346562.146837,
+    "ast_hash": "cc6b853f39a6e03fd1e2bca9023dec70",
     "semantic_hash": ""
   },
   "tests/fakes.py": {
@@ -515,8 +515,8 @@
     "semantic_hash": ""
   },
   "docs/architecture/architecture-diagram.html": {
-    "mtime": 1794346397.7422812,
-    "ast_hash": "d38e7e8c67cf71b101398c03d56a537c",
+    "mtime": 1794346669.4006357,
+    "ast_hash": "5784d035bbfde0fe60bc1ab8f64126b2",
     "semantic_hash": ""
   },
   "src/climb_beta/metrics/detection.py": {
@@ -560,8 +560,8 @@
     "semantic_hash": ""
   },
   "app/app.py": {
-    "mtime": 1794345739.3787377,
-    "ast_hash": "e594e19850879ef7209f05d59a3febf8",
+    "mtime": 1794346562.1027155,
+    "ast_hash": "41ad9e2ad6694cf84c354daf81d94f93",
     "semantic_hash": ""
   },
   "app/build_space.py": {
@@ -570,13 +570,13 @@
     "semantic_hash": ""
   },
   "src/climb_beta/demo.py": {
-    "mtime": 1794346329.6965752,
-    "ast_hash": "e2eff02b7f7869cd1a20e50b830c0e03",
+    "mtime": 1794346552.7629673,
+    "ast_hash": "59e8060aee87858d45ce58730d9603cd",
     "semantic_hash": ""
   },
   "tests/test_demo.py": {
-    "mtime": 1794345739.3822536,
-    "ast_hash": "fa3cce91af404c03540aa2a23eff64a7",
+    "mtime": 1794346593.6306853,
+    "ast_hash": "31daacc7b11affdbc1f337f5b981231f",
     "semantic_hash": ""
   },
   "docs/runbooks/deploy-space.md": {
@@ -585,8 +585,8 @@
     "semantic_hash": ""
   },
   "logs/2026-11-10.md": {
-    "mtime": 1794346416.174054,
-    "ast_hash": "4e365f5a72852783ac582e729921ab56",
+    "mtime": 1794346680.9723177,
+    "ast_hash": "c6e2f8450f3a89f1c15522eeef2df877",
     "semantic_hash": ""
   },
   "tests/test_colour_tape.py": {
