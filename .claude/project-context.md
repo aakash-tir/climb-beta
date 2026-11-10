@@ -48,7 +48,11 @@ table in `plan.md` on the held-out test walls.
 - **Colour sidecar**: `colours/{split}/<stem>.json`, a list aligned to the label lines:
   `{"colour": "red", "chalked": false}` (`null` for volume and tape).
 - **Routes GT** (test only): `routes.yaml`, entries
-  `{image, colour, holds: [label line idx], start: [idx]}`.
+  `{image, colour, holds: [label line idx], grade, start: [idx], finish: idx, complete}`
+  (`grade`/`start`/`finish` optional; `complete` defaults true). `holds` = own-colour
+  holds + taped grey/black starts. Only complete routes are scored, matched by colour +
+  grade. The owner's notes on the first photo batch, to build it from, are in the
+  gitignored `data/basecamp/labels/route_notes.yaml`.
 - **Basecamp raw**: `data/basecamp/raw/<wall_id>/*.jpg` (gitignored). `data/basecamp/walls.yaml`
   is committed and records each wall's ID, angle and notes. `data/basecamp/splits.yaml`
   (committed) maps wall → split.
