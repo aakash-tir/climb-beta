@@ -21,9 +21,10 @@ from climb_beta.labelling import schema
 
 CLASS_COLOURS = {"hold": "#ff4d4f", "volume": "#40a9ff", "tape": "#fadb14"}
 INSTRUCTIONS = (
-    "Outline every hold, volume and start-tape strip. Click a hold to prompt SAM 2 "
+    "Outline every hold, volume and tape diamond. Click a hold to prompt SAM 2 "
     "(or drag a box), check the mask, then with the region selected pick its colour and "
-    "tick 'chalked' if chalk covers a visible part of it. Volumes and tape need no colour."
+    "tick 'chalked' if chalk covers a visible part of it. Tape diamonds get their colour "
+    "too (it is the route's grade). Volumes need no colour."
 )
 
 
@@ -54,7 +55,7 @@ def build_config(classes: Sequence[str], cfg: ColourConfig) -> str:
     _labels(view, "RectangleLabels", schema.RECT, classes, smart="true")
 
     region = ET.SubElement(view, "View", {"visibleWhen": "region-selected"})
-    ET.SubElement(region, "Header", {"value": "Hold colour"})
+    ET.SubElement(region, "Header", {"value": "Colour (hold, or tape diamond = grade)"})
     colour = ET.SubElement(
         region,
         "Choices",

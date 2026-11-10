@@ -46,6 +46,7 @@ class ExportReport:
     photos: int = 0
     regions: dict[str, int] = field(default_factory=dict)
     holds_without_colour: list[str] = field(default_factory=list)
+    tape_without_colour: list[str] = field(default_factory=list)
     skipped_tasks: list[str] = field(default_factory=list)
     empty_masks: int = 0
 
@@ -114,6 +115,11 @@ def task_regions(
             rec["chalked"] = rid in chalked
             if rec["colour"] is None:
                 report.holds_without_colour.append(f"{where}#{rid}")
+        elif cls == "tape":
+            # A tape diamond's colour is the route's grade (see configs/colours.yaml).
+            rec["colour"] = colours.get(rid)
+            if rec["colour"] is None:
+                report.tape_without_colour.append(f"{where}#{rid}")
         out.append((YoloInstance(cls_index[cls], normalise(poly, h, w)), rec))
         report.regions[cls] = report.regions.get(cls, 0) + 1
     return out

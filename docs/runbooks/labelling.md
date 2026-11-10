@@ -46,10 +46,13 @@ Settings → Personal Access Token**, copy the token into `.env` as
    tape. Fix edges with the brush/eraser, or draw a `poly` by hand if SAM fails.
 2. **Select the region**, then pick its **colour**, and tick **chalked** if chalk
    covers a visible part of the hold. Every hold needs a colour (the export warns
-   about any that don't). Volumes and tape need none.
-3. Label **every** hold, volume and tape strip in the photo. A missed hold becomes
+   about any that don't).
+3. Label each small **tape diamond** as `tape` (`sam_box` works best) and give it
+   its colour too: at Basecamp the diamond colour is the route's grade. Two diamonds
+   at the bottom mark the start, one at the top the finish. Volumes need no colour.
+4. Label **every** hold, volume and tape diamond in the photo. A missed hold becomes
    background and teaches the detector to miss it.
-4. Submit.
+5. Submit.
 
 ## 5. Export → training data
 1. **Export → JSON** (not JSON-MIN) → save to `data/basecamp/exports/<date>.json`.

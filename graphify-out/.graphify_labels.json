@@ -43,9 +43,6 @@
   "41": "run",
   "42": "test_labelling_compose.py",
   "43": "__init__.py",
-  "44": "run",
-  "45": "wall",
-  "46": "group.py",
   "47": "group.py",
   "48": "main",
   "49": "group_routes",
@@ -54,12 +51,5 @@
   "52": "build_space.py",
   "53": "2026-11-10",
   "54": "evaluate",
-  "55": "test_colour_tape.py",
-  "56": "colour_detections",
-  "57": "imageio.py",
-  "58": "Detection",
-  "59": "test_colour_pink_red.py",
-  "60": "test_colour_white.py",
-  "61": "FakeDetector",
-  "62": "app.py"
+  "57": "imageio.py"
 }

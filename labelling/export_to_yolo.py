@@ -37,6 +37,10 @@ def main(argv: list[str] | None = None) -> int:
         print(f"WARNING {len(rep.holds_without_colour)} holds have no colour choice:")
         for h in rep.holds_without_colour[:20]:
             print(f"  {h}")
+    if rep.tape_without_colour:
+        print(f"WARNING {len(rep.tape_without_colour)} tape regions have no colour (grade):")
+        for t in rep.tape_without_colour[:20]:
+            print(f"  {t}")
     if rep.skipped_tasks:
         print(f"skipped {len(rep.skipped_tasks)} tasks (no annotation, or path not raw/<wall>/)")
     return 0
